@@ -1,35 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evan Wiorek</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="columns.css">
 </head>
+
 <body>
-    
-    <!--Navbar-->
-    <div class="navbar flex between align-center">
-        <div class="nav-left flex flex-1">
-            <h2 class="name">Evan Wiorek</h2>
-        </div>
-        <div class="nav-right flex flex-1 between">
-            <a class="navlink" href="#" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">About Me</a>
-            <a class="navlink" href="#" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">Skills</a>
-            <a class="navlink" href="#" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">Projects</a>
-            <a class="navlink" href="#" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">Education</a>
-            <a class="navlink" href="#" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">Experience</a>
-        </div>
-    </div>
 
     <div class="main-container">
 
-        <!--Webpage Body (temporary)-->
-        <img src="./assets/bg.png" alt="Raimi Spider-Man" class="background">
+        <!--Navbar-->
+        <div class="navbar flex between align-center">
+            <div class="nav-left flex col-6">
+                <h2 class="name">Evan Wiorek</h2>
+            </div>
+            <div class="nav-right flex col-6 between">
+                <a class="navlink" href="#about" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">About
+                    Me</a>
+                <a class="navlink" href="#skills" onmouseover="scale(this, 1.1)"
+                    onmouseleave="scale(this, 1)">Skills</a>
+                <a class="navlink" href="#" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">Projects</a>
+                <a class="navlink" href="#" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">Education</a>
+                <a class="navlink" href="#" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">Experience</a>
+            </div>
+        </div>
 
-    </div>
+        <div class="body-container">
 
-<script src="script.js"></script>
+            <!--About Me-->
+            <div id="about" class="about-me-header">
+                <div class="spider-man parallax">
+                    <h1 class="about-title">About Me</h1>
+                </div>
+            </div>
+            <div class="container">
+                <div class="about-me-card flex align-center justify-center">
+                    <div class="about-me-blip col-4">
+                        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem hic excepturi quidem
+                            dicta atque, labore praesentium eligendi similique blanditiis sit iure repudiandae, minus
+                            quas aperiam dolorem nihil fugit error fugiat.</h3>
+                    </div>
+                    <div class="about-me-hobbies col-4">
+                        <video width="500" autoplay loop>
+                            <source src="./assets/hobbies.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div id="skills" class="skills-header">
+                <div class="batman parallax">
+                    <h1 class="skills-title">Skills</h1>
+                </div>
+            </div>
+            <div class="container">
+                <div class="about-me-card flex align-center justify-center">
+                    <div class="about-me-blip col-4">
+                        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem hic excepturi quidem
+                            dicta atque, labore praesentium eligendi similique blanditiis sit iure repudiandae, minus
+                            quas aperiam dolorem nihil fugit error fugiat.</h3>
+                    </div>
+                    <div class="about-me-hobbies col-4">
+                        <video width="500" autoplay loop>
+                            <source src="./assets/hobbies.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+            <script src="script.js"></script>
 </body>
+
 </html>
