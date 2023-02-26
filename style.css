@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@font-face {
-    font-family: 'itc_avant_garde_gothic_stdMd';
-    src: url('./assets/itc_avant_garde_gothic_std_medium-webfont.woff2') format('woff2'),
-        url('./assets/itc_avant_garde_gothic_std_medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -73,17 +64,6 @@
     height: 100vh;
 }
 
-/* .portrait-quotes-container {
-    margin-top: ;
-    background-color: rgb(0, 0, 0, .3);
-    padding: 20px 0px;
-    width: 60%;
-    margin: 170px auto 0px auto;
-    backdrop-filter: blur(15px);
-    border-radius: 30px;
-    box-shadow: 0px 0px 5px 0px rgb(0 0 0 / .5);
-} */
-
 .portrait-quotes-container {
     margin-top: 150px;
     background-color: rgba(0, 0, 0, 0.2);
@@ -92,7 +72,7 @@
 }
 
 .bible-quotes-container {
-    color: white;
+    color: rgb(224, 224, 224);
 }
 
 .bible-quotes-container h2 {
@@ -100,24 +80,22 @@
 }
 
 .portrait img {
-    width: 50%;
+    width: 65%;
     border-radius: 30px;
 }
 
 /*About Me*/
-.about-me-card {
-    background-color: aliceblue;
+.card-1 {
+    background-image: linear-gradient(180deg, rgba(30,43,46,1) 0%, rgba(17,22,25,1) 150%);
+    color: #899ea4;
     padding: 20px;
     font-size: 2rem;
     box-shadow: 0px 0px 5px 0px rgb(0 0 0 / .5);
 }
 
-.about-me-blip {
-    margin-left: 100px;
-}
-
-.about-me-hobbies {
-    margin-right: 100px;
+.about-me-title {
+    color: rgb(224, 224, 224);
+    font-weight: 500 !important; 
 }
 
 .skills-title {
