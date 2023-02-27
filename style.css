@@ -6,7 +6,6 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 /*Containers*/
@@ -18,8 +17,15 @@
     width: 100%;
     max-width: none;
     margin: auto;
+    z-index: 5;
 }
 
+.wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+}
 
 /*Navbar*/
 .navbar {
@@ -49,23 +55,20 @@
 }
 
 
-/*Body-Content*/
-
 /*Header*/
-.parallax {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.spider-man {
-    background-image: url("./assets/bg3.jpeg");
+.header {
+    position: relative;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 0 5px #000;
+    transform-style:preserve-3d;
 }
 
 .portrait-quotes-container {
-    margin-top: 150px;
+    margin-top: 90px;
     background-color: rgba(0, 0, 0, 0.2);
     padding: 30px 0px;
     backdrop-filter: blur(15px);
@@ -84,9 +87,37 @@
     border-radius: 30px;
 }
 
+.parallax::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -5px;
+    transform: translateZ(-1px) scale(1.5);
+    background-size: 100%;
+    z-index: -1;
+}
+
+.header-bg::after {
+  background-image: url('./assets/bg3.jpeg');
+}
+
+
 /*About Me*/
-.card-1 {
-    background-image: linear-gradient(180deg, rgba(30,43,46,1) 0%, rgba(17,22,25,1) 150%);
+.about-me-section {
+    position: relative;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 0 5px #000;
+    transform-style:preserve-3d;
+}
+
+.card-style-1 {
+    background-image: linear-gradient(180deg, rgba(30, 43, 46, 1) 0%, rgba(17, 22, 25, 1) 150%);
     color: #899ea4;
     padding: 20px;
     font-size: 2rem;
@@ -95,19 +126,41 @@
 
 .about-me-title {
     color: rgb(224, 224, 224);
-    font-weight: 500 !important; 
+    font-weight: 500 !important;
 }
 
-.skills-title {
+/*Skills*/
+.bg2::after {
+    background-image: url('https://placekitten.com/g/800/600');
+  }
+
+  .skills-section {
+    position: relative;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 0 5px #000;
+    transform-style:preserve-3d;
+}
+
+.skills-title h1 {
     font-size: 5rem;
     color: white;
     text-align: center;
-    padding-top: 170px;
-    padding-bottom: 50px;
+    padding-top: 100px;
     font-weight: 400;
 }
 
-.batman {
-    background-image: url("./assets/bg2.png");
+.skills-title h2 {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+}
+
+.stars-2-bg {
+    background-image: url("./assets/bg4.jpg");
     min-height: 300px;
 }

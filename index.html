@@ -14,67 +14,78 @@
 
     <div class="main-container">
 
-        <!--Navbar-->
-        <div class="navbar flex between align-center">
-            <div class="nav-left flex col-6">
-                <h2 class="name">Evan Wiorek</h2>
-            </div>
-            <div class="nav-right flex col-6 between">
-                <a class="navlink" href="#about" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">About Me</a>
-                <a class="navlink" href="#skills" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">Skills</a>
-                <a class="navlink" href="#" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">Projects</a>
-                <a class="navlink" href="#" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">Education</a>
-                <a class="navlink" href="#" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">Experience</a>
-            </div>
-        </div>
 
-        <div class="body-container">
+
+        <div class="body-container wrapper">
+
+            <!--Navbar-->
+            <div class="navbar flex between align-center">
+                <div class="nav-left flex col-6">
+                    <h2 class="name">Evan Wiorek</h2>
+                </div>
+                <div class="nav-right flex col-6 between">
+                    <a class="navlink" href="#about" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">About
+                        Me</a>
+                    <a class="navlink" href="#skills" onmouseover="scale(this, 1.1)"
+                        onmouseleave="scale(this, 1)">Skills</a>
+                    <a class="navlink" href="#" onmouseover="scale(this, 1.1)"
+                        onmouseleave="scale(this, 1)">Projects</a>
+                    <a class="navlink" href="#" onmouseover="scale(this, 1.1)"
+                        onmouseleave="scale(this, 1)">Education</a>
+                    <a class="navlink" href="#" onmouseover="scale(this, 1.1)"
+                        onmouseleave="scale(this, 1)">Experience</a>
+                </div>
+            </div>
+
+            <!--Header-->
+            <header class="header parallax header-bg">
+                <div class="portrait-quotes-container  flex align-center justify-center">
+                    <div class="portrait flex col-4">
+                        <img src="./assets/portrait.png" alt="Portrait of Evan Wiorek">
+                    </div>
+                    <div class="bible-quotes-container flex col-4 flex-col center-align gap-1">
+                        <h3 class="bible-quote">"Immediately Jesus stretched out his hand and caught him, and said
+                            to him, “O you of little faith, why did you doubt?”"</h3>
+                        <h3 class="bible-quote-source">Matthew 14:31</h3>
+                        <br><br>
+                        <h3 class="bible-quote">“I have the strength for everything through Him who empowers me.”
+                        </h3>
+                        <h3 class="bible-quote-source">Philippians 4:13</h3>
+                    </div>
+                </div>
+            </header>
 
             <!--About Me-->
-            <div id="about" class="about-me-header">
-                <div class="spider-man parallax">
-                    
-                    <div class="portrait-quotes-container  flex align-center justify-center">
-                        <div class="portrait flex col-4">
-                            <img src="./assets/portrait.png" alt="Portrait of Evan Wiorek">
-                        </div>
-                        <div class="bible-quotes-container flex col-4 flex-col center-align gap-1">
-                            <h3 class="bible-quote">"Immediately Jesus stretched out his hand and caught him, and said to him, “O you of little faith, why did you doubt?”"</h3>
-                            <h3 class="bible-quote-source">Matthew 14:31</h3>
-                            <br><br>
-                            <h3 class="bible-quote">“I have the strength for everything through Him who empowers me.”</h3>
-                            <h3 class="bible-quote-source">Philippians 4:13</h3>
-                        </div>
-                    </div>
-                    
+            <div class="about-me-section card-style-1">
+                <div id="about-me-blip" class="about-me-blip col-4">
+                    <h3 class="center-align about-me-title">About Me</h3>
+                    <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem hic excepturi
+                        quidem
+                        dicta atque, labore praesentium eligendi similique blanditiis sit iure repudiandae,
+                        minus
+                        quas aperiam dolorem nihil fugit error fugiat.</h4>
                 </div>
-            </div>
-            <div class="container">
-                <div class="about-me-card card-1 flex align-center justify-center gap-2">
-                    <div id="about-me-blip" class="about-me-blip col-4">
-                        <h3 class="center-align about-me-title">About Me</h3>
-                        <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem hic excepturi quidem
-                            dicta atque, labore praesentium eligendi similique blanditiis sit iure repudiandae, minus
-                            quas aperiam dolorem nihil fugit error fugiat.</h4>
-                    </div>
-                    <div class="about-me-hobbies col-4">
-                        <video width="500" autoplay loop>
-                            <source src="./assets/hobbies.mp4" type="video/mp4">
-                        </video>
-                    </div>
+                <div class="about-me-hobbies col-4">
+                    <video width="500" autoplay loop>
+                        <source src="./assets/hobbies.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
 
+            <!--Skills-->
             <div id="skills" class="skills-header">
-                <div class="batman parallax">
-                    <h1 class="skills-title">Skills</h1>
+                <div class="stars-2-bg parallax skills-title">
+                    <h1>Skills</h1>
+                    <h2>This list can grow!</h2>
                 </div>
             </div>
-            <div class="container">
+            <div class="container skills-section">
                 <div class="skills-card card-1 flex align-center justify-center">
                     <div class="about-me-blip col-4">
-                        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem hic excepturi quidem
-                            dicta atque, labore praesentium eligendi similique blanditiis sit iure repudiandae, minus
+                        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem hic excepturi
+                            quidem
+                            dicta atque, labore praesentium eligendi similique blanditiis sit iure repudiandae,
+                            minus
                             quas aperiam dolorem nihil fugit error fugiat.</h3>
                     </div>
                     <div class="about-me-hobbies col-4">
@@ -85,9 +96,13 @@
                 </div>
             </div>
 
+
+
+
+
         </div>
 
-            <script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>
