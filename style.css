@@ -192,6 +192,7 @@
     background-color: rgba(0, 0, 0, 0.2);
     padding: 30px 0px;
     backdrop-filter: blur(15px);
+    width: 100%;
 }
 
 .bible-quotes-container {
@@ -203,7 +204,7 @@
 }
 
 .portrait img {
-    width: 60%;
+    width: 300px;
     border-radius: 30px;
 }
 
