@@ -8,42 +8,58 @@
     <title>Evan Wiorek</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="columns.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
     <div class="main-container">
 
-
-
-        <div class="body-container wrapper">
-
-            <!--Navbar-->
-            <div class="navbar flex between align-center">
-                <div class="nav-left flex col-6">
-                    <h2 class="name">Evan Wiorek</h2>
-                </div>
-                <div class="nav-right flex col-6 between">
-                    <a class="navlink" href="#about" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">About
-                        Me</a>
-                    <a class="navlink" href="#skills" onmouseover="scale(this, 1.1)"
-                        onmouseleave="scale(this, 1)">Skills</a>
-                    <a class="navlink" href="#" onmouseover="scale(this, 1.1)"
-                        onmouseleave="scale(this, 1)">Projects</a>
-                    <a class="navlink" href="#" onmouseover="scale(this, 1.1)"
-                        onmouseleave="scale(this, 1)">Education</a>
-                    <a class="navlink" href="#" onmouseover="scale(this, 1.1)"
-                        onmouseleave="scale(this, 1)">Experience</a>
-                </div>
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-nav">
+            <a href="#home" class="mobile-name">Evan Wiorek</a>
+            <div id="mobile-links">
+                <a href="#about">About Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
             </div>
+            <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <!--Desktop Navbar-->
+        <div class="navbar flex between align-center fixed">
+            <div class="nav-left flex">
+                <h2 class="name">Evan Wiorek</h2>
+            </div>
+            <div class="nav-right flex">
+                <a class="navlink" href="#about" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">About
+                    Me</a>
+                <a class="navlink" href="#" onmouseover="scale(this, 1.1)"
+                    onmouseleave="scale(this, 1)">Projects</a>
+                <a class="navlink" href="#skills" onmouseover="scale(this, 1.1)"
+                    onmouseleave="scale(this, 1)">Skills</a>
+                <a class="navlink" href="#" onmouseover="scale(this, 1.1)"
+                    onmouseleave="scale(this, 1)">Education</a>
+                <a class="navlink" href="#" onmouseover="scale(this, 1.1)"
+                    onmouseleave="scale(this, 1)">Experience</a>
+                <a class="navlink" href="#" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">Contact</a>
+            </div>
+        </div>
+
+        <div class="wrapper">
 
             <!--Header-->
             <header class="header parallax header-bg">
-                <div class="portrait-quotes-container  flex align-center justify-center">
-                    <div class="portrait flex col-4">
+                <div class="portrait-quotes-container flex align-center justify-center flex-small">
+                    <div class="portrait flex col-4 flex-small col-sm-11 center-align">
                         <img src="./assets/portrait.png" alt="Portrait of Evan Wiorek">
                     </div>
-                    <div class="bible-quotes-container flex col-4 flex-col center-align gap-1">
+                    <div class="bible-quotes-container flex col-4 col-sm-10 flex-col center-align gap-1 center-align">
                         <h3 class="bible-quote">"Immediately Jesus stretched out his hand and caught him, and said
                             to him, “O you of little faith, why did you doubt?”"</h3>
                         <h3 class="bible-quote-source">Matthew 14:31</h3>
@@ -55,8 +71,32 @@
                 </div>
             </header>
 
-            <!--About Me-->
-            <div class="about-me-section card-style-1">
+            <!--About Me section-->
+            <div class="about-me-section card-style-1 gap-2 flex-small">
+                <div id="about-me-blip" class="about-me-blip col-4 flex-small col-sm-11">
+                    <h3 class="center-align about-me-title">About Me</h3>
+                    <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem hic excepturi
+                        quidem
+                        dicta atque, labore praesentium eligendi similique blanditiis sit iure repudiandae,
+                        minus
+                        quas aperiam dolorem nihil fugit error fugiat.</h4>
+                </div>
+                <div class="about-me-hobbies col-4 flex-small col-sm-11">
+                    <video width="500" autoplay loop>
+                        <source src="./assets/hobbies.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+
+            <!--Projects Header-->
+            <div class="projects-header parallax projects-bg">
+                <div class="projects-title">
+                    <h1>Projects</h1>
+                </div>
+            </div>
+            <!--Projects section-->
+            <div class="projects-section card-style-1 gap-2">
                 <div id="about-me-blip" class="about-me-blip col-4">
                     <h3 class="center-align about-me-title">About Me</h3>
                     <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem hic excepturi
@@ -72,30 +112,99 @@
                 </div>
             </div>
 
-            <!--Skills-->
-            <div id="skills" class="skills-header">
-                <div class="stars-2-bg parallax skills-title">
+
+            <!--Skills Header-->
+            <div class="skills-header parallax skills-bg">
+                <div class="skills-title">
                     <h1>Skills</h1>
-                    <h2>This list can grow!</h2>
                 </div>
             </div>
-            <div class="container skills-section">
-                <div class="skills-card card-1 flex align-center justify-center">
-                    <div class="about-me-blip col-4">
-                        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem hic excepturi
-                            quidem
-                            dicta atque, labore praesentium eligendi similique blanditiis sit iure repudiandae,
-                            minus
-                            quas aperiam dolorem nihil fugit error fugiat.</h3>
-                    </div>
-                    <div class="about-me-hobbies col-4">
-                        <video width="500" autoplay loop>
-                            <source src="./assets/hobbies.mp4" type="video/mp4">
-                        </video>
-                    </div>
+            <!--Skills section-->
+            <div class="skills-section card-style-1 gap-2">
+                <div id="about-me-blip" class="about-me-blip col-4">
+                    <h3 class="center-align about-me-title">About Me</h3>
+                    <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem hic excepturi
+                        quidem
+                        dicta atque, labore praesentium eligendi similique blanditiis sit iure repudiandae,
+                        minus
+                        quas aperiam dolorem nihil fugit error fugiat.</h4>
+                </div>
+                <div class="about-me-hobbies col-4">
+                    <video width="500" autoplay loop>
+                        <source src="./assets/hobbies.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
 
+            <!--Education Header-->
+            <div class="education-header parallax skills-bg">
+                <div class="education-title">
+                    <h1>Education</h1>
+                </div>
+            </div>
+            <!--Education section-->
+            <div class="education-section card-style-1 gap-2">
+                <div id="about-me-blip" class="about-me-blip col-4">
+                    <h3 class="center-align about-me-title">About Me</h3>
+                    <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem hic excepturi
+                        quidem
+                        dicta atque, labore praesentium eligendi similique blanditiis sit iure repudiandae,
+                        minus
+                        quas aperiam dolorem nihil fugit error fugiat.</h4>
+                </div>
+                <div class="about-me-hobbies col-4">
+                    <video width="500" autoplay loop>
+                        <source src="./assets/hobbies.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!--Experience Header-->
+            <div class="experience-header parallax skills-bg">
+                <div class="experience-title">
+                    <h1>Experience</h1>
+                </div>
+            </div>
+            <!--Experience section-->
+            <div class="experience-section card-style-1 gap-2">
+                <div id="about-me-blip" class="about-me-blip col-4">
+                    <h3 class="center-align about-me-title">About Me</h3>
+                    <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem hic excepturi
+                        quidem
+                        dicta atque, labore praesentium eligendi similique blanditiis sit iure repudiandae,
+                        minus
+                        quas aperiam dolorem nihil fugit error fugiat.</h4>
+                </div>
+                <div class="about-me-hobbies col-4">
+                    <video width="500" autoplay loop>
+                        <source src="./assets/hobbies.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!--Contact Header-->
+            <div class="contact-header parallax skills-bg">
+                <div class="contact-title center-align">
+                    <h1>Contact</h1>
+                    <h2>Feel free to conact me!</h2>
+                </div>
+            </div>
+            <!--Contact section-->
+            <div class="contact-section card-style-1 gap-2">
+                <div id="about-me-blip" class="about-me-blip col-4">
+                    <h3 class="center-align about-me-title">About Me</h3>
+                    <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem hic excepturi
+                        quidem
+                        dicta atque, labore praesentium eligendi similique blanditiis sit iure repudiandae,
+                        minus
+                        quas aperiam dolorem nihil fugit error fugiat.</h4>
+                </div>
+                <div class="about-me-hobbies col-4">
+                    <video width="500" autoplay loop>
+                        <source src="./assets/hobbies.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
 
 
 
