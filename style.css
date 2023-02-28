@@ -49,7 +49,7 @@
     bottom: 0;
     left: -5px;
     transform: translateZ(-1px) scale(1.5);
-    background-size: 100%;
+    background-size: cover;
     z-index: -1;
 }
 
@@ -442,9 +442,35 @@
     .navbar {
         display: none;
     }
+    .header-bg::after {
+        background-image: url('./assets/bg3-2.jpeg');
+        margin-bottom: -20px;
+        background-color: #000;
+    }
+    .parallax::after {
+        transform: translateZ(-1px) scale(2);
+        background-color: #000;
+    }
+    .header {
+        height: 90vh;
+    }
+
+    .portrait-quotes-container {
+        margin-top: 100px;
+    }
+    .portrait img {
+        margin-bottom: 20px;
+    }
+    .about-me-section {
+        font-size: 1.5rem;
+        text-shadow: 0px 0px 0px black;
+    }
+    .about-me-hobbies video {
+        width: 300px;
+    }
 }
 
-@media only screen and (min-width: 992px) {
+/* @media only screen and (min-width: 992px) {
     .col-lg-4 {
         flex: 0 0 auto;
         width: 33.33333333%;
@@ -456,7 +482,7 @@
     .navbar {
         display: none;
     }
-}
+} */
 
 @media only screen and (min-width: 601px) {
     .col-1 {
