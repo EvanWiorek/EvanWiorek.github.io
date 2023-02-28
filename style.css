@@ -8,6 +8,7 @@
     box-sizing: border-box;
 }
 
+
 *::-webkit-scrollbar {
     width: 10px;
 }
@@ -23,10 +24,6 @@
 }
 
 /*Universal and Containers*/
-.main-container {
-    margin: auto;
-}
-
 .wrapper {
     height: 100vh;
     overflow-x: hidden;
@@ -259,4 +256,9 @@
     background-image: url('./assets/bg4.jpg');
     height: 500px;
     top: -100px;
+}
+
+.card-title h2 {
+    color: white;
+    font-weight: 300;
 }

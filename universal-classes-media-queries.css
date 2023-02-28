@@ -49,6 +49,15 @@
 
 /*Phone Screen*/
 @media only screen and (max-width: 910px) {
+    
+    .my-navbar {
+        visibility: hidden;
+    }
+
+    .mobile-nav {
+        visibility: visible;
+    }
+    
     .flex-small {
         display: flex;
         flex-direction: column;
@@ -170,13 +179,6 @@
         top: 100px;
     }
 
-    .my-navbar {
-        visibility: hidden;
-    }
-
-    .mobile-nav {
-        visibility: visible;
-    }
 }
 
 /*Desktop*/
