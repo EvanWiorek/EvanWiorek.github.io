@@ -1,0 +1,250 @@
+/*Universal Classes*/
+.inline {
+    display: inline-block;
+}
+
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.margin-center {
+    margin: auto;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.around {
+    justify-content: space-around;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.gap-2  {
+    gap: 2rem;
+}
+
+.center-align {
+    text-align: center;
+}
+
+/*Full-screen*/
+.col {
+    flex: 1 0 0%;
+}
+
+.col-auto {
+    flex: 0 0 auto;
+    width: auto;
+}
+
+
+/*Media Queries*/
+@media only screen and (max-width: 910px) {
+    .flex-small {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-sm {
+        flex: 1 0 0%;
+    }
+
+    .col-sm-auto {
+        flex: 0 0 auto;
+        width: auto;
+    }
+
+    .col-sm-1 {
+        flex: 0 0 auto;
+        width: 8.33333333%;
+    }
+
+    .col-sm-2 {
+        flex: 0 0 auto;
+        width: 16.66666667%;
+    }
+
+    .col-sm-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+
+    .col-sm-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+
+    .col-sm-5 {
+        flex: 0 0 auto;
+        width: 41.66666667%;
+    }
+
+    .col-sm-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .col-sm-7 {
+        flex: 0 0 auto;
+        width: 58.33333333%;
+    }
+
+    .col-sm-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%;
+    }
+
+    .col-sm-9 {
+        flex: 0 0 auto;
+        width: 75%;
+    }
+
+    .col-sm-10 {
+        flex: 0 0 auto;
+        width: 83.33333333%;
+    }
+
+    .col-sm-11 {
+        flex: 0 0 auto;
+        width: 91.66666667%;
+    }
+
+    .col-sm-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .header-bg::after {
+        background-image: url('./assets/bg3-2.jpeg');
+        margin-bottom: -20px;
+        background-color: #000;
+    }
+
+    .parallax::after {
+        transform: translateZ(-1px) scale(2);
+        background-color: #000;
+    }
+
+    .header {
+        height: 90vh;
+    }
+
+    .portrait-quotes-container {
+        margin-top: 100px;
+    }
+
+    .portrait img {
+        margin-bottom: 20px;
+    }
+
+    .about-me-section {
+        font-size: 1.5rem;
+    }
+
+    .about-me-hobbies video {
+        width: 300px;
+    }
+
+    .card-header {
+        height: 15vh;
+    }
+
+    .card-title h1 {
+        font-size: 2rem;
+        color: white;
+        font-weight: 400;
+    }
+
+    .card-section {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media only screen and (min-width: 911px) {
+    .col-1 {
+        flex: 0 0 auto;
+        width: 8.33333333%;
+    }
+
+    .col-2 {
+        flex: 0 0 auto;
+        width: 16.66666667%;
+    }
+
+    .col-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+
+    .col-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+
+    .col-5 {
+        flex: 0 0 auto;
+        width: 41.66666667%;
+    }
+
+    .col-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .col-7 {
+        flex: 0 0 auto;
+        width: 58.33333333%;
+    }
+
+    .col-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%;
+    }
+
+    .col-9 {
+        flex: 0 0 auto;
+        width: 75%;
+    }
+
+    .col-10 {
+        flex: 0 0 auto;
+        width: 83.33333333%;
+    }
+
+    .col-11 {
+        flex: 0 0 auto;
+        width: 91.66666667%;
+    }
+
+    .col-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .flex {
+        display: flex;
+    }
+}

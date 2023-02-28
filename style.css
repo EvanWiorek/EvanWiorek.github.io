@@ -20,7 +20,7 @@
     background-color: #192125;
     border-radius: 20px;
     border: 0px;
-  }
+}
 
 /*Universal and Containers*/
 .main-container {
@@ -57,6 +57,41 @@
     position: fixed;
 }
 
+/*Universal Classes*/
+.card-style-1 {
+    background-image: linear-gradient(180deg, rgba(30, 43, 46, 1) 0%, rgba(17, 22, 25, 1) 150%);
+    color: #899ea4;
+    padding: 20px;
+    font-size: 2rem;
+    box-shadow: 0px 0px 5px 0px rgb(0 0 0 / .5);
+}
+
+.card-header {
+    position: relative;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transform-style: preserve-3d;
+}
+
+.card-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 0 5px #000;
+    transform-style: preserve-3d;
+    z-index: 1;
+}
+
+.card-title h1 {
+    font-size: 5rem;
+    color: white;
+    font-weight: 400;
+}
+
 /*Navbar*/
 .navbar {
     padding: 20px;
@@ -91,7 +126,6 @@
     padding: 20px;
     background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
     width: 100%;
-    font-size: 1.3rem;
     color: white;
     box-shadow: 0px 0px 5px 0px rgb(0 0 0 / .5);
     backdrop-filter: blur(15px);
@@ -100,28 +134,40 @@
     z-index: 100;
 }
 
-.mobile-nav #mobile-links {
-    display: none;
+.mobile-left a {
+    color: white;
+    text-align: left;
+    text-decoration: none;
+    font-size: 150%;
+    display: block;
 }
 
-.mobile-nav a {
+.mobile-right a {
     color: white;
-    padding: 14px 16px;
+    padding: 14px 0px;
     text-decoration: none;
     font-size: 17px;
     display: block;
 }
 
-.mobile-nav a.icon {
+.icon {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
     display: block;
     position: absolute;
     right: 0;
-    top: 20px;
+    top: 15px;
     margin-right: 24px;
+    padding: 8px 10px;
 }
 
-.mobile-nav a:hover {
-    background-color: transparent;
+#mobile-links {
+    display: none;
+}
+
+
+.mobile-right a:hover {
     color: white;
 }
 
@@ -177,14 +223,6 @@
     z-index: 1;
 }
 
-.card-style-1 {
-    background-image: linear-gradient(180deg, rgba(30, 43, 46, 1) 0%, rgba(17, 22, 25, 1) 150%);
-    color: #899ea4;
-    padding: 20px;
-    font-size: 2rem;
-    box-shadow: 0px 0px 5px 0px rgb(0 0 0 / .5);
-}
-
 .about-me-title {
     color: rgb(224, 224, 224);
     font-weight: 500 !important;
@@ -192,360 +230,40 @@
 
 
 /*Projects*/
-.projects-header {
-    position: relative;
-    height: 30vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    transform-style: preserve-3d;
-}
-
 .projects-bg::after {
     background-image: url('./assets/bg4.jpg');
     height: 500px;
     top: -100px;
 }
 
-.projects-section {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-shadow: 0 0 5px #000;
-    transform-style: preserve-3d;
-    z-index: 1;
-}
-
-.projects-title h1 {
-    font-size: 5rem;
-    color: white;
-    font-weight: 400;
-}
-
 
 
 /*Skills*/
-.skills-header {
-    position: relative;
-    height: 30vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    transform-style: preserve-3d;
-}
-
 .skills-bg::after {
     background-image: url('./assets/bg4.jpg');
     height: 500px;
     top: -100px;
 }
 
-.skills-section {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-shadow: 0 0 5px #000;
-    transform-style: preserve-3d;
-    z-index: 1;
-}
-
-.skills-title h1 {
-    font-size: 5rem;
-    color: white;
-    font-weight: 400;
-}
-
 /*Education*/
-.education-header {
-    position: relative;
-    height: 30vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    transform-style: preserve-3d;
-}
-
 .education-bg::after {
     background-image: url('./assets/bg4.jpg');
     height: 500px;
     top: -100px;
 }
 
-.education-section {
-    position: relative;
-    height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-shadow: 0 0 5px #000;
-    transform-style: preserve-3d;
-    z-index: 1;
-}
-
-.education-title h1 {
-    font-size: 5rem;
-    color: white;
-    font-weight: 400;
-}
-
 /*Experience*/
-.experience-header {
-    position: relative;
-    height: 30vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    transform-style: preserve-3d;
-}
-
 .experience-bg::after {
     background-image: url('./assets/bg4.jpg');
     height: 500px;
     top: -100px;
 }
 
-.experience-section {
-    position: relative;
-    height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-shadow: 0 0 5px #000;
-    transform-style: preserve-3d;
-    z-index: 1;
-}
-
-.experience-title h1 {
-    font-size: 5rem;
-    color: white;
-    font-weight: 400;
-}
 
 /*Contact*/
-.contact-header {
-    position: relative;
-    height: 30vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    transform-style: preserve-3d;
-}
-
 .contact-bg::after {
     background-image: url('./assets/bg4.jpg');
     height: 500px;
     top: -100px;
 }
 
-.contact-section {
-    position: relative;
-    height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-shadow: 0 0 5px #000;
-    transform-style: preserve-3d;
-    z-index: 1;
-}
-
-.contact-title h1 {
-    font-size: 5rem;
-    color: white;
-    font-weight: 400;
-}
-
-
-
-/*Media Queries*/
-@media only screen and (max-width: 600px) {
-    .flex-small {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .col-sm {
-        flex: 1 0 0%;
-    }
-    
-    .col-sm-auto {
-        flex: 0 0 auto;
-        width: auto;
-    }
-    
-    .col-sm-1 {
-        flex: 0 0 auto;
-        width: 8.33333333%;
-    }
-    
-    .col-sm-2 {
-        flex: 0 0 auto;
-        width: 16.66666667%;
-    }
-    
-    .col-sm-3 {
-        flex: 0 0 auto;
-        width: 25%;
-    }
-    
-    .col-sm-4 {
-        flex: 0 0 auto;
-        width: 33.33333333%;
-    }
-    
-    .col-sm-5 {
-        flex: 0 0 auto;
-        width: 41.66666667%;
-    }
-    
-    .col-sm-6 {
-        flex: 0 0 auto;
-        width: 50%;
-    }
-    
-    .col-sm-7 {
-        flex: 0 0 auto;
-        width: 58.33333333%;
-    }
-    
-    .col-sm-8 {
-        flex: 0 0 auto;
-        width: 66.66666667%;
-    }
-    
-    .col-sm-9 {
-        flex: 0 0 auto;
-        width: 75%;
-    }
-
-    .col-sm-10 {
-        flex: 0 0 auto;
-        width: 83.33333333%;
-    }
-    
-    .col-sm-11 {
-        flex: 0 0 auto;
-        width: 91.66666667%;
-    }
-    
-    .col-sm-12 {
-        flex: 0 0 auto;
-        width: 100%;
-    }
-    .navbar {
-        display: none;
-    }
-    .header-bg::after {
-        background-image: url('./assets/bg3-2.jpeg');
-        margin-bottom: -20px;
-        background-color: #000;
-    }
-    .parallax::after {
-        transform: translateZ(-1px) scale(2);
-        background-color: #000;
-    }
-    .header {
-        height: 90vh;
-    }
-
-    .portrait-quotes-container {
-        margin-top: 100px;
-    }
-    .portrait img {
-        margin-bottom: 20px;
-    }
-    .about-me-section {
-        font-size: 1.5rem;
-        text-shadow: 0px 0px 0px black;
-    }
-    .about-me-hobbies video {
-        width: 300px;
-    }
-}
-
-/* @media only screen and (min-width: 992px) {
-    .col-lg-4 {
-        flex: 0 0 auto;
-        width: 33.33333333%;
-    }
-
-    .flex {
-        display: flex;
-    }
-    .navbar {
-        display: none;
-    }
-} */
-
-@media only screen and (min-width: 601px) {
-    .col-1 {
-        flex: 0 0 auto;
-        width: 8.33333333%;
-    }
-    
-    .col-2 {
-        flex: 0 0 auto;
-        width: 16.66666667%;
-    }
-    
-    .col-3 {
-        flex: 0 0 auto;
-        width: 25%;
-    }
-    
-    .col-4 {
-        flex: 0 0 auto;
-        width: 33.33333333%;
-    }
-    
-    .col-5 {
-        flex: 0 0 auto;
-        width: 41.66666667%;
-    }
-    
-    .col-6 {
-        flex: 0 0 auto;
-        width: 50%;
-    }
-    
-    .col-7 {
-        flex: 0 0 auto;
-        width: 58.33333333%;
-    }
-    
-    .col-8 {
-        flex: 0 0 auto;
-        width: 66.66666667%;
-    }
-    
-    .col-9 {
-        flex: 0 0 auto;
-        width: 75%;
-    }
-    
-    .col-10 {
-        flex: 0 0 auto;
-        width: 83.33333333%;
-    }
-    
-    .col-11 {
-        flex: 0 0 auto;
-        width: 91.66666667%;
-    }
-    
-    .col-12 {
-        flex: 0 0 auto;
-        width: 100%;
-    }
-
-    .flex {
-        display: flex;
-    }
-}

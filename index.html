@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evan Wiorek</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="columns.css">
+    <link rel="stylesheet" href="universal-classes-media-queries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -17,8 +17,10 @@
 
         <!-- Mobile Navigation Menu -->
         <div class="mobile-nav">
-            <a href="#home" class="mobile-name">Evan Wiorek</a>
-            <div id="mobile-links">
+            <div class="mobile-left">
+                <a href="#home">Evan Wiorek</a>
+            </div>
+            <div class="mobile-right" id="mobile-links">
                 <a href="#about">About Me</a>
                 <a href="#projects">Projects</a>
                 <a href="#skills">Skills</a>
@@ -90,14 +92,14 @@
 
 
             <!--Projects Header-->
-            <div class="projects-header parallax projects-bg">
-                <div class="projects-title">
+            <div class="card-header parallax projects-bg">
+                <div class="card-title">
                     <h1>Projects</h1>
                 </div>
             </div>
             <!--Projects section-->
-            <div class="projects-section card-style-1 gap-2">
-                <div id="about-me-blip" class="about-me-blip col-4">
+            <div class="card-section card-style-1 gap-2 flex-small">
+                <div id="about-me-blip" class="about-me-blip col-4 flex-small col-sm-11">
                     <h3 class="center-align about-me-title">About Me</h3>
                     <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem hic excepturi
                         quidem
@@ -105,7 +107,7 @@
                         minus
                         quas aperiam dolorem nihil fugit error fugiat.</h4>
                 </div>
-                <div class="about-me-hobbies col-4">
+                <div class="about-me-hobbies col-4 flex-small col-sm-11">
                     <video width="500" autoplay loop>
                         <source src="./assets/hobbies.mp4" type="video/mp4">
                     </video>
@@ -114,14 +116,14 @@
 
 
             <!--Skills Header-->
-            <div class="skills-header parallax skills-bg">
-                <div class="skills-title">
+            <div class="card-header parallax skills-bg">
+                <div class="card-title">
                     <h1>Skills</h1>
                 </div>
             </div>
             <!--Skills section-->
-            <div class="skills-section card-style-1 gap-2">
-                <div id="about-me-blip" class="about-me-blip col-4">
+            <div class="card-section card-style-1 gap-2 flex-small">
+                <div id="about-me-blip" class="about-me-blip col-4 flex-small col-sm-11">
                     <h3 class="center-align about-me-title">About Me</h3>
                     <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem hic excepturi
                         quidem
@@ -129,7 +131,7 @@
                         minus
                         quas aperiam dolorem nihil fugit error fugiat.</h4>
                 </div>
-                <div class="about-me-hobbies col-4">
+                <div class="about-me-hobbies col-4 flex-small col-sm-11">
                     <video width="500" autoplay loop>
                         <source src="./assets/hobbies.mp4" type="video/mp4">
                     </video>
@@ -137,14 +139,14 @@
             </div>
 
             <!--Education Header-->
-            <div class="education-header parallax skills-bg">
-                <div class="education-title">
+            <div class="card-header parallax skills-bg">
+                <div class="card-title">
                     <h1>Education</h1>
                 </div>
             </div>
             <!--Education section-->
-            <div class="education-section card-style-1 gap-2">
-                <div id="about-me-blip" class="about-me-blip col-4">
+            <div class="card-section card-style-1 gap-2 flex-small">
+                <div id="about-me-blip" class="about-me-blip col-4 flex-small col-sm-11">
                     <h3 class="center-align about-me-title">About Me</h3>
                     <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem hic excepturi
                         quidem
@@ -152,7 +154,7 @@
                         minus
                         quas aperiam dolorem nihil fugit error fugiat.</h4>
                 </div>
-                <div class="about-me-hobbies col-4">
+                <div class="about-me-hobbies col-4 flex-small col-sm-11">
                     <video width="500" autoplay loop>
                         <source src="./assets/hobbies.mp4" type="video/mp4">
                     </video>
@@ -160,15 +162,15 @@
             </div>
 
             <!--Experience Header-->
-            <div class="experience-header parallax skills-bg">
-                <div class="experience-title">
+            <div class="card-header parallax skills-bg">
+                <div class="card-title">
                     <h1>Experience</h1>
                 </div>
             </div>
             <!--Experience section-->
-            <div class="experience-section card-style-1 gap-2">
-                <div id="about-me-blip" class="about-me-blip col-4">
-                    <h3 class="center-align about-me-title">About Me</h3>
+            <div class="card-section card-style-1 gap-2 flex-small">
+                <div id="about-me-blip" class="about-me-blip col-4 flex-small col-sm-11">
+                    <h3 class="center-align about-me-title flex-small col-sm-11">About Me</h3>
                     <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem hic excepturi
                         quidem
                         dicta atque, labore praesentium eligendi similique blanditiis sit iure repudiandae,
@@ -183,15 +185,15 @@
             </div>
 
             <!--Contact Header-->
-            <div class="contact-header parallax skills-bg">
-                <div class="contact-title center-align">
+            <div class="card-header parallax skills-bg">
+                <div class="card-title center-align">
                     <h1>Contact</h1>
                     <h2>Feel free to conact me!</h2>
                 </div>
             </div>
             <!--Contact section-->
-            <div class="contact-section card-style-1 gap-2">
-                <div id="about-me-blip" class="about-me-blip col-4">
+            <div class="card-section card-style-1 gap-2 flex-small">
+                <div id="about-me-blip" class="about-me-blip col-4 flex-small col-sm-11">
                     <h3 class="center-align about-me-title">About Me</h3>
                     <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem hic excepturi
                         quidem
@@ -199,7 +201,7 @@
                         minus
                         quas aperiam dolorem nihil fugit error fugiat.</h4>
                 </div>
-                <div class="about-me-hobbies col-4">
+                <div class="about-me-hobbies col-4 flex-small col-sm-11">
                     <video width="500" autoplay loop>
                         <source src="./assets/hobbies.mp4" type="video/mp4">
                     </video>
