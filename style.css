@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
     font-weight: 300;
     box-sizing: border-box;
 }
@@ -27,13 +27,6 @@
     margin: auto;
 }
 
-.container {
-    width: 100%;
-    max-width: none;
-    margin: auto;
-    z-index: 5;
-}
-
 .wrapper {
     height: 100vh;
     overflow-x: hidden;
@@ -53,10 +46,6 @@
     z-index: -1;
 }
 
-.fixed {
-    position: fixed;
-}
-
 /*Universal Classes*/
 .card-style-1 {
     background-image: linear-gradient(180deg, rgba(30, 43, 46, 1) 0%, rgba(17, 22, 25, 1) 150%);
@@ -68,11 +57,10 @@
 
 .card-header {
     position: relative;
-    height: 30vh;
+    height: 25vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
     transform-style: preserve-3d;
 }
 
@@ -87,23 +75,25 @@
 }
 
 .card-title h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     color: white;
     font-weight: 400;
 }
 
 /*Navbar*/
-.navbar {
+.my-navbar {
     padding: 20px;
     background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
     width: 100%;
     font-size: 1.3rem;
-    color: white;
     box-shadow: 0px 0px 5px 0px rgb(0 0 0 / .5);
     backdrop-filter: blur(15px);
-    position: fixed;
-    padding-right: 20px;
     z-index: 100;
+}
+
+.nav-left h2 {
+    color: white;
+    font-weight: 500;
 }
 
 .nav-right a {
@@ -116,10 +106,6 @@
     transition: 200ms;
 }
 
-.nav-right {
-    padding: 6px;
-}
-
 
 /*Mobile Navbar*/
 .mobile-nav {
@@ -130,8 +116,9 @@
     box-shadow: 0px 0px 5px 0px rgb(0 0 0 / .5);
     backdrop-filter: blur(15px);
     position: fixed;
-    padding-right: 20px;
+    padding-right: 10px;
     z-index: 100;
+    visibility: hidden;
 }
 
 .mobile-left a {
@@ -177,14 +164,13 @@
 }
 
 /*Header*/
-.header {
+.header-1 {
     position: relative;
-    height: 115vh;
+    height: 110vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    text-shadow: 0 0 5px #000;
+    text-shadow: 0 0 2px #000;
     transform-style: preserve-3d;
 }
 
@@ -196,11 +182,18 @@
 }
 
 .bible-quotes-container {
-    color: rgb(224, 224, 224);
+    color: rgb(220, 220, 220);
 }
 
-.bible-quotes-container h2 {
+.bible-quotes-container h4 {
     font-style: italic;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.bible-quotes-container h5 {
+    font-weight: 400;
+    color: #899ea4;
 }
 
 .portrait img {
@@ -267,4 +260,3 @@
     height: 500px;
     top: -100px;
 }
-

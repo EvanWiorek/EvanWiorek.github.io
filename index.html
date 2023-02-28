@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="universal-classes-media-queries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 
 <body>
@@ -29,16 +30,18 @@
                 <a href="#contact">Contact</a>
             </div>
             <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
-                <i class="fa fa-bars"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
             </a>
         </div>
 
         <!--Desktop Navbar-->
-        <div class="navbar flex between align-center fixed">
-            <div class="nav-left flex">
-                <h2 class="name">Evan Wiorek</h2>
+        <div class="my-navbar d-flex justify-content-between align-items-center fixed-top">
+            <div class="nav-left d-flex">
+                <h2>Evan Wiorek</h2>
             </div>
-            <div class="nav-right flex">
+            <div class="nav-right d-flex">
                 <a class="navlink" href="#about" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">About
                     Me</a>
                 <a class="navlink" href="#" onmouseover="scale(this, 1.1)"
@@ -56,26 +59,26 @@
         <div class="wrapper">
 
             <!--Header-->
-            <header class="header parallax header-bg">
-                <div class="portrait-quotes-container flex align-center justify-center flex-small">
-                    <div class="portrait flex col-4 flex-small col-sm-11 center-align">
+            <header class="header-1 parallax header-bg">
+                <div class="portrait-quotes-container d-flex justify-content-center align-items-center flex-small">
+                    <div class="portrait col-lg-3 text-center">
                         <img src="./assets/portrait.png" alt="Portrait of Evan Wiorek">
                     </div>
-                    <div class="bible-quotes-container flex col-4 col-sm-10 flex-col center-align gap-1 center-align">
-                        <h3 class="bible-quote">"Immediately Jesus stretched out his hand and caught him, and said
-                            to him, “O you of little faith, why did you doubt?”"</h3>
-                        <h3 class="bible-quote-source">Matthew 14:31</h3>
+                    <div class="bible-quotes-container col-lg-4 my-col-sm-10 text-center">
+                        <h4 class="bible-quote">"Immediately Jesus stretched out his hand and caught him, and said
+                            to him, “O you of little faith, why did you doubt?”"</h4>
+                        <h5 class="bible-quote-source">Matthew 14:31</h5>
                         <br><br>
-                        <h3 class="bible-quote">“I have the strength for everything through Him who empowers me.”
-                        </h3>
-                        <h3 class="bible-quote-source">Philippians 4:13</h3>
+                        <h4 class="bible-quote">“I have the strength for everything through Him who empowers me.”
+                        </h4>
+                        <h5 class="bible-quote-source">Philippians 4:13</h5>
                     </div>
                 </div>
             </header>
 
             <!--About Me section-->
             <div class="about-me-section card-style-1 gap-2 flex-small">
-                <div id="about-me-blip" class="about-me-blip col-4 flex-small col-sm-11">
+                <div id="about-me-blip" class="about-me-blip col-lg-4 flex-small my-col-sm-10">
                     <h3 class="center-align about-me-title">About Me</h3>
                     <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem hic excepturi
                         quidem
@@ -83,7 +86,7 @@
                         minus
                         quas aperiam dolorem nihil fugit error fugiat.</h4>
                 </div>
-                <div class="about-me-hobbies col-4 flex-small col-sm-11">
+                <div class="about-me-hobbies col-lg-4 my-col-sm-10">
                     <video width="500" autoplay loop>
                         <source src="./assets/hobbies.mp4" type="video/mp4">
                     </video>
@@ -99,7 +102,7 @@
             </div>
             <!--Projects section-->
             <div class="card-section card-style-1 gap-2 flex-small">
-                <div id="about-me-blip" class="about-me-blip col-4 flex-small col-sm-11">
+                <div id="about-me-blip" class="about-me-blip col-lg-4 my-col-sm-10">
                     <h3 class="center-align about-me-title">About Me</h3>
                     <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem hic excepturi
                         quidem
@@ -107,7 +110,7 @@
                         minus
                         quas aperiam dolorem nihil fugit error fugiat.</h4>
                 </div>
-                <div class="about-me-hobbies col-4 flex-small col-sm-11">
+                <div class="about-me-hobbies col-lg-4 my-col-sm-10">
                     <video width="500" autoplay loop>
                         <source src="./assets/hobbies.mp4" type="video/mp4">
                     </video>
@@ -123,7 +126,7 @@
             </div>
             <!--Skills section-->
             <div class="card-section card-style-1 gap-2 flex-small">
-                <div id="about-me-blip" class="about-me-blip col-4 flex-small col-sm-11">
+                <div id="about-me-blip" class="about-me-blip col-lg-4 my-col-sm-10">
                     <h3 class="center-align about-me-title">About Me</h3>
                     <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem hic excepturi
                         quidem
@@ -131,7 +134,7 @@
                         minus
                         quas aperiam dolorem nihil fugit error fugiat.</h4>
                 </div>
-                <div class="about-me-hobbies col-4 flex-small col-sm-11">
+                <div class="about-me-hobbies col-lg-4 my-col-sm-10">
                     <video width="500" autoplay loop>
                         <source src="./assets/hobbies.mp4" type="video/mp4">
                     </video>
@@ -146,7 +149,7 @@
             </div>
             <!--Education section-->
             <div class="card-section card-style-1 gap-2 flex-small">
-                <div id="about-me-blip" class="about-me-blip col-4 flex-small col-sm-11">
+                <div id="about-me-blip" class="about-me-blip col-lg-4 my-col-sm-10">
                     <h3 class="center-align about-me-title">About Me</h3>
                     <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem hic excepturi
                         quidem
@@ -154,7 +157,7 @@
                         minus
                         quas aperiam dolorem nihil fugit error fugiat.</h4>
                 </div>
-                <div class="about-me-hobbies col-4 flex-small col-sm-11">
+                <div class="about-me-hobbies col-lg-4 my-col-sm-10">
                     <video width="500" autoplay loop>
                         <source src="./assets/hobbies.mp4" type="video/mp4">
                     </video>
@@ -162,22 +165,22 @@
             </div>
 
             <!--Experience Header-->
-            <div class="card-header parallax skills-bg">
+            <div class="card-header parallax skills-bg my-col-sm-10">
                 <div class="card-title">
                     <h1>Experience</h1>
                 </div>
             </div>
             <!--Experience section-->
             <div class="card-section card-style-1 gap-2 flex-small">
-                <div id="about-me-blip" class="about-me-blip col-4 flex-small col-sm-11">
-                    <h3 class="center-align about-me-title flex-small col-sm-11">About Me</h3>
+                <div id="about-me-blip" class="about-me-blip col-lg-4 my-col-sm-10">
+                    <h3 class="center-align about-me-title">About Me</h3>
                     <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem hic excepturi
                         quidem
                         dicta atque, labore praesentium eligendi similique blanditiis sit iure repudiandae,
                         minus
                         quas aperiam dolorem nihil fugit error fugiat.</h4>
                 </div>
-                <div class="about-me-hobbies col-4">
+                <div class="about-me-hobbies col-lg-4">
                     <video width="500" autoplay loop>
                         <source src="./assets/hobbies.mp4" type="video/mp4">
                     </video>
@@ -193,7 +196,7 @@
             </div>
             <!--Contact section-->
             <div class="card-section card-style-1 gap-2 flex-small">
-                <div id="about-me-blip" class="about-me-blip col-4 flex-small col-sm-11">
+                <div id="about-me-blip" class="about-me-blip col-lg-4 my-col-sm-10">
                     <h3 class="center-align about-me-title">About Me</h3>
                     <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem hic excepturi
                         quidem
@@ -201,7 +204,7 @@
                         minus
                         quas aperiam dolorem nihil fugit error fugiat.</h4>
                 </div>
-                <div class="about-me-hobbies col-4 flex-small col-sm-11">
+                <div class="about-me-hobbies col-lg-4  my-col-sm-10">
                     <video width="500" autoplay loop>
                         <source src="./assets/hobbies.mp4" type="video/mp4">
                     </video>
@@ -213,6 +216,7 @@
 
         </div>
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
         <script src="script.js"></script>
 </body>
 
