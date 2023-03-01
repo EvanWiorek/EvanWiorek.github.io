@@ -40,6 +40,7 @@
     gap: 2rem;
 }
 
+
 .center-align {
     text-align: center;
 }
@@ -153,10 +154,6 @@
         margin-bottom: 20px;
     }
 
-    .about-me-section {
-        font-size: 1.5rem;
-    }
-
     .about-me-hobbies video {
         width: 300px;
     }
@@ -177,6 +174,10 @@
 
     .skills-bg::after {
         top: 100px;
+    }
+
+    .about-me-blip {
+        margin-right: 0px;
     }
 
 }

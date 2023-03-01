@@ -219,6 +219,7 @@ body {
 /*About Me*/
 .about-me-blip {
     font-size: 1.3rem;
+    margin-right: 100px;
 }
 
 .about-me-title {
