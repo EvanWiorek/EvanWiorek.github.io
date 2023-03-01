@@ -46,7 +46,7 @@
 /*Universal Classes*/
 .card-style-1 {
     background-image: linear-gradient(180deg, rgba(30, 43, 46, 1) 0%, rgba(17, 22, 25, 1) 150%);
-    color: #899ea4;
+    color: #a2bcc3;
     padding: 20px;
     font-size: 2rem;
     box-shadow: 0px 0px 5px 0px rgb(0 0 0 / .5);
@@ -76,6 +76,12 @@
     color: white;
     font-weight: 400;
 }
+
+
+.w3-content {
+    max-width: 980px
+}
+
 
 /*Navbar*/
 .my-navbar {
@@ -204,14 +210,8 @@
 
 
 /*About Me*/
-.about-me-section {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-shadow: 0 0 5px #000;
-    transform-style: preserve-3d;
-    z-index: 1;
+.about-me-blip {
+    font-size: 1.3rem;
 }
 
 .about-me-title {

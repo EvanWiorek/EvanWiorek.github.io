@@ -8,8 +8,10 @@
     <title>Evan Wiorek</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="universal-classes-media-queries.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 </head>
 
 <body>
@@ -30,9 +32,11 @@
                 <a href="#contact">Contact</a>
             </div>
             <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                  </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
             </a>
         </div>
 
@@ -44,14 +48,11 @@
             <div class="nav-right d-flex">
                 <a class="navlink" href="#about" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">About
                     Me</a>
-                <a class="navlink" href="#" onmouseover="scale(this, 1.1)"
-                    onmouseleave="scale(this, 1)">Projects</a>
+                <a class="navlink" href="#" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">Projects</a>
                 <a class="navlink" href="#skills" onmouseover="scale(this, 1.1)"
                     onmouseleave="scale(this, 1)">Skills</a>
-                <a class="navlink" href="#" onmouseover="scale(this, 1.1)"
-                    onmouseleave="scale(this, 1)">Education</a>
-                <a class="navlink" href="#" onmouseover="scale(this, 1.1)"
-                    onmouseleave="scale(this, 1)">Experience</a>
+                <a class="navlink" href="#" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">Education</a>
+                <a class="navlink" href="#" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">Experience</a>
                 <a class="navlink" href="#" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">Contact</a>
             </div>
         </div>
@@ -77,19 +78,34 @@
             </header>
 
             <!--About Me section-->
-            <div class="about-me-section card-style-1 gap-2 flex-small">
+            <div class="card-section card-style-1 gap-2 flex-small align-items-center">
                 <div id="about-me-blip" class="about-me-blip col-lg-4 flex-small my-col-sm-10">
                     <h3 class="center-align about-me-title">About Me</h3>
-                    <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem hic excepturi
-                        quidem
-                        dicta atque, labore praesentium eligendi similique blanditiis sit iure repudiandae,
-                        minus
-                        quas aperiam dolorem nihil fugit error fugiat.</h4>
+                    <p>I am a teacher turned software developer based out of Wisconsin. I like to do a lot of stuff! I
+                        dabble in:</p>
+                    <ul>
+                        <li id="video">Video Production</li>
+                        <li id="drawing">Drawing</li>
+                        <li id="printing">3D Printing and Painting</li>
+                        <li id="photography">Photography</li>
+                        <li id="leather">Sewwing and Leathercraft</li>
+                        <li id="design">Graphic Design</li>
+                    </ul>
+                    <p>When I am not coding or working on my hobbies, I am spending time with my family.</p>
                 </div>
                 <div class="about-me-hobbies col-lg-4 my-col-sm-10">
-                    <video width="500" autoplay loop>
-                        <source src="./assets/hobbies.mp4" type="video/mp4">
-                    </video>
+
+                    <div class="w3-content w3-section" value="video" style="max-width:500px">
+                        <video class="mySlides video-production" type="video/mp4" value="video" autoplay muted style="width:100%">
+                            <source src="./assets/hobbies/video-production.mp4" type="video/mp4">
+                        </video>
+                        <img class="mySlides" src="./assets/hobbies/drawing.png" alt="Drawing" style="width:100%">
+                        <img class="mySlides" src="./assets/hobbies/3dprint.png" alt="3D Printing & Painting" style="width:100%">
+                        <img class="mySlides" src="./assets/hobbies/photography3.png" alt="Photography"style="width:100%">
+                        <img class="mySlides" src="./assets/hobbies/leather.png" alt="Sewwing & Leathercraft" style="width:100%">
+                        <img class="mySlides" src="./assets/hobbies/gaad.jpg" alt="Graphic Design" style="width:100%">
+                    </div>
+
                 </div>
             </div>
 
@@ -216,7 +232,9 @@
 
         </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
         <script src="script.js"></script>
 </body>
 
