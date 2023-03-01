@@ -227,6 +227,34 @@ body {
     font-weight: 500 !important;
 }
 
+.slideshow img {
+    border: 0px;
+    border-radius: 10px;
+}
+.slideshow video {
+    border: 0px;
+    border-radius: 10px;
+}
+
+.fade-in-slides img {
+    animation: fadeIn 1s;
+    /* animation: fadeOut 1s; */
+}
+
+.fade-in-slides video {
+    animation: fadeIn 1s;
+    /* animation: fadeOut 1s; */
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+/* 
+  @keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  } */
 
 /*Projects*/
 .projects-bg::after {
