@@ -24,7 +24,7 @@
                 <a href="#home">Evan Wiorek</a>
             </div>
             <div class="mobile-right" id="mobile-links">
-                <a href="#about">About Me</a>
+                <a href="#about-me">About Me</a>
                 <a href="#projects">Projects</a>
                 <a href="#skills">Skills</a>
                 <a href="#education">Education</a>
@@ -46,14 +46,14 @@
                 <h2>Evan Wiorek</h2>
             </div>
             <div class="nav-right d-flex">
-                <a class="navlink" href="#about" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">About
+                <a class="navlink" href="#about-me" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">About
                     Me</a>
-                <a class="navlink" href="#" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">Projects</a>
+                <a class="navlink" href="#projects" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">Projects</a>
                 <a class="navlink" href="#skills" onmouseover="scale(this, 1.1)"
                     onmouseleave="scale(this, 1)">Skills</a>
-                <a class="navlink" href="#" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">Education</a>
-                <a class="navlink" href="#" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">Experience</a>
-                <a class="navlink" href="#" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">Contact</a>
+                <a class="navlink" href="#education" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">Education</a>
+                <a class="navlink" href="#experience" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">Experience</a>
+                <a class="navlink" href="#contact" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">Contact</a>
             </div>
         </div>
 
@@ -78,14 +78,14 @@
             </header>
 
             <!--About Me section-->
-            <div class="card-section card-style-1 gap-2 flex-small align-items-center">
-                <div id="about-me-blip" class="about-me-blip col-lg-4 flex-small my-col-sm-10">
+            <div id="about-me" class="card-section card-style-1 gap-2 flex-small align-items-center">
+                <div class="about-me-blip col-lg-4 flex-small my-col-sm-10">
                     <h3 class="center-align about-me-title">About Me</h3>
                     <p>I am a teacher turned software developer based out of Wisconsin. I like to do a lot of stuff! I
                         dabble in:</p>
                     <ul>
-                        <li id="video">Video Production</li>
                         <li id="drawing">Drawing</li>
+                        <li id="video">Video Production</li>
                         <li id="printing">3D Printing and Painting</li>
                         <li id="photography">Photography</li>
                         <li id="leather">Sewwing and Leathercraft</li>
@@ -96,10 +96,10 @@
                 <div class="about-me-hobbies col-lg-4 my-col-sm-10">
 
                     <div class="w3-content w3-section" value="video" style="max-width:500px">
+                        <img class="mySlides" src="./assets/hobbies/drawing.png" alt="Drawing" style="width:100%">
                         <video class="mySlides video-production" type="video/mp4" value="video" autoplay muted style="width:100%">
                             <source src="./assets/hobbies/video-production.mp4" type="video/mp4">
                         </video>
-                        <img class="mySlides" src="./assets/hobbies/drawing.png" alt="Drawing" style="width:100%">
                         <img class="mySlides" src="./assets/hobbies/3dprint.png" alt="3D Printing & Painting" style="width:100%">
                         <img class="mySlides" src="./assets/hobbies/photography3.png" alt="Photography"style="width:100%">
                         <img class="mySlides" src="./assets/hobbies/leather.png" alt="Sewwing & Leathercraft" style="width:100%">
@@ -111,7 +111,7 @@
 
 
             <!--Projects Header-->
-            <div class="card-header parallax projects-bg">
+            <div id="projects" class="card-header parallax projects-bg">
                 <div class="card-title">
                     <h1>Projects</h1>
                 </div>
@@ -135,7 +135,7 @@
 
 
             <!--Skills Header-->
-            <div class="card-header parallax skills-bg">
+            <div id="skills" class="card-header parallax skills-bg">
                 <div class="card-title">
                     <h1>Skills</h1>
                 </div>
@@ -158,7 +158,7 @@
             </div>
 
             <!--Education Header-->
-            <div class="card-header parallax education-bg">
+            <div id="education" class="card-header parallax education-bg">
                 <div class="card-title">
                     <h1>Education</h1>
                 </div>
@@ -181,7 +181,7 @@
             </div>
 
             <!--Experience Header-->
-            <div class="card-header parallax experience-bg">
+            <div id="experience" class="card-header parallax experience-bg">
                 <div class="card-title">
                     <h1>Experience</h1>
                 </div>
@@ -204,7 +204,7 @@
             </div>
 
             <!--Contact Header-->
-            <div class="card-header parallax contact-bg">
+            <div id="contact" class="card-header parallax contact-bg">
                 <div class="card-title center-align">
                     <h1>Contact</h1>
                     <h2>Feel free to conact me!</h2>

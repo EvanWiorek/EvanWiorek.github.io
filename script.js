@@ -34,7 +34,7 @@ function carousel() {
 
     slideshow[myIndex - 1].style.display = "block";
     if(slideshow[myIndex - 1].getAttribute('value') == "video") {
-        console.log("2")
+        console.log("1")
         video.style = "font-size: 1.8rem;";
     }
     if(slideshow[myIndex - 1].getAttribute('value') != "video") {
