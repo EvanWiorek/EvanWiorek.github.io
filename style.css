@@ -85,6 +85,11 @@ html {
     font-weight: 400;
 }
 
+.card-text-blip {
+    font-size: 1.5rem;
+    margin-right: 100px;
+}
+
 body {
     position: relative;
 }
@@ -232,11 +237,6 @@ body {
 
 
 /*About Me*/
-.about-me-blip {
-    font-size: 1.5rem;
-    margin-right: 100px;
-}
-
 .about-me-title {
     color: rgb(224, 224, 224);
     font-weight: 500;
@@ -336,6 +336,7 @@ body {
     width: 60px;
 }
 
+
 div.svg-link span {
     display: none;
     position: absolute;
@@ -357,7 +358,7 @@ div.svg-link span {
     text-align: center;
   }
 
-  .black-line {
+  .projects-line {
     height: 1px;
     width: 74%;
     background-color: #314246;
@@ -375,10 +376,46 @@ div.svg-link span {
 
 /*Skills*/
 .skills-bg::after {
-    background-image: url('./assets/bg4.jpg');
+    background-image: url('./assets/bg6.jpg');
     height: 500px;
     top: -100px;
 }
+
+
+.skills-card {
+    margin: 0px auto;
+    min-height: 500px;
+}
+
+.skills-blip {
+
+}
+
+.skills-line {
+    height: 1px;
+    width: 100%;
+    background-color: #314246;
+    margin: 20px 0px;
+}
+
+.table-top-right-1 img {
+    width: 12%;
+    /* height: 100%; */
+    margin: 0px 10px;
+}
+
+.table-top-right-2 img {
+    width: 20%;
+    /* height: 100%; */
+    margin: 0px 10px;
+}
+
+.table-top-right-3 img {
+    width: 40%;
+    /* height: 100%; */
+    margin: 0px 10px;
+}
+
 
 /*Education*/
 .education-bg::after {
