@@ -24,61 +24,65 @@ var design = document.getElementById("design");
 carousel();
 
 function carousel() {
-    var slideshow = document.getElementsByClassName("mySlides");
+    let slideshow = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
     for (i = 0; i < slideshow.length; i++) {
         slideshow[i].style.display = "none";
     }
     myIndex++;
-    if (myIndex > slideshow.length) { 
-        myIndex = 1 }
+    if (myIndex > slideshow.length) {
+        myIndex = 1
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
 
     slideshow[myIndex - 1].style.display = "block";
-    if(slideshow[myIndex - 1].getAttribute('value') == "video") {
+    dots[myIndex-1].className += " active";
+    if (slideshow[myIndex - 1].getAttribute('value') == "video") {
         console.log("1")
-        video.style = "font-size: 1.8rem;";
+        video.style.cssText = "font-weight: 500;";
     }
-    if(slideshow[myIndex - 1].getAttribute('value') != "video") {
-        video.style = "font-size: 1.3rem;";
+    if (slideshow[myIndex - 1].getAttribute('value') != "video") {
+        video.style.cssText = "";
     }
-    if(slideshow[myIndex - 1].alt == "Drawing") {
+    if (slideshow[myIndex - 1].alt == "Drawing") {
         console.log("2")
-        drawing.style = "font-size: 1.8rem;";
+        drawing.style.cssText = "font-weight: 500;";
     }
-    if(slideshow[myIndex - 1].alt != "Drawing") {
-        drawing.style = "font-size: 1.3rem;";
+    if (slideshow[myIndex - 1].alt != "Drawing") {
+        drawing.style.cssText = "";
     }
-    if(slideshow[myIndex - 1].alt == "3D Printing & Painting") {
+    if (slideshow[myIndex - 1].alt == "3D Printing & Painting") {
         console.log("3")
-        printing.style = "font-size: 1.8rem;";
+        printing.style.cssText = "font-weight: 500;";
     }
-    if(slideshow[myIndex - 1].alt != "3D Printing & Painting") {
-        printing.style = "font-size: 1.3rem;";
+    if (slideshow[myIndex - 1].alt != "3D Printing & Painting") {
+        printing.style.cssText = "";
     }
-    if(slideshow[myIndex - 1].alt == "Photography") {
+    if (slideshow[myIndex - 1].alt == "Photography") {
         console.log("4")
-        photography.style = "font-size: 1.8rem;";
+        photography.style.cssText = "font-weight: 500;";
     }
-    if(slideshow[myIndex - 1].alt != "Photography") {
-        photography.style = "font-size: 1.3rem;";
+    if (slideshow[myIndex - 1].alt != "Photography") {
+        photography.style.cssText = "";
     }
-    if(slideshow[myIndex - 1].alt == "Sewwing & Leathercraft") {
+    if (slideshow[myIndex - 1].alt == "Sewwing & Leathercraft") {
         console.log("5")
-        leather.style = "font-size: 1.8rem;";
+        leather.style.cssText = "font-weight: 500;";
     }
-    if(slideshow[myIndex - 1].alt != "Sewwing & Leathercraft") {
-        leather.style = "font-size: 1.3rem;";
+    if (slideshow[myIndex - 1].alt != "Sewwing & Leathercraft") {
+        leather.style.cssText = "";
     }
-    if(slideshow[myIndex - 1].alt == "Graphic Design") {
+    if (slideshow[myIndex - 1].alt == "Graphic Design") {
         console.log("6")
-        design.style = "font-size: 1.8rem;";
+        design.style.cssText = "font-weight: 500;";
     }
-    if(slideshow[myIndex - 1].alt != "Graphic Design") {
-        design.style = "font-size: 1.3rem;";
+    if (slideshow[myIndex - 1].alt != "Graphic Design") {
+        design.style.cssText = "";
     }
-    setTimeout(carousel, 4000); // Change image every 2 seconds
+    setTimeout(carousel, 5000); // Change image every 2 seconds
 }
-
-
 //switch(expression) {
     // case x:
     //     // code block

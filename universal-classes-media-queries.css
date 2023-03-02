@@ -20,6 +20,10 @@
     justify-content: center;
 }
 
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
 .margin-center {
     margin: auto;
 }
@@ -40,6 +44,10 @@
     gap: 2rem;
 }
 
+.gap-5 {
+    gap: 4rem;
+}
+
 
 .center-align {
     text-align: center;
@@ -49,7 +57,7 @@
 /*Media Queries*/
 
 /*Phone Screen*/
-@media only screen and (max-width: 910px) {
+@media only screen and (max-width: 912px) {
     
     .my-navbar {
         visibility: hidden;
@@ -178,6 +186,18 @@
 
     .about-me-blip {
         margin-right: 0px;
+    }
+
+    .slideshow {
+        width:100%;
+    }
+
+    div.svg-link span {
+        display: block;
+      }
+
+      .links-list {
+        margin-bottom: 60px;
     }
 
 }

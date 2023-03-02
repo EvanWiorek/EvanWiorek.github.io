@@ -76,10 +76,11 @@ html {
     text-shadow: 0 0 5px #000;
     transform-style: preserve-3d;
     z-index: 1;
+    padding-bottom: 30px;
 }
 
 .card-title h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: white;
     font-weight: 400;
 }
@@ -100,9 +101,12 @@ body {
     z-index: 100;
 }
 
-.nav-left h2 {
+
+.nav-left a {
     color: white;
     font-weight: 500;
+    text-decoration: none;
+    font-size: 2rem;
 }
 
 .nav-right a {
@@ -115,18 +119,15 @@ body {
     transition: 200ms;
 }
 
-
-
 /*Mobile Navbar*/
 .mobile-nav {
-    padding: 20px;
+    padding: 20px 10px 20px 10px;
     background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
     width: 100%;
     color: white;
     box-shadow: 0px 0px 5px 0px rgb(0 0 0 / .5);
     backdrop-filter: blur(15px);
     position: fixed;
-    padding-right: 10px;
     z-index: 100;
     visibility: hidden;
 }
@@ -136,15 +137,23 @@ body {
     text-align: left;
     text-decoration: none;
     font-size: 150%;
-    display: block;
+    padding: 10px;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0.05);
+}
+
+.mobile-right {
+    margin-top: 10px;
 }
 
 .mobile-right a {
     color: white;
-    padding: 14px 0px;
+    padding: 14px 10px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.2rem;
     display: block;
+    position: relative;
+    left: -10px;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0.05);
 }
 
 .icon {
@@ -155,8 +164,9 @@ body {
     position: absolute;
     right: 0;
     top: 15px;
-    margin-right: 24px;
-    padding: 8px 10px;
+    margin-right: 10px;
+    padding: 10px 10px;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0.05);
 }
 
 #mobile-links {
@@ -195,13 +205,18 @@ body {
     color: rgb(220, 220, 220);
 }
 
-.bible-quotes-container h4 {
+.bible-quotes-container h1 {
+    font-size: 3rem;
+}
+
+.bible-quote {
     font-style: italic;
     font-weight: 400;
     margin-bottom: 10px;
 }
 
-.bible-quotes-container h5 {
+
+.bible-quote-source {
     font-weight: 400;
     color: #899ea4;
 }
@@ -218,43 +233,82 @@ body {
 
 /*About Me*/
 .about-me-blip {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-right: 100px;
 }
 
 .about-me-title {
     color: rgb(224, 224, 224);
-    font-weight: 500 !important;
+    font-weight: 500;
+}
+
+.about-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    min-height: 500px;
+}
+
+.slideshow-container {
+    padding: 20px;
+}
+
+.slideshow {
+    width: 120%;
 }
 
 .slideshow img {
     border: 0px;
     border-radius: 10px;
+    width: 100%;
 }
+
 .slideshow video {
     border: 0px;
     border-radius: 10px;
+    width: 100%;
 }
 
 .fade-in-slides img {
     animation: fadeIn 1s;
-    /* animation: fadeOut 1s; */
 }
 
 .fade-in-slides video {
     animation: fadeIn 1s;
-    /* animation: fadeOut 1s; */
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-/* 
-  @keyframes fadeOut {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
-  } */
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.dot {
+    height: 3px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #1e2b2e;
+    transition: background-color 0.6s ease;
+}
+
+.dot-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    margin: auto;
+    width: 100%;
+}
+
+.active {
+    background-color: #6a7d82;
+}
+
 
 /*Projects*/
 .projects-bg::after {
@@ -263,6 +317,60 @@ body {
     top: -100px;
 }
 
+
+.bi-link {
+    font-size: 5rem;
+    color: white;
+}
+
+.bi-github {
+    font-size: 3rem;
+    color: white;
+}
+
+.links-list {
+    margin-top: 20px;
+}
+
+.links-list img {
+    width: 60px;
+}
+
+div.svg-link span {
+    display: none;
+    position: absolute;
+    margin-top: 4.5rem;
+    background: rgb(0, 0, 0, .3);
+    padding: 5px 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.3rem;
+    border: 0px;
+    border-radius: 5px;
+  }
+  
+  div.svg-link:hover span {
+    display: block;
+  }
+
+  .project-title {
+    text-align: center;
+  }
+
+  .black-line {
+    height: 1px;
+    width: 74%;
+    background-color: #314246;
+    margin: 30px 0px;
+  }
+
+  .piet-pic img {
+    width: 100%;
+  }
+
+  .projects-card {
+    padding: 30px 0px 40px 0px;
+  }
 
 
 /*Skills*/
