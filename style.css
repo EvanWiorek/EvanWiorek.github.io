@@ -433,12 +433,9 @@ div.svg-link:hover span {
 .svg-items img {
     height: 100px;
     margin: 0px 10px;
+    image-rendering: crisp-edges;
 }
 
-.svg-items-software img {
-    height: 100px;
-    margin: 0px 10px;
-}
 
 div.gimp span {
     display: none;

@@ -177,9 +177,6 @@
         margin-bottom: 20px;
     }
 
-    .about-me-hobbies video {
-        width: 300px;
-    }
 
     .card-header {
         height: 15vh;
@@ -196,7 +193,7 @@
     }
 
     .skills-line {
-        display: none;
+        width: 90%;
     }
 
     .card-text-blip {
@@ -231,21 +228,34 @@
         justify-content: center;
     }
 
-    .svg-items img {
-        width: 20%;
-        height: 20%;
-        margin: 0px 10px;
-        image-rendering: crisp-edges;
+    .svg-items-languages img {
+        width: 70%;
+        height: 100%;
+    }
+
+    .svg-items-front-end img {
+        width: 30%;
+        height: 100%;
     }
 
     .svg-items-software img {
         width: 80%;
         height: 100%;
-        margin: 0px 10px;
-        image-rendering: crisp-edges;
+    }
+
+    div.gimp:hover span {
+        display: none;
+    }
+    
+    div.software:hover span {
+        display: none;
     }
 
     .table-line {
+        margin-bottom: 30px;
+    }
+
+    .layer-margin {
         margin-bottom: 20px;
     }
 
