@@ -196,33 +196,53 @@ body {
     align-items: center;
     justify-content: center;
     text-shadow: 0 0 2px #000;
-    transform-style: preserve-3d;
 }
 
-.portrait-quotes-container {
+.welcome-container {
     background-color: rgba(0, 0, 0, 0.2);
     padding: 30px 0px;
     backdrop-filter: blur(15px);
     width: 100%;
+    box-shadow: 0px 0px 5px 0px rgb(0 0 0 / .5);
 }
 
-.bible-quotes-container {
-    color: rgb(220, 220, 220);
+.welcome-text {
+    color: #778b91;
 }
 
-.bible-quotes-container h1 {
-    font-size: 3rem;
+.welcome-text h1 {
+    font-size: 4rem;
+    font-weight: 300;
 }
 
-.bible-quote {
-    font-style: italic;
+.welcome-text h2 {
+    font-size: 2.8rem;
     font-weight: 400;
+}
+
+
+.welcome-text .name,
+.title {
+    font-size: 3rem;
+    font-weight: 500;
+    color: rgb(205, 205, 205);
+}
+
+.bible-quote span {
+
     margin-bottom: 10px;
 }
 
-
-.bible-quote-source {
+.quote {
+    font-style: italic;
+    color: #899ea4;
     font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.quote-source {
+    font-weight: 400;
+    font-size: .9rem;
     color: #899ea4;
 }
 
@@ -231,8 +251,21 @@ body {
     border-radius: 30px;
 }
 
-.header-bg::after {
-    background-image: url('./assets/bg3.jpeg');
+.header-background {
+    animation: rotation 800s infinite linear;
+    z-index: -1;
+    position: absolute;
+    width: 115%;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
 }
 
 
@@ -312,20 +345,9 @@ body {
 
 /*Projects*/
 .projects-bg::after {
-    background-image: url('./assets/bg4.jpg');
+    background-image: url('./assets/bg4-1.jpg');
     height: 500px;
     top: -100px;
-}
-
-
-.bi-link {
-    font-size: 5rem;
-    color: white;
-}
-
-.bi-github {
-    font-size: 3rem;
-    color: white;
 }
 
 .links-list {
@@ -335,7 +357,6 @@ body {
 .links-list img {
     width: 60px;
 }
-
 
 div.svg-link span {
     display: none;
@@ -348,30 +369,41 @@ div.svg-link span {
     font-size: 1.3rem;
     border: 0px;
     border-radius: 5px;
-  }
-  
-  div.svg-link:hover span {
+}
+
+div.svg-link:hover span {
     display: block;
-  }
+}
 
-  .project-title {
+.project-title {
     text-align: center;
-  }
+}
 
-  .projects-line {
+.projects-text ul {
+    list-style: none;
+    padding-left:0;
+}
+
+.projects-text ul li:before {
+    content: "•";
+    font-size: 10pt;
+}
+
+.projects-text {
+    font-size: 1.1rem;
+}
+
+.projects-line {
     height: 1px;
     width: 74%;
     background-color: #314246;
     margin: 30px 0px;
-  }
+}
 
-  .piet-pic img {
-    width: 100%;
-  }
 
-  .projects-card {
+.projects-card {
     padding: 30px 0px 40px 0px;
-  }
+}
 
 
 /*Skills*/
@@ -383,12 +415,7 @@ div.svg-link span {
 
 
 .skills-card {
-    margin: 0px auto;
-    min-height: 500px;
-}
-
-.skills-blip {
-
+    padding: 30px 0px;
 }
 
 .skills-line {
@@ -398,28 +425,60 @@ div.svg-link span {
     margin: 20px 0px;
 }
 
-.table-top-right-1 img {
-    width: 12%;
-    /* height: 100%; */
+.svg-flex {
+    display: flex;
+    justify-content: flex-end;
+   }
+
+.svg-items img {
+    height: 100px;
     margin: 0px 10px;
 }
 
-.table-top-right-2 img {
-    width: 20%;
-    /* height: 100%; */
+.svg-items-software img {
+    height: 100px;
     margin: 0px 10px;
 }
 
-.table-top-right-3 img {
-    width: 40%;
-    /* height: 100%; */
-    margin: 0px 10px;
+div.gimp span {
+    display: none;
+    position: absolute;
+    margin-top: 4.5rem;
+    background: rgb(0, 0, 0, .3);
+    padding: 5px 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.3rem;
+    border: 0px;
+    border-radius: 5px;
+    margin-top: 5.5rem;
 }
 
+div.software span {
+    display: none;
+    position: absolute;
+    margin-top: 4.5rem;
+    background: rgb(0, 0, 0, .3);
+    padding: 5px 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.3rem;
+    border: 0px;
+    border-radius: 5px;
+    margin-top: 6.8rem;
+}
+
+div.gimp:hover span {
+    display: block;
+}
+
+div.software:hover span {
+    display: block;
+}
 
 /*Education*/
 .education-bg::after {
-    background-image: url('./assets/bg4.jpg');
+    background-image: url('./assets/bg4-2.jpg');
     height: 500px;
     top: -100px;
 }
