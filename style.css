@@ -142,7 +142,6 @@ html {
     font-size: 1.2rem;
     display: block;
     position: relative;
-    left: -10px;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0.05);
 }
 
@@ -333,7 +332,6 @@ html {
     background-image: url('./assets/bg4.jpg');
 }
 
-
 .links-list {
     margin-top: 20px;
 }
@@ -456,10 +454,8 @@ div.software:hover span {
 }
 
 /*Education*/
-.education-bg::after {
-    background-image: url('./assets/bg4-2.jpg');
-    height: 400px;
-    top: -100px;
+#parallax3 {
+    background-image: url('./assets/bg4.jpg');
 }
 
 .education-img img {
@@ -473,10 +469,8 @@ div.software:hover span {
 }
 
 /*Experience*/
-.experience-bg::after {
+#parallax4 {
     background-image: url('./assets/bg4.jpg');
-    height: 450px;
-    top: -70px;
 }
 
 .experience-top {
@@ -532,10 +526,8 @@ div.personal-project-github-link:hover span {
 
 
 /*Contact*/
-.contact-bg::after {
+#parallax5 {
     background-image: url('./assets/bg4.jpg');
-    height: 350px;
-
 }
 
 .card-title h2 {

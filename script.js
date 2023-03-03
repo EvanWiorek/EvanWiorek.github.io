@@ -1,7 +1,10 @@
+//Scaling transition for navbar link elements
 function scale(element, value) {
     element.style.transform = "scale(" + value + ")";
 }
 
+
+//Mobile Navbar Functionality
 function mobileNav() {
     var x = document.getElementById("mobile-links");
     if (x.style.display === "block") {
@@ -11,8 +14,8 @@ function mobileNav() {
     }
 }
 
+//About Me Slideshow
 var myIndex = 0;
-
 var video = document.getElementById("video");
 var drawing = document.getElementById("drawing");
 var printing = document.getElementById("printing");
@@ -20,10 +23,7 @@ var photography = document.getElementById("photography");
 var leather = document.getElementById("leather");
 var design = document.getElementById("design");
 
-
-carousel();
-
-function carousel() {
+function aboutMeSlideshow() {
     let slideshow = document.getElementsByClassName("mySlides");
     let dots = document.getElementsByClassName("dot");
     for (i = 0; i < slideshow.length; i++) {
@@ -81,10 +81,12 @@ function carousel() {
     if (slideshow[myIndex - 1].alt != "Graphic Design") {
         design.style.cssText = "";
     }
-    setTimeout(carousel, 5000); // Change image every 2 seconds
+    setTimeout(aboutMeSlideshow, 5000); // Change image every 2 seconds
 }
 
+aboutMeSlideshow();
 
+//Parallax headers, iterates through a list of 5
 document.getElementById("body").onscroll = function parallaxBackground() {  
     for(var i=1; i<6; i++) {
         var target = document.getElementById("parallax" + i);
