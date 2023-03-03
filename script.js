@@ -88,7 +88,7 @@ aboutMeSlideshow();
 
 //Parallax headers, iterates through a list of 5
 document.getElementById("body").onscroll = function parallaxBackground() {  
-    for(var i=1; i<6; i++) {
+    for(var i=1; i<7; i++) {
         var target = document.getElementById("parallax" + i);
         var scrolltotop = document.scrollingElement.scrollTop;
         var xvalue = "center";
