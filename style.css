@@ -455,7 +455,7 @@ div.software:hover span {
 
 /*Education*/
 #parallax3 {
-    background-image: url('./assets/bg4.jpg');
+    background-image: url('./assets/bg13.jpg');
 }
 
 .education-img img {
@@ -470,7 +470,8 @@ div.software:hover span {
 
 /*Experience*/
 #parallax4 {
-    background-image: url('./assets/bg4.jpg');
+    background-image: url('./assets/bg9-1.jpg');
+    background-size: cover;
 }
 
 .experience-top {
@@ -527,7 +528,7 @@ div.personal-project-github-link:hover span {
 
 /*Contact*/
 #parallax5 {
-    background-image: url('./assets/bg4.jpg');
+    background-image: url('./assets/bg11.jpg');
 }
 
 .card-title h2 {
