@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
 
-<body>
+<body id="body">
 
     <div class="main-container">
 
@@ -60,415 +60,419 @@
             </div>
         </div>
 
-        <div class="wrapper">
-
-            <!--Header-->
-            <header class="header-1" id="topofpage">
-                <img class="header-background" src="./assets/bg8.jpg" alt="bg">
-                <div class="welcome-container d-flex justify-content-center align-items-center flex-small">
-                    <div class="portrait col-lg-3 text-center">
-                        <img src="./assets/portrait.png" alt="Portrait of Evan Wiorek">
-                    </div>
-                    <div class="welcome-text col-lg-6 my-col-sm-11">
-                        <h1>Hello there,
-                        </h1>
-                        <br>
-                        <h2>My name is <span class="name">Evan Wiorek</span>, and I'm a <span class="title">Software
-                                Developer</span>. Thank you for visiting my portfolio!</h2>
-                        <br>
-                        <div class="bible-quote">
-                            <h5><span class="quote">“I have the strength for everything through Him who empowers me.”
-                                </span><span class="quote-source">~ Philippians 4:13</span></h5>
-                        </div>
-                    </div>
+        <!--Header-->
+        <header class="header-1" id="topofpage">
+            <img class="header-background" src="./assets/bg8.jpg" alt="bg">
+            <div class="welcome-container d-flex justify-content-center align-items-center flex-small">
+                <div class="portrait col-lg-3 text-center">
+                    <img src="./assets/portrait.png" alt="Portrait of Evan Wiorek">
                 </div>
-            </header>
-
-            <!--About Me section-->
-            <div id="about-me" class="card-section card-style-1 about-card flex-small d-flex align-items-center">
-                <div class="card-text-blip col-lg-4 my-col-sm-10">
-                    <h1 class="text-center about-me-title">About Me</h1>
-                    <p>I am a teacher turned software developer based out of Wisconsin. I like to do a lot of stuff! I
-                        dabble in <span id="drawing">drawing</span>, <span id="video">video production</span>, <span
-                            id="printing">3D printing and painting</span>, <span id="photography">photography</span>,
-                        <span id="leather">sewing and leathercraft</span>, and <span id="design">graphic design</span>.
-                    </p>
-                    <p>When I am not coding or working on my hobbies, I am spending time with my family.</p>
-                </div>
-                <div class="col-lg-4 my-col-sm-12">
-                    <div
-                        class="slideshow-container d-flex flex-column gap-4 align-items-center justify-content-center text-center">
-                        <div class="slideshow fade-in-slides">
-                            <img class="mySlides" src="./assets/hobbies/drawing.png" alt="Drawing">
-                            <video class="mySlides video-production" type="video/mp4" value="video" autoplay muted loop>
-                                <source src="./assets/hobbies/video-prod.mp4" type="video/mp4">
-                            </video>
-                            <img class="mySlides" src="./assets/hobbies/3dprint.png" alt="3D Printing & Painting">
-                            <img class="mySlides" src="./assets/hobbies/photography3.png" alt="Photography">
-                            <img class="mySlides" src="./assets/hobbies/leather.png" alt="Sewwing & Leathercraft">
-                            <img class="mySlides" src="./assets/hobbies/gaad.jpg" alt="Graphic Design">
-                        </div>
-                        <div class="dot-container">
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                        </div>
+                <div class="welcome-text col-lg-6 my-col-sm-11">
+                    <h1>Hello there,
+                    </h1>
+                    <br>
+                    <h2>My name is <span class="name">Evan Wiorek</span>, and I'm a <span class="title">Software
+                            Developer</span>. Thank you for visiting my portfolio!</h2>
+                    <br>
+                    <div class="bible-quote">
+                        <h5><span class="quote">“I have the strength for everything through Him who empowers me.”
+                            </span><span class="quote-source">~ Philippians 4:13</span></h5>
                     </div>
-                </div>
-
-            </div>
-
-
-            <!--Projects Header-->
-            <div id="projects" class="card-header parallax projects-bg">
-                <div class="card-title">
-                    <h1>Projects</h1>
                 </div>
             </div>
-            <!--Projects section-->
-            <div class="card-section projects-card card-style-1 gap-2 d-flex flex-column">
+        </header>
 
-                <!--Project 1-->
-                <div class="project-1 d-flex justify-content-center flex-small align-items-center">
-                    <div class="card-text-blip col-lg-4 my-col-sm-10 projects-text">
-                        <h1 class="project-title">JavaScript Calculator</h1>
-                        <p>This is an operational 4 function calculator, made using HTML, CSS, and JavaScript. It is
-                            styled after an old Casio MS80-B. </p>
-                        <ul>
-                            <li>When the equation produces too high a number for the display to contain, "too long!" is
-                                shown.</li>
-                            <li>If an equation has a large string of decimals, the amount displayed on the right is
-                                determined by the space to the left of the decimal.</li>
-                            <li>The calculator can also be moved around the screen.</li>
-                        </ul>
-                        <div class="links-list d-flex align-items-center justify-content-around">
-                            <div class="svg-link d-flex flex-column align-items-center">
-                                <a href="https://evanwiorek.github.io/JavaScript-Calculator/" target="_blank"><img
-                                        src="./assets/link.svg" alt="Website"></a>
-                                <span>Website</span>
-                            </div>
-                            <div class="svg-link d-flex flex-column align-items-center">
-                                <a href="https://github.com/EvanWiorek/JavaScript-Calculator" target="_blank"><img
-                                        src="./assets/github.svg" alt="GitHub Repo"></a>
-                                <span>GitHub Repo</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-video-img col-lg-4 my-col-sm-12 text-center">
-                        <video width="500" playsinline autoplay muted loop>
-                            <source src="./assets/project-videos/javascript-calc.webm" type="video/webm">
+        <!--About Me section-->
+        <div id="about-me" class="card-section card-style-1 about-card flex-small d-flex align-items-center">
+            <div class="card-text-blip col-lg-4 my-col-sm-10">
+                <h1 class="text-center about-me-title">About Me</h1>
+                <p>I am a teacher turned software developer based out of Wisconsin. I like to do a lot of stuff! I
+                    dabble in <span id="drawing">drawing</span>, <span id="video">video production</span>, <span
+                        id="printing">3D printing and painting</span>, <span id="photography">photography</span>,
+                    <span id="leather">sewing and leathercraft</span>, and <span id="design">graphic design</span>.
+                </p>
+                <p>When I am not coding or working on my hobbies, I am spending time with my family.</p>
+            </div>
+            <div class="col-lg-4 my-col-sm-12">
+                <div
+                    class="slideshow-container d-flex flex-column gap-4 align-items-center justify-content-center text-center">
+                    <div class="slideshow fade-in-slides">
+                        <img class="mySlides" src="./assets/hobbies/drawing.png" alt="Drawing">
+                        <video class="mySlides video-production" type="video/mp4" value="video" autoplay muted loop>
+                            <source src="./assets/hobbies/video-prod.mp4" type="video/mp4">
                         </video>
+                        <img class="mySlides" src="./assets/hobbies/3dprint.png" alt="3D Printing & Painting">
+                        <img class="mySlides" src="./assets/hobbies/photography3.png" alt="Photography">
+                        <img class="mySlides" src="./assets/hobbies/leather.png" alt="Sewwing & Leathercraft">
+                        <img class="mySlides" src="./assets/hobbies/gaad.jpg" alt="Graphic Design">
                     </div>
-                </div>
-
-                <div class="projects-line"></div>
-
-                <!--Project 2-->
-                <div class="project-2 d-flex justify-content-center flex-small align-items-center">
-                    <div class="card-text-blip col-lg-4 my-col-sm-10 projects-text">
-                        <h1 class="project-title">Pacman From Scratch</h1>
-                        <p>This is an operational 4 function calculator, made using HTML, CSS, and JavaScript. It is
-                            styled after an old Casio MS80-B. </p>
-                        <ul>
-                            <li>When the equation produces too high a number for the display to contain, "too long!" is
-                                shown.</li>
-                            <li>If an equation has a large string of decimals, the amount displayed on the right is
-                                determined by the space to the left of the decimal.</li>
-                            <li>The calculator can also be moved around the screen.</li>
-                        </ul>
-                        <div class="links-list d-flex align-items-center justify-content-around">
-                            <div class="svg-link d-flex flex-column align-items-center">
-                                <a href="https://evanwiorek.github.io/pacman-from-scratch/" target="_blank"><img
-                                        src="./assets/link.svg" alt="Website"></a>
-                                <span>Website</span>
-                            </div>
-                            <div class="svg-link d-flex flex-column align-items-center">
-                                <a href="https://github.com/EvanWiorek/pacman-from-scratch" target="_blank"><img
-                                        src="./assets/github.svg" alt="GitHub Repo"></a>
-                                <span>GitHub Repo</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-video-img col-lg-4 my-col-sm-12 text-center">
-                        <video width="500" playsinline autoplay muted loop>
-                            <source src="./assets/project-videos/pacman-video.webm" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-
-                <div class="projects-line"></div>
-
-                <!--Project 3-->
-                <div class="project-3 d-flex justify-content-center flex-small align-items-center">
-                    <div class="card-text-blip col-lg-4 my-col-sm-10 projects-text">
-                        <h1 class="project-title">Piet Mondrian Digital Recreation</h1>
-                        <p>This is an operational 4 function calculator, made using HTML, CSS, and JavaScript. It is
-                            styled after an old Casio MS80-B. </p>
-                        <ul>
-                            <li>When the equation produces too high a number for the display to contain, "too long!" is
-                                shown.</li>
-                            <li>If an equation has a large string of decimals, the amount displayed on the right is
-                                determined by the space to the left of the decimal.</li>
-                            <li>The calculator can also be moved around the screen.</li>
-                        </ul>
-                        <div class="links-list d-flex align-items-center justify-content-around">
-                            <div class="svg-link d-flex flex-column align-items-center">
-                                <a href="https://evanwiorek.github.io/piet-mondrian/" target="_blank"><img
-                                        src="./assets/link.svg" alt="Website"></a>
-                                <span>Website</span>
-                            </div>
-                            <div class="svg-link d-flex flex-column align-items-center">
-                                <a href="https://github.com/EvanWiorek/piet-mondrian" target="_blank"><img
-                                        src="./assets/github.svg" alt="GitHub Repo"></a>
-                                <span>GitHub Repo</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-video-img col-lg-4 my-col-sm-12 text-center">
-                        <img src="./assets/project-videos/piet3.png" alt="Piet Mondrian Recreation" width="500">
-                    </div>
-                </div>
-
-
-            </div>
-
-
-            <!--Skills Header-->
-            <div id="skills" class="card-header parallax skills-bg">
-                <div class="card-title">
-                    <h1>Skills</h1>
-                </div>
-            </div>
-
-            <!--Skills section-->
-            <div class="card-section skills-card card-style-1 gap-2 d-flex justify-content-center flex-small">
-                <div class="col-lg-8 my-col-sm-11 flex-small">
-
-                    <!--Languages-->
-                    <div class="table-line d-flex justify-content-between flex-small">
-                        <div class="table-top-left d-flex">
-                            <h1>Languages</h1>
-                        </div>
-
-                        <div class="software-image-container d-flex flex-small">
-                            <div class="svg-items svg-items svg-items-languages svg-flex">
-                                <div class="software d-flex flex-column align-items-center ">
-                                    <img src="./assets/skills/js.png" alt="JavaScript">
-                                    <span>JavaScript</span>
-                                </div>
-                                <div class="software d-flex flex-column align-items-center ">
-                                    <img src="./assets/skills/HTML.png" alt="HTML">
-                                    <span>HTML</span>
-                                </div>
-                                <div class="software d-flex flex-column align-items-center ">
-                                    <img src="./assets/skills/css.png" alt="CSS">
-                                    <span>CSS</span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="skills-line"></div>
-
-                    <!--Front End Tools-->
-                    <div class="table-line d-flex justify-content-between flex-small">
-                        <div class="table-top-left d-flex">
-                            <h1>Front End Tools</h1>
-                        </div>
-                        <div class="software-image-container d-flex flex-small">
-                            <div class="svg-items svg-items-front-end text-center my-col-sm-11 svg-flex">
-                                <div class="software d-flex flex-column align-items-center ">
-                                    <img src="./assets/skills/bs.png" alt="Bootstrap">
-                                    <span>Bootstrap</span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="skills-line"></div>
-
-                    <!--Software-->
-                    <div class="table-line d-flex flex-small justify-content-between">
-                        <div class="table-top-left d-flex">
-                            <h1>Software</h1>
-                        </div>
-                        <div class="software-image-container d-flex flex-small">
-
-                            <div class="svg-flex layer-margin text-center my-col-sm-11 svg-items svg-items-software">
-                                <div class="gimp d-flex flex-column align-items-center ">
-                                    <img src="./assets/skills/GIMP.png" alt="GIMP">
-                                    <span>GIMP</span>
-                                </div>
-                                <div class="software d-flex flex-column align-items-center ">
-                                    <img src="./assets/skills/git.png" alt="Git">
-                                    <span>Git</span>
-                                </div>
-                                <div class="software d-flex flex-column align-items-center">
-                                    <img src="./assets/skills/Wondershare_filmora_logo.svg.png"
-                                        alt="Wondershare Filmora">
-                                    <span>Wondershare Filmora</span>
-                                </div>
-                            </div>
-                            <div class="svg-flex text-center my-col-sm-11 svg-items svg-items-software">
-                                <div class="software d-flex flex-column align-items-center">
-                                    <img src="./assets/skills/ai.png" alt="Adobe Illustrator">
-                                    <span>Adobe Illustrator</span>
-                                </div>
-                                <div class="software  d-flex flex-column align-items-center">
-                                    <img src="./assets/skills/vscode.png" alt="Visual Studio Code">
-                                    <span>Visual Studio Code</span>
-                                </div>
-                                <div class="software d-flex flex-column align-items-center">
-                                    <img src="./assets/skills/davinci.png" alt="DaVinci Resolve">
-                                    <span>DaVinci Resolve</span>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="skills-line"></div>
-
-                </div>
-
-            </div>
-
-            <!--Education Header-->
-            <div id="education" class="card-header parallax education-bg">
-                <div class="card-title">
-                    <h1>Education</h1>
-                </div>
-            </div>
-            <!--Education section-->
-            <div class="card-section education-card card-style-1 gap-2 flex-small">
-                <div class="col-lg-8 my-col-sm-11 flex-small">
-
-                    <!--Coding Dojo-->
-                    <div class="table-line d-flex justify-content-center flex-small">
-                        <div class="education-img col-lg-2 d-flex">
-                            <img src="./assets/education/cd.png">
-                        </div>
-                        <div class="education-text col-lg-8">
-                            <h4>Coding Dojo Bootcamp</h4>
-                            <h5>Software Development - Online Full-Time</h5>
-                            <h5>February, 2023 - Present</h5>
-                            <!-- <ul>
-                                <li></li>
-                            </ul> -->
-                        </div>
-
-                    </div>
-
-                    <div class="skills-line"></div>
-
-                    <!--UWSP-->
-                    <div class="table-line d-flex justify-content-center flex-small">
-                        <div class="education-img col-lg-2 d-flex">
-                            <img src="./assets/education/uwsp.jpg">
-                        </div>
-                        <div class="education-text col-lg-8">
-                            <h4>University of Wisconsin - Stevens Point</h4>
-                            <h5>Bachelors of Science Degree in Education</h5>
-                            <h5>Major in Family and Consumer Sciences Ed.</h5>
-                            <h5>Minor in Health Ed.</h5>
-                            <h5>Stevens Point, WI | December, 2019</h5>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-            <!--Experience Header-->
-            <div id="experience" class="card-header parallax experience-bg">
-                <div class="card-title">
-                    <h1>Experience</h1>
-                </div>
-            </div>
-            <!--Experience section-->
-            <div class="card-section experience-card card-style-1 gap-2 flex-small">
-                <div class="col-lg-8 my-col-sm-10">
-                    <div class="experience-top text-left">
-                        <h6>I started coding when MySpace was big, which for me was in late elementary school. I would spend hours editing my profile over and over until it was perfect. Then along came YouTube in my middle school days, editing that profile, and creating custom XML files to create effects in Windows Movie Maker.
-                        </h6>
-                        <h6>Since then, I've had many projects that involved a little bit of coding. I would take what was made, try to understand how it did what it did, then import my own code or change it to fit my liking.</h6>
-                        <h6>Fast forward to now: I am currently enrolled full-time in Coding Dojo, and finally acting on a passion of mine I've had since I was a child. I am excited for what new projects await me - but for now, I have listed some in which I didn't fully know what I was doing. All graphics were made by me, and coding manipulated by me.
-                        </h6>
-                    </div>
-                    <div class="personal-projects d-flex justify-content-evenly align-items-center flex-small my-col-sm-11">
-                        <div class="personal-project text-center">
-                            <div class="project-title-link">
-                                <h4>FunKey S Themes</h4>
-                                <div class="personal-project-github-link d-flex flex-column align-items-center">
-                                    <a href="https://github.com/EvanWiorek/EvanWiorek/tree/main/FunKeySThemes" target="_blank"><img
-                                            src="./assets/github.png" alt="GitHub Repo"></a>
-                                    <span>GitHub Repo</span>
-                                </div>
-                            </div>
-                            <img src="./assets/experience/FunKeyS.gif" alt="FunKey S Themes" class="funkey-gif">
-                        </div>
-                        <div class="personal-project text-center">
-                            <div class="project-title-link">
-                                <h4>Dig Themes</h4>
-                                <div class="personal-project-github-link d-flex flex-column align-items-center">
-                                    <a href="https://github.com/EvanWiorek/EvanWiorek/tree/main/DIG-Themes/Retroid%20Pocket%202" target="_blank"><img
-                                            src="./assets/github.png" alt="GitHub Repo"></a>
-                                    <span>GitHub Repo</span>
-                                </div>
-                            </div>
-                            <img src="./assets/experience/dig.gif" alt="Dig Themes" class="dig-gif">
-                        </div>
-                        <div class="personal-project text-center">
-                            <div class="project-title-link">
-                                <h4>Watch Widgets</h4>
-                                <div class="personal-project-github-link d-flex flex-column align-items-center">
-                                    <a href="https://github.com/EvanWiorek/EvanWiorek/tree/main/Watch-Widgets" target="_blank"><img
-                                            src="./assets/github.png" alt="GitHub Repo"></a>
-                                    <span>GitHub Repo</span>
-                                </div>
-                            </div>
-                            <img src="./assets/experience/Watch2.gif" alt="Watch Widgets" class="watch-gif">
-                        </div>
-
+                    <div class="dot-container">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
                     </div>
                 </div>
             </div>
-
-            <!--Contact Header-->
-            <div id="contact" class="card-header parallax contact-bg">
-                <div class="card-title center-align">
-                    <h1>Contact</h1>
-                    <h2>Feel free to conact me!</h2>
-                </div>
-            </div>
-            <!--Contact section-->
-            <div class="card-section card-style-1 gap-2 flex-small">
-                <div class="about-me-blip col-lg-4 my-col-sm-10">
-                    <h3 class="center-align about-me-title">About Me</h3>
-                    <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem hic excepturi
-                        quidem
-                        dicta atque, labore praesentium eligendi similique blanditiis sit iure repudiandae,
-                        minus
-                        quas aperiam dolorem nihil fugit error fugiat.</h4>
-
-                </div>
-            </div>
-
-
-
 
         </div>
 
 
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="script.js"></script>
+        <!--Projects Header-->
+        <div id="parallax1" class="card-header">
+            <div class="card-title">
+                <h1>Projects</h1>
+            </div>
+        </div>
+        <!--Projects section-->
+        <div class="card-section projects-card card-style-1 gap-2 d-flex flex-column">
+
+            <!--Project 1-->
+            <div class="project-1 d-flex justify-content-center flex-small align-items-center">
+                <div class="card-text-blip col-lg-4 my-col-sm-10 projects-text">
+                    <h1 class="project-title">JavaScript Calculator</h1>
+                    <p>This is an operational 4 function calculator, made using HTML, CSS, and JavaScript. It is
+                        styled after an old Casio MS80-B. </p>
+                    <ul>
+                        <li>When the equation produces too high a number for the display to contain, "too long!" is
+                            shown.</li>
+                        <li>If an equation has a large string of decimals, the amount displayed on the right is
+                            determined by the space to the left of the decimal.</li>
+                        <li>The calculator can also be moved around the screen.</li>
+                    </ul>
+                    <div class="links-list d-flex align-items-center justify-content-around">
+                        <div class="svg-link d-flex flex-column align-items-center">
+                            <a href="https://evanwiorek.github.io/JavaScript-Calculator/" target="_blank"><img
+                                    src="./assets/link.svg" alt="Website"></a>
+                            <span>Website</span>
+                        </div>
+                        <div class="svg-link d-flex flex-column align-items-center">
+                            <a href="https://github.com/EvanWiorek/JavaScript-Calculator" target="_blank"><img
+                                    src="./assets/github.svg" alt="GitHub Repo"></a>
+                            <span>GitHub Repo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-video-img col-lg-4 my-col-sm-12 text-center">
+                    <video width="500" playsinline autoplay muted loop>
+                        <source src="./assets/project-videos/javascript-calc.webm" type="video/webm">
+                    </video>
+                </div>
+            </div>
+
+            <div class="projects-line"></div>
+
+            <!--Project 2-->
+            <div class="project-2 d-flex justify-content-center flex-small align-items-center">
+                <div class="card-text-blip col-lg-4 my-col-sm-10 projects-text">
+                    <h1 class="project-title">Pacman From Scratch</h1>
+                    <p>This is an operational 4 function calculator, made using HTML, CSS, and JavaScript. It is
+                        styled after an old Casio MS80-B. </p>
+                    <ul>
+                        <li>When the equation produces too high a number for the display to contain, "too long!" is
+                            shown.</li>
+                        <li>If an equation has a large string of decimals, the amount displayed on the right is
+                            determined by the space to the left of the decimal.</li>
+                        <li>The calculator can also be moved around the screen.</li>
+                    </ul>
+                    <div class="links-list d-flex align-items-center justify-content-around">
+                        <div class="svg-link d-flex flex-column align-items-center">
+                            <a href="https://evanwiorek.github.io/pacman-from-scratch/" target="_blank"><img
+                                    src="./assets/link.svg" alt="Website"></a>
+                            <span>Website</span>
+                        </div>
+                        <div class="svg-link d-flex flex-column align-items-center">
+                            <a href="https://github.com/EvanWiorek/pacman-from-scratch" target="_blank"><img
+                                    src="./assets/github.svg" alt="GitHub Repo"></a>
+                            <span>GitHub Repo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-video-img col-lg-4 my-col-sm-12 text-center">
+                    <video width="500" playsinline autoplay muted loop>
+                        <source src="./assets/project-videos/pacman-video.webm" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="projects-line"></div>
+
+            <!--Project 3-->
+            <div class="project-3 d-flex justify-content-center flex-small align-items-center">
+                <div class="card-text-blip col-lg-4 my-col-sm-10 projects-text">
+                    <h1 class="project-title">Piet Mondrian Digital Recreation</h1>
+                    <p>This is an operational 4 function calculator, made using HTML, CSS, and JavaScript. It is
+                        styled after an old Casio MS80-B. </p>
+                    <ul>
+                        <li>When the equation produces too high a number for the display to contain, "too long!" is
+                            shown.</li>
+                        <li>If an equation has a large string of decimals, the amount displayed on the right is
+                            determined by the space to the left of the decimal.</li>
+                        <li>The calculator can also be moved around the screen.</li>
+                    </ul>
+                    <div class="links-list d-flex align-items-center justify-content-around">
+                        <div class="svg-link d-flex flex-column align-items-center">
+                            <a href="https://evanwiorek.github.io/piet-mondrian/" target="_blank"><img
+                                    src="./assets/link.svg" alt="Website"></a>
+                            <span>Website</span>
+                        </div>
+                        <div class="svg-link d-flex flex-column align-items-center">
+                            <a href="https://github.com/EvanWiorek/piet-mondrian" target="_blank"><img
+                                    src="./assets/github.svg" alt="GitHub Repo"></a>
+                            <span>GitHub Repo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-video-img col-lg-4 my-col-sm-12 text-center">
+                    <img src="./assets/project-videos/piet3.png" alt="Piet Mondrian Recreation" width="500">
+                </div>
+            </div>
+
+
+        </div>
+
+        <!--Skills Header-->
+        <div id="parallax2" class="card-header">
+            <div class="card-title">
+                <h1>Skills</h1>
+            </div>
+        </div>
+
+        <!--Skills section-->
+        <div class="card-section skills-card card-style-1 gap-2 d-flex justify-content-center flex-small">
+            <div class="col-lg-8 my-col-sm-11 flex-small">
+
+                <!--Languages-->
+                <div class="table-line d-flex justify-content-between flex-small">
+                    <div class="table-top-left d-flex">
+                        <h1>Languages</h1>
+                    </div>
+
+                    <div class="software-image-container d-flex flex-small">
+                        <div class="svg-items svg-items svg-items-languages svg-flex">
+                            <div class="software d-flex flex-column align-items-center ">
+                                <img src="./assets/skills/js.png" alt="JavaScript">
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="software d-flex flex-column align-items-center ">
+                                <img src="./assets/skills/HTML.png" alt="HTML">
+                                <span>HTML</span>
+                            </div>
+                            <div class="software d-flex flex-column align-items-center ">
+                                <img src="./assets/skills/css.png" alt="CSS">
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="skills-line"></div>
+
+                <!--Front End Tools-->
+                <div class="table-line d-flex justify-content-between flex-small">
+                    <div class="table-top-left d-flex">
+                        <h1>Front End Tools</h1>
+                    </div>
+                    <div class="software-image-container d-flex flex-small">
+                        <div class="svg-items svg-items-front-end text-center my-col-sm-11 svg-flex">
+                            <div class="software d-flex flex-column align-items-center ">
+                                <img src="./assets/skills/bs.png" alt="Bootstrap">
+                                <span>Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="skills-line"></div>
+
+                <!--Software-->
+                <div class="table-line d-flex flex-small justify-content-between">
+                    <div class="table-top-left d-flex">
+                        <h1>Software</h1>
+                    </div>
+                    <div class="software-image-container d-flex flex-small">
+
+                        <div class="svg-flex layer-margin text-center my-col-sm-11 svg-items svg-items-software">
+                            <div class="gimp d-flex flex-column align-items-center ">
+                                <img src="./assets/skills/GIMP.png" alt="GIMP">
+                                <span>GIMP</span>
+                            </div>
+                            <div class="software d-flex flex-column align-items-center ">
+                                <img src="./assets/skills/git.png" alt="Git">
+                                <span>Git</span>
+                            </div>
+                            <div class="software d-flex flex-column align-items-center">
+                                <img src="./assets/skills/Wondershare_filmora_logo.svg.png" alt="Wondershare Filmora">
+                                <span>Wondershare Filmora</span>
+                            </div>
+                        </div>
+                        <div class="svg-flex text-center my-col-sm-11 svg-items svg-items-software">
+                            <div class="software d-flex flex-column align-items-center">
+                                <img src="./assets/skills/ai.png" alt="Adobe Illustrator">
+                                <span>Adobe Illustrator</span>
+                            </div>
+                            <div class="software  d-flex flex-column align-items-center">
+                                <img src="./assets/skills/vscode.png" alt="Visual Studio Code">
+                                <span>Visual Studio Code</span>
+                            </div>
+                            <div class="software d-flex flex-column align-items-center">
+                                <img src="./assets/skills/davinci.png" alt="DaVinci Resolve">
+                                <span>DaVinci Resolve</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="skills-line"></div>
+
+            </div>
+
+        </div>
+
+        <!--Education Header-->
+        <div id="education" class="card-header parallax education-bg">
+            <div class="card-title">
+                <h1>Education</h1>
+            </div>
+        </div>
+        <!--Education section-->
+        <div class="card-section education-card card-style-1 gap-2 flex-small">
+            <div class="col-lg-8 my-col-sm-11 flex-small">
+
+                <!--Coding Dojo-->
+                <div class="table-line d-flex justify-content-center flex-small">
+                    <div class="education-img col-lg-2 d-flex">
+                        <img src="./assets/education/cd.png">
+                    </div>
+                    <div class="education-text col-lg-8">
+                        <h4>Coding Dojo Bootcamp</h4>
+                        <h5>Software Development - Online Full-Time</h5>
+                        <h5>February, 2023 - Present</h5>
+                        <!-- <ul>
+                                <li></li>
+                            </ul> -->
+                    </div>
+
+                </div>
+
+                <div class="skills-line"></div>
+
+                <!--UWSP-->
+                <div class="table-line d-flex justify-content-center flex-small">
+                    <div class="education-img col-lg-2 d-flex">
+                        <img src="./assets/education/uwsp.jpg">
+                    </div>
+                    <div class="education-text col-lg-8">
+                        <h4>University of Wisconsin - Stevens Point</h4>
+                        <h5>Bachelors of Science Degree in Education</h5>
+                        <h5>Major in Family and Consumer Sciences Ed.</h5>
+                        <h5>Minor in Health Ed.</h5>
+                        <h5>Stevens Point, WI | December, 2019</h5>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!--Experience Header-->
+        <div id="experience" class="card-header parallax experience-bg">
+            <div class="card-title">
+                <h1>Experience</h1>
+            </div>
+        </div>
+        <!--Experience section-->
+        <div class="card-section experience-card card-style-1 gap-2 flex-small">
+            <div class="col-lg-8 my-col-sm-10">
+                <div class="experience-top text-left">
+                    <h6>I started coding when MySpace was big, which for me was in late elementary school. I would spend
+                        hours editing my profile over and over until it was perfect. Then along came YouTube in my
+                        middle school days, editing that profile, and creating custom XML files to create effects in
+                        Windows Movie Maker.
+                    </h6>
+                    <h6>Since then, I've had many projects that involved a little bit of coding. I would take what was
+                        made, try to understand how it did what it did, then import my own code or change it to fit my
+                        liking.</h6>
+                    <h6>Fast forward to now: I am currently enrolled full-time in Coding Dojo, and finally acting on a
+                        passion of mine I've had since I was a child. I am excited for what new projects await me - but
+                        for now, I have listed some in which I didn't fully know what I was doing. All graphics were
+                        made by me, and coding manipulated by me.
+                    </h6>
+                </div>
+                <div class="personal-projects d-flex justify-content-evenly align-items-center flex-small my-col-sm-11">
+                    <div class="personal-project text-center">
+                        <div class="project-title-link">
+                            <h4>FunKey S Themes</h4>
+                            <div class="personal-project-github-link d-flex flex-column align-items-center">
+                                <a href="https://github.com/EvanWiorek/EvanWiorek/tree/main/FunKeySThemes"
+                                    target="_blank"><img src="./assets/github.png" alt="GitHub Repo"></a>
+                                <span>GitHub Repo</span>
+                            </div>
+                        </div>
+                        <img src="./assets/experience/FunKeyS.gif" alt="FunKey S Themes" class="funkey-gif">
+                    </div>
+                    <div class="personal-project text-center">
+                        <div class="project-title-link">
+                            <h4>Dig Themes</h4>
+                            <div class="personal-project-github-link d-flex flex-column align-items-center">
+                                <a href="https://github.com/EvanWiorek/EvanWiorek/tree/main/DIG-Themes/Retroid%20Pocket%202"
+                                    target="_blank"><img src="./assets/github.png" alt="GitHub Repo"></a>
+                                <span>GitHub Repo</span>
+                            </div>
+                        </div>
+                        <img src="./assets/experience/dig.gif" alt="Dig Themes" class="dig-gif">
+                    </div>
+                    <div class="personal-project text-center">
+                        <div class="project-title-link">
+                            <h4>Watch Widgets</h4>
+                            <div class="personal-project-github-link d-flex flex-column align-items-center">
+                                <a href="https://github.com/EvanWiorek/EvanWiorek/tree/main/Watch-Widgets"
+                                    target="_blank"><img src="./assets/github.png" alt="GitHub Repo"></a>
+                                <span>GitHub Repo</span>
+                            </div>
+                        </div>
+                        <img src="./assets/experience/Watch2.gif" alt="Watch Widgets" class="watch-gif">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--Contact Header-->
+        <div id="contact" class="card-header parallax contact-bg">
+            <div class="card-title center-align">
+                <h1>Contact</h1>
+                <h2>Feel free to conact me!</h2>
+            </div>
+        </div>
+        <!--Contact section-->
+        <div class="card-section card-style-1 gap-2 flex-small">
+            <div class="about-me-blip col-lg-4 my-col-sm-10">
+                <h3 class="center-align about-me-title">About Me</h3>
+                <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem hic excepturi
+                    quidem
+                    dicta atque, labore praesentium eligendi similique blanditiis sit iure repudiandae,
+                    minus
+                    quas aperiam dolorem nihil fugit error fugiat.</h4>
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

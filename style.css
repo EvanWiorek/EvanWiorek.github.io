@@ -27,25 +27,8 @@ html {
 }
 
 /*Universal and Containers*/
-.wrapper {
-    height: 100vh;
+.main-container {
     overflow-x: hidden;
-    overflow-y: auto;
-    perspective: 2px;
-    scroll-behavior: smooth;
-}
-
-
-.parallax::after {
-    content: " ";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: -5px;
-    transform: translateZ(-1px) scale(1.5);
-    background-size: cover;
-    z-index: -1;
 }
 
 /*Universal Classes*/
@@ -59,8 +42,6 @@ html {
 }
 
 .card-header {
-    position: relative;
-    height: 25vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,8 +71,12 @@ html {
     margin-right: 100px;
 }
 
-body {
-    position: relative;
+#parallax1, #parallax2, #parallax3, #parallax4, #parallax5 {
+    background-position: top center;
+    background-attachment:scroll;
+    background-size: cover;
+    height: 25vh;
+    width: 100%;
 }
 
 
@@ -344,11 +329,10 @@ body {
 
 
 /*Projects*/
-.projects-bg::after {
-    background-image: url('./assets/bg4-1.jpg');
-    height: 500px;
-    top: -100px;
+#parallax1 {
+    background-image: url('./assets/bg4.jpg');
 }
+
 
 .links-list {
     margin-top: 20px;
@@ -407,10 +391,8 @@ div.svg-link:hover span {
 
 
 /*Skills*/
-.skills-bg::after {
+#parallax2 {
     background-image: url('./assets/bg6.jpg');
-    height: 500px;
-    top: -100px;
 }
 
 

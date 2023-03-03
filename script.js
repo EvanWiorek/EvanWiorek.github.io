@@ -83,13 +83,15 @@ function carousel() {
     }
     setTimeout(carousel, 5000); // Change image every 2 seconds
 }
-//switch(expression) {
-    // case x:
-    //     // code block
-    //     break;
-    //   case y:
-    //     // code block
-    //     break;
-    //   default:
-    //     // code block
-    // }
+
+
+document.getElementById("body").onscroll = function parallaxBackground() {  
+    for(var i=1; i<6; i++) {
+        var target = document.getElementById("parallax" + i);
+        var scrolltotop = document.scrollingElement.scrollTop;
+        var xvalue = "center";
+        var factor = .7;
+        var yvalue = scrolltotop * factor;
+        target.style.backgroundPosition = xvalue + " " + yvalue + "px";
+    }
+  }
