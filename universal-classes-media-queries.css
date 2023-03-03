@@ -259,6 +259,32 @@
         margin-bottom: 20px;
     }
 
+    .education-img img {
+        border: 0px;
+        border-radius: 50%;
+        width: 100px;
+        margin-bottom: 10px;
+    }
+
+    .dig-gif {
+        height: 200px;
+        margin-bottom: 30px;
+    }
+    
+    .funkey-gif {
+        width: 200px;
+        margin-bottom: 30px;
+    }
+    
+    .watch-gif {
+        width: 200px;
+        height: 243px;
+    }
+
+    div.personal-project-github-link:hover span {
+        display: none;
+    }
+
 }
 
 /*tablet*/  
