@@ -266,14 +266,14 @@
     }
 
     #parallax4 {
-        background-image: url('./assets/bg9-3.jpg');
+        background-image: url('./assets/bg9-2.jpg');
         background-size: revert;
         height: 15vh;
     }
 
     #parallax5 {
         background-size: revert;
-        background-image: url('./assets/bg11-3.jpg');
+        background-image: url('./assets/bg11-2.jpg');
         height: 15vh;
     }
 
@@ -540,14 +540,14 @@
     }
 
     #parallax4 {
-        background-image: url('./assets/bg9-3.jpg');
+        background-image: url('./assets/bg9-2.jpg');
         background-size: revert;
         height: 15vh;
     }
 
     #parallax5 {
         background-size: revert;
-        background-image: url('./assets/bg11-3.jpg');
+        background-image: url('./assets/bg11.jpg');
         height: 15vh;
     }
 
