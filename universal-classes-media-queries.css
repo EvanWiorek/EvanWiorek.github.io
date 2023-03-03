@@ -523,10 +523,14 @@
         display: none;
     }
 
-    #parallax1,
-    #parallax2 {
+    #parallax1{
         background-size: revert;
         height: 15vh;
+    }
+
+    #parallax2 {
+        height: 15vh;
+        background-image: url('./assets/bg6-2.jpg');
     }
 
     #parallax3 {
