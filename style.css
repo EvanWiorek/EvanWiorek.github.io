@@ -33,6 +33,7 @@ html {
 /*Universal and Containers*/
 .main-container {
     overflow-x: hidden;
+    background-color: #161d20;
 }
 
 /*Universal Classes*/
@@ -51,6 +52,7 @@ html {
     justify-content: center;
     transform-style: preserve-3d;
     scroll-margin-top: 5.7rem;
+    background-color: #161d20;
 }
 
 .card-section {
@@ -185,6 +187,7 @@ html {
     align-items: center;
     justify-content: center;
     text-shadow: 0 0 2px #000;
+    background-color: #161d20;
 }
 
 .welcome-container {
@@ -242,7 +245,7 @@ html {
 
 .header-background {
     animation: rotation 800s infinite linear;
-    z-index: -1;
+    z-index: 0;
     position: absolute;
     width: 115%;
 }
