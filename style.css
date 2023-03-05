@@ -34,6 +34,7 @@ html {
 .main-container {
     overflow-x: hidden;
     background-color: #161d20;
+    z-index: 0;
 }
 
 /*Universal Classes*/
@@ -188,6 +189,7 @@ html {
     justify-content: center;
     text-shadow: 0 0 2px #000;
     background-color: #161d20;
+    z-index: 1;
 }
 
 .welcome-container {

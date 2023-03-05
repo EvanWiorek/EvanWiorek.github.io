@@ -283,13 +283,14 @@
     }
 
     .contact-link img {
-        height: 80px;
+        height: 70px;
         width: revert;
-        margin: 10px 10px 50px 10px;
+        margin: 10px 20px 60px 20px;
     }
 
     div.contact-link span {
         display: block;
+        font-size: 1rem;
     }
 
 }
