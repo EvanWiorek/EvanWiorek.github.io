@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #000;
+    background-color: #161d20;
 }
 
 html {
@@ -81,6 +81,7 @@ html {
     background-size: cover;
     height: 25vh;
     width: 100%;
+    background-color: #161d20;
 }
 
 
@@ -334,6 +335,7 @@ html {
 /*Projects*/
 #parallax1 {
     background-image: url('./assets/bg4.jpg');
+    background-color: #161d20;
 }
 
 .links-list {
@@ -395,6 +397,7 @@ div.svg-link:hover span {
 /*Skills*/
 #parallax2 {
     background-image: url('./assets/bg6.jpg');
+    background-color: #161d20;
 }
 
 
@@ -460,6 +463,7 @@ div.software:hover span {
 /*Education*/
 #parallax3 {
     background-image: url('./assets/bg13.jpg');
+    background-color: #161d20;
 }
 
 .education-img img {
@@ -475,6 +479,7 @@ div.software:hover span {
 /*Experience*/
 #parallax4 {
     background-image: url('./assets/bg9-1.jpg');
+    background-color: #161d20;
     background-size: cover;
 }
 
@@ -533,6 +538,7 @@ div.personal-project-github-link:hover span {
 /*Contact*/
 #parallax5 {
     background-image: url('./assets/bg11.jpg');
+    background-color: #161d20;
 }
 
 .card-title h2 {
