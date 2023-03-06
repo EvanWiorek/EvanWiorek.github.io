@@ -369,22 +369,26 @@ div.svg-link:hover span {
     display: block;
 }
 
-.project-title {
-    text-align: center;
-}
-
 .projects-text ul {
     list-style: none;
     padding-left:0;
 }
 
 .projects-text ul li:before {
-    content: "•";
-    font-size: 10pt;
+    content: "• ";
+    font-size: 20pt;
 }
 
 .projects-text {
     font-size: 1.1rem;
+}
+
+.projects-text p {
+    font-weight: 400;
+}
+
+.projects-text li {
+    font-weight: 400;
 }
 
 .projects-line {
