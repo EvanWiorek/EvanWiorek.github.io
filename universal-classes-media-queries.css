@@ -184,6 +184,10 @@
         width: 300px;
     }
 
+    .header-1 {
+        height: 100vh;
+    }
+
     .header-background {
         animation: rotation 800s infinite linear;
         z-index: -1;
@@ -377,7 +381,7 @@
     }
 
     .header-1 {
-        height: 90vh;
+        height: 80vh;
 
     }
 
@@ -448,7 +452,7 @@
 
     .project-video-img video,
     img {
-        width: 300px;
+        width: 600px;
     }
 
     .header-background {
@@ -531,6 +535,7 @@
 
     #parallax2 {
         height: 15vh;
+        background-size: revert;
         background-image: url('./assets/bg6-2.jpg');
     }
 
