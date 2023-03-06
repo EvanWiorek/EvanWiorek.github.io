@@ -41,42 +41,42 @@ function aboutMeSlideshow() {
     dots[myIndex-1].className += " active";
     if (slideshow[myIndex - 1].getAttribute('value') == "video") {
         console.log("1")
-        video.style.cssText = "font-weight: 500;";
+        video.style.cssText = "font-weight: 600;";
     }
     if (slideshow[myIndex - 1].getAttribute('value') != "video") {
         video.style.cssText = "";
     }
     if (slideshow[myIndex - 1].alt == "Drawing") {
         console.log("2")
-        drawing.style.cssText = "font-weight: 500;";
+        drawing.style.cssText = "font-weight: 600;";
     }
     if (slideshow[myIndex - 1].alt != "Drawing") {
         drawing.style.cssText = "";
     }
     if (slideshow[myIndex - 1].alt == "3D Printing & Painting") {
         console.log("3")
-        printing.style.cssText = "font-weight: 500;";
+        printing.style.cssText = "font-weight: 600;";
     }
     if (slideshow[myIndex - 1].alt != "3D Printing & Painting") {
         printing.style.cssText = "";
     }
     if (slideshow[myIndex - 1].alt == "Photography") {
         console.log("4")
-        photography.style.cssText = "font-weight: 500;";
+        photography.style.cssText = "font-weight: 600;";
     }
     if (slideshow[myIndex - 1].alt != "Photography") {
         photography.style.cssText = "";
     }
     if (slideshow[myIndex - 1].alt == "Sewwing & Leathercraft") {
         console.log("5")
-        leather.style.cssText = "font-weight: 500;";
+        leather.style.cssText = "font-weight: 600;";
     }
     if (slideshow[myIndex - 1].alt != "Sewwing & Leathercraft") {
         leather.style.cssText = "";
     }
     if (slideshow[myIndex - 1].alt == "Graphic Design") {
         console.log("6")
-        design.style.cssText = "font-weight: 500;";
+        design.style.cssText = "font-weight: 600;";
     }
     if (slideshow[myIndex - 1].alt != "Graphic Design") {
         design.style.cssText = "";

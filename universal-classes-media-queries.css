@@ -297,6 +297,22 @@
         font-size: 1rem;
     }
 
+    .card-text-blip {
+        font-size: 1.3rem;
+        font-weight: 400;
+        margin-right: 0px;
+    }
+
+    .card-text-blip p {
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+    
+    .card-text-blip span {
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+
 }
 
 /*tablet*/
