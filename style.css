@@ -78,9 +78,13 @@ html {
     margin-right: 100px;
 }
 
-#parallax1, #parallax2, #parallax3, #parallax4, #parallax5 {
+#parallax1,
+#parallax2,
+#parallax3,
+#parallax4,
+#parallax5 {
     background-position: top center;
-    background-attachment:scroll;
+    background-attachment: scroll;
     background-size: cover;
     height: 25vh;
     width: 100%;
@@ -371,7 +375,7 @@ div.svg-link:hover span {
 
 .projects-text ul {
     list-style: none;
-    padding-left:0;
+    padding-left: 0;
 }
 
 .projects-text ul li:before {
@@ -425,7 +429,7 @@ div.svg-link:hover span {
 .svg-flex {
     display: flex;
     justify-content: flex-end;
-   }
+}
 
 .svg-items img {
     height: 100px;

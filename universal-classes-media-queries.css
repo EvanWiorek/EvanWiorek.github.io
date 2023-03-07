@@ -200,19 +200,18 @@
         justify-content: center;
     }
 
-    .svg-items-languages img {
-        width: 70%;
-        height: 100%;
+    .row-of-1 img {
+        width: 20%;
+        height: revert;
     }
 
-    .svg-items-front-end img {
-        width: 30%;
-        height: 100%;
+    .row-of-3 img {
+        width: 60%;
+        height: revert;
     }
 
-    .svg-items-software img {
-        width: 80%;
-        height: 100%;
+    .skills-line {
+        margin: 0px 0px 20px 0px;
     }
 
     div.gimp:hover span {
@@ -491,19 +490,18 @@
         justify-content: center;
     }
 
-    .svg-items-languages img {
-        width: 70%;
-        height: 100%;
+    .row-of-1 img {
+        width: 20%;
+        height: revert;
     }
 
-    .svg-items-front-end img {
-        width: 30%;
-        height: 100%;
+    .row-of-3 img {
+        width: 45%;
+        height: revert;
     }
 
-    .svg-items-software img {
-        width: 80%;
-        height: 100%;
+    .skills-line {
+        margin: 0px 0px 20px 0px;
     }
 
     div.gimp:hover span {
