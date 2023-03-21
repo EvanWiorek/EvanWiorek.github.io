@@ -426,10 +426,10 @@ div.svg-link:hover span {
 }
 
 .skills-line {
-    height: 1px;
+    height: .5px;
     width: 100%;
     background-color: #314246;
-    margin: 20px 0px;
+    margin: 10px 0px;
 }
 
 .svg-flex {
@@ -438,7 +438,7 @@ div.svg-link:hover span {
 }
 
 .svg-items img {
-    height: 100px;
+    height: 80px;
     margin: 0px 10px;
     image-rendering: crisp-edges;
 }
@@ -447,7 +447,6 @@ div.svg-link:hover span {
 div.gimp span {
     display: none;
     position: absolute;
-    margin-top: 4.5rem;
     background: rgb(0, 0, 0, .3);
     padding: 5px 10px;
     color: #fff;
@@ -455,13 +454,12 @@ div.gimp span {
     font-size: 1.3rem;
     border: 0px;
     border-radius: 5px;
-    margin-top: 5.5rem;
+    margin-top: 4.5rem;
 }
 
 div.software span {
     display: none;
     position: absolute;
-    margin-top: 4.5rem;
     background: rgb(0, 0, 0, .3);
     padding: 5px 10px;
     color: #fff;
@@ -469,7 +467,7 @@ div.software span {
     font-size: 1.3rem;
     border: 0px;
     border-radius: 5px;
-    margin-top: 6.8rem;
+    margin-top: 5.8rem;
 }
 
 div.gimp:hover span {
