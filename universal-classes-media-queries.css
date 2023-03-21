@@ -320,6 +320,18 @@
         font-weight: 400;
     }
 
+    .project-width {
+        width: 90%;
+    }
+
+    .project-video-img video {
+        width: 90%;
+    }
+
+    .footer-body {
+        height: 350px;
+    }
+
 }
 
 /*tablet*/
@@ -598,5 +610,13 @@
 
     div.contact-link span {
         display: block;
+    }
+
+    .project-width {
+        width: 80%;
+    }
+
+    .project-video-img video {
+        width: 80%;
     }
 }
