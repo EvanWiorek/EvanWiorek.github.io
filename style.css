@@ -71,6 +71,7 @@ html {
     font-size: 3.5rem;
     color: white;
     font-weight: 400;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
 }
 
 .card-text-blip {
@@ -206,6 +207,7 @@ html {
 
 .welcome-text {
     color: #778b91;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, .6);
 }
 
 .welcome-text h1 {
@@ -247,6 +249,7 @@ html {
 .portrait img {
     width: 300px;
     border-radius: 30px;
+    filter: drop-shadow(0px 2px 2px rgba(0,0,0,.3));
 }
 
 .header-background {
@@ -293,12 +296,14 @@ html {
     border: 0px;
     border-radius: 10px;
     width: 100%;
+    filter: drop-shadow(0px 2px 2px rgba(0,0,0,.3));
 }
 
 .slideshow video {
     border: 0px;
     border-radius: 10px;
     width: 100%;
+    filter: drop-shadow(0px 2px 2px rgba(0,0,0,.3));
 }
 
 .fade-in-slides img {
@@ -354,6 +359,15 @@ html {
 
 .links-list img {
     width: 60px;
+    transition: .4s;
+}
+
+.svg-link img {
+    filter: invert(83%) sepia(9%) saturate(557%) hue-rotate(146deg) brightness(90%) contrast(83%) drop-shadow(0px 0px 3px rgba(0,0,0,1));
+}
+
+.svg-link img:hover {
+    opacity: .5;
 }
 
 div.svg-link span {
@@ -399,7 +413,6 @@ div.svg-link:hover span {
     width: 100%;
 }
 
-
 .projects-line {
     height: 1px;
     width: 90%;
@@ -407,9 +420,18 @@ div.svg-link:hover span {
     margin: 30px 0px;
 }
 
-
 .projects-card {
     padding: 30px 0px 40px 0px;
+}
+
+.loose-on-earth-logo {
+    width: 90%;
+    margin-left: -10px;
+    margin-bottom: 10px;
+}
+
+.project-video-img {
+    filter: drop-shadow(0px 2px 2px rgba(0,0,0,.3));
 }
 
 
@@ -441,6 +463,8 @@ div.svg-link:hover span {
     height: 80px;
     margin: 0px 10px;
     image-rendering: crisp-edges;
+    filter: drop-shadow(0px 2px 3px rgba(0,0,0,.3));
+    z-index: 1;
 }
 
 
@@ -455,6 +479,7 @@ div.gimp span {
     border: 0px;
     border-radius: 5px;
     margin-top: 4.5rem;
+    z-index: 2;
 }
 
 div.software span {
@@ -468,6 +493,7 @@ div.software span {
     border: 0px;
     border-radius: 5px;
     margin-top: 5.8rem;
+    z-index: 2;
 }
 
 div.gimp:hover span {
@@ -488,10 +514,20 @@ div.software:hover span {
     border: 0px;
     border-radius: 50%;
     height: 100px;
+    filter: drop-shadow(0px 2px 3px rgba(0,0,0,.3));
 }
 
 .education-card {
     padding: 30px 0px 30px 0px;
+}
+
+.education-line {
+    height: .5px;
+    width: 100%;
+    background-color: #314246;
+    margin: 20px 0px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*Experience*/
@@ -508,6 +544,12 @@ div.software:hover span {
 .personal-project-github-link img {
     width: 25px;
     margin: -15px 0px 0px 10px;
+    filter: invert(83%) sepia(9%) saturate(557%) hue-rotate(146deg) brightness(90%) contrast(83%) drop-shadow(0px 0px 3px rgba(0,0,0,.8));
+    transition: .4s;
+}
+
+.personal-project-github-link img:hover {
+    opacity: .5;
 }
 
 div.personal-project-github-link span {
@@ -520,6 +562,7 @@ div.personal-project-github-link span {
     font-size: 1rem;
     border: 0px;
     border-radius: 5px;
+    z-index: 2;
 }
 
 div.personal-project-github-link:hover span {
@@ -538,14 +581,17 @@ div.personal-project-github-link:hover span {
 
 .dig-gif {
     height: 200px;
+    filter: drop-shadow(0px 2px 3px rgba(0,0,0,.3));
 }
 
 .funkey-gif {
     height: 200px;
+    filter: drop-shadow(0px 2px 3px rgba(0,0,0,.3));
 }
 
 .watch-gif {
     height: 200px;
+    filter: drop-shadow(0px 2px 3px rgba(0,0,0,.3));
 }
 
 .experience-card {
@@ -559,19 +605,21 @@ div.personal-project-github-link:hover span {
     background-color: #161d20;
 }
 
+.contact-lines {
+    height: .5px;
+    width: 100%;
+    background-color: #314246;
+}
+
 .card-title h2 {
     color: white;
     font-weight: 300;
 }
 
-.contact-card {
-    padding: 30px 0px 50px;
-}
-
 div.contact-link span {
     display: none;
     position: absolute;
-    margin-top: 6rem;
+    margin-top: 4.9rem;
     background: rgb(0, 0, 0, .3);
     padding: 5px 10px;
     color: #fff;
@@ -585,11 +633,18 @@ div.contact-link:hover span {
     display: block;
 }
 
-.footer-body {
-    height: 180px;
+.contact-body {
+    height: 170px;
+    padding: 30px;
 }
 
 .contact-link img {
-    height: 80px;
+    height: 70px;
     margin: 0px 50px;
+    transition: .4s;
+    filter: invert(83%) sepia(9%) saturate(557%) hue-rotate(146deg) brightness(90%) contrast(83%) drop-shadow(0px 0px 3px rgba(0,0,0,.9));
+}
+
+.contact-link img:hover {
+    opacity: .5;
 }
