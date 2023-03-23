@@ -74,6 +74,12 @@ html {
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
 }
 
+.card-title h2 {
+    color: white;
+    font-weight: 300;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+}
+
 .card-text-blip {
     font-size: 1.5rem;
     margin-right: 100px;
@@ -440,8 +446,8 @@ div.svg-link:hover span {
     background-image: url('./assets/bg6.jpg');
     background-color: #161d20;
     background-size: 250vh;
+    height: 30vh;
 }
-
 
 .skills-card {
     padding: 30px 0px;
@@ -603,17 +609,13 @@ div.personal-project-github-link:hover span {
 #parallax5 {
     background-image: url('./assets/bg11.jpg');
     background-color: #161d20;
+    height: 30vh;
 }
 
 .contact-lines {
     height: .5px;
     width: 100%;
     background-color: #314246;
-}
-
-.card-title h2 {
-    color: white;
-    font-weight: 300;
 }
 
 div.contact-link span {

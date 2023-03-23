@@ -262,16 +262,21 @@
         display: none;
     }
     
-    #parallax1,
-    #parallax2 {
+    #parallax1 {
         background-size: revert;
         height: 15vh;
+    }
+
+    #parallax2 {
+        background-size: revert;
+        height: 20vh;
     }
 
     #parallax3 {
         background-size: revert;
         background-image: url('./assets/bg13-2.jpg');
         height: 15vh;
+        background-size: 210vh;
     }
 
     #parallax4 {
@@ -283,7 +288,7 @@
     #parallax5 {
         background-size: 100vh;
         background-image: url('./assets/bg11-2.jpg');
-        height: 15vh;
+        height: 20vh;
     }
 
     
@@ -345,9 +350,7 @@
 
     div.contact-link span {
         margin-top: 5.5rem;
-
     }
-
 }
 
 /*tablet*/
@@ -588,7 +591,7 @@
     }
 
     #parallax2 {
-        height: 15vh;
+        height: 19vh;
         background-size: revert;
         background-image: url('./assets/bg6-2.jpg');
     }
@@ -597,6 +600,7 @@
         background-size: revert;
         background-image: url('./assets/bg13-2.jpg');
         height: 15vh;
+        background-size: 250vh;
     }
 
     #parallax4 {
@@ -608,7 +612,7 @@
     #parallax5 {
         background-size: revert;
         background-image: url('./assets/bg11.jpg');
-        height: 15vh;
+        height: 19vh;
     }
 
     
