@@ -35,7 +35,7 @@
         visibility: hidden;
     }
 
-    .mobile-nav {
+    #mobile-nav {
         visibility: visible;
     }
 
@@ -658,3 +658,7 @@
 
     }
 }
+/* 
+@media only screen and (min-width: 912px) {
+    .mobile-nav
+} */

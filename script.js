@@ -5,12 +5,16 @@ function scale(element, value) {
 
 
 //Mobile Navbar Functionality
-function mobileNav() {
-    var x = document.getElementById("mobile-links");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
+function mobileNav(element) {
+    var mobileNavBody = document.getElementById("mobile-nav")
+    var x = document.getElementById("mobileLinks");
+    element.classList.toggle("active");
+    if (element.classList.contains("active")) {
         x.style.display = "block";
+        mobileNavBody.style.height = x.scrollHeight + "px";
+    } else {
+        x.style.display = "none";
+        mobileNavBody.style.height = null;
     }
 }
 
