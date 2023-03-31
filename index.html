@@ -146,12 +146,10 @@
                     <p>This is a passion project I made to help people examine their conscience before completing the
                         act of reconciliation.</p>
                     <ul>
-                        <li>The user first enters how long it's been since their last confession. Then they go through
-                            each of the The Commandments, and review their life with each checklist item.</li>
-                        <li>I also included an option to add custom confessions, if they aren't on the list. These can
-                            be removed by clicking on them.</li>
-                        <li>When done, the list can be copied to be saved for their personal use, and I've included a
-                            guide to confession with some prayer examples.</li>
+                        <li>Users select from a list what applies to them, and can add custom list items. These two lists are stored seperately, stringified, and encrypted before entering the database.</li>
+                        <li>Upon loading the page, the data is decrypted and parsed through.</li>
+                        <li>Validations are done using AJAX, and users do not have to login in for the list to save to session. This allows for users to leave the page without worrying that the list will clear. There is a button to clear the list manually.</li>
+                        <li>I deployed this via AWS EC2 for better scalability and security, added SSL using CertBot, and routed a Google Domain to the elastic IP address, incase the instance server needs to be moved/updated.</li>
                     </ul>
                     <div class="links-list d-flex align-items-center justify-content-around">
                         <div class="svg-link d-flex flex-column align-items-center">
