@@ -490,6 +490,13 @@
     font-size: 1.3rem !important;
   }
 
+  .welcome-text .name,
+  .title {
+    font-size: 3rem;
+    font-weight: 500;
+    color: rgb(205, 205, 205);
+  }
+
   .card-title h2 {
     font-size: 1.8rem;
     margin-top: 10px !important;
