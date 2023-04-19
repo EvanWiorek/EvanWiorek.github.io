@@ -89,7 +89,7 @@ html {
 }
 
 .card-title h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: #dadcdd;
   font-weight: 500;
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
@@ -523,7 +523,7 @@ div.gimp span {
 div.software span {
   display: none;
   position: absolute;
-  background: rgb(0, 0, 0, 0.3);
+  background: rgb(0, 0, 0, 0.4);
   padding: 5px 10px;
   color: #fff;
   text-align: center;
@@ -670,7 +670,7 @@ div.contact-link:hover span {
 }
 
 .contact-link img {
-  height: 70px;
+  height: 60px;
   margin: 0px 50px;
   transition: 0.4s;
   filter: invert(83%) sepia(9%) saturate(557%) hue-rotate(146deg)
