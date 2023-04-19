@@ -680,3 +680,7 @@ div.contact-link:hover span {
 .contact-link img:hover {
   opacity: 0.5;
 }
+
+.bottom-name {
+  color: #778b91;
+}

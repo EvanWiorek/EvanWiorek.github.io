@@ -148,7 +148,7 @@
   }
 
   .parallax-header-style-2 {
-    max-height: 20vh;
+    max-height: 17vh;
   }
 
   h1 {
@@ -214,6 +214,32 @@
     z-index: -1;
     position: absolute;
     width: 300%;
+  }
+
+  .loose-on-earth-logo {
+    width: 100%;
+  }
+
+  .projects-line {
+    margin-bottom: 10px;
+  }
+
+  .project-title {
+    margin-top: 0 !important;
+    font-size: 2.2rem !important;
+  }
+
+  div.svg-link span {
+    display: block;
+    margin-top: 4.5rem;
+    background-color: transparent;
+    color: #778b91;
+    font-weight: 500 !important;
+  }
+
+  .luke-api-title {
+    font-size: 2rem !important;
+    margin-top: 0 !important;
   }
 
   .svg-flex {
@@ -291,7 +317,10 @@
 
   div.contact-link span {
     display: block;
-    font-size: 1rem;
+    margin-top: 6rem;
+    background-color: transparent;
+    color: #778b91;
+    font-weight: 500 !important;
   }
 
   .card-text-blip {
@@ -327,16 +356,17 @@
   }
 
   .contact-body {
-    height: 320px;
+    height: 360px;
     padding: 10px;
+  }
+
+  .contact-image-container {
+    margin-bottom: -20px;
+    margin-top: 10px;
   }
 
   .contact-lines {
     display: none;
-  }
-
-  div.contact-link span {
-    margin-top: 7rem;
   }
 }
 
@@ -466,7 +496,7 @@
   }
 
   .parallax-header-style-2 {
-    max-height: 20vh;
+    max-height: 17vh;
   }
 
   h1 {
@@ -522,6 +552,10 @@
 
   div.svg-link span {
     display: block;
+    margin-top: 4.5rem;
+    background-color: transparent;
+    color: #778b91;
+    font-weight: 500 !important;
   }
 
   .links-list {
@@ -612,7 +646,7 @@
   }
 
   .contact-link img {
-    height: 80px;
+    height: 70px;
     width: revert;
     margin: 10px 30px;
   }
@@ -639,7 +673,15 @@
   }
 
   div.contact-link span {
+    display: block;
     margin-top: 7rem;
+    background-color: transparent;
+    color: #778b91;
+    font-weight: 500 !important;
+  }
+
+  .contact-image-container {
+    margin-bottom: 20px;
   }
 }
 
