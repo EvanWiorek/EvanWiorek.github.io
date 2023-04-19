@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+
 * {
   margin: 0;
   padding: 0;
@@ -10,10 +12,12 @@
 
 body {
   background-color: #161d20;
+  overflow: initial;
 }
 
 html {
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.08);
 }
 
 *::-webkit-scrollbar {
@@ -62,7 +66,7 @@ html {
 
 .parallax img {
   width: 110%;
-  filter: brightness(90%);
+  filter: brightness(90%) blur(30px);
 }
 
 .parallax-header-style-1 {
@@ -86,21 +90,40 @@ html {
 
 .card-title h1 {
   font-size: 4rem;
-  color: white;
-  font-weight: 400;
+  color: #dadcdd;
+  font-weight: 500;
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .card-title h2 {
-  color: white;
-  font-weight: 300;
+  color: #dadcdd;
+  font-weight: 400;
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
   font-size: 2rem;
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 .card-text-blip {
   font-size: 1.5rem;
   margin-right: 100px;
+}
+
+.card-text-blip a {
+  color: #a2bcc3;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+#projects, #skills, #education, #experience, #contact {
+  scroll-padding-top: 150rem;
+}
+
+h3 {
+  font-size: 2.2rem !important;
+  margin-top: 0 !important;
 }
 
 /*Navbar*/
@@ -119,14 +142,14 @@ html {
 }
 
 .nav-left a {
-  color: white;
+  color: #dadcdd;
   font-weight: 500;
   text-decoration: none;
   font-size: 2rem;
 }
 
 .nav-right a {
-  color: white;
+  color: #dadcdd;
   text-decoration: none;
   margin: 10px;
 }
@@ -144,7 +167,7 @@ html {
     rgba(255, 255, 255, 0) 100%
   );
   width: 100%;
-  color: white;
+  color: #dadcdd;
   box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 0.5);
   backdrop-filter: blur(15px);
   position: fixed;
@@ -156,7 +179,7 @@ html {
 }
 
 .mobile-left a {
-  color: white;
+  color: #dadcdd;
   text-align: left;
   text-decoration: none;
   font-size: 150%;
@@ -169,7 +192,7 @@ html {
 }
 
 .mobile-right a {
-  color: white;
+  color: #dadcdd;
   padding: 14px 10px;
   text-decoration: none;
   font-size: 1.2rem;
@@ -179,7 +202,7 @@ html {
 }
 
 .icon {
-  color: white;
+  color: #dadcdd;
   text-decoration: none;
   font-size: 17px;
   display: block;
@@ -197,12 +220,12 @@ html {
 }
 
 .mobile-right a:hover {
-  color: white;
+  color: #dadcdd;
 }
 
 .mobile-name {
   font-size: 1.3rem;
-  color: white;
+  color: #dadcdd;
 }
 
 /*Header*/
@@ -292,6 +315,7 @@ html {
   color: rgb(224, 224, 224);
   font-weight: 500;
   font-size: 3rem;
+  margin-top: 0px;
 }
 
 .about-card {
@@ -366,6 +390,12 @@ html {
 /*Projects*/
 .project-title {
   font-size: 3rem;
+  margin-top: 0;
+}
+
+.luke-api-title {
+  font-family: 'Star Wars', sans-serif !important;
+  transform: translateY(7px);
 }
 
 .links-list {
@@ -414,7 +444,7 @@ div.svg-link:hover span {
 }
 
 .projects-text {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .projects-text p {
@@ -441,7 +471,7 @@ div.svg-link:hover span {
 }
 
 .loose-on-earth-logo {
-  width: 90%;
+  width: 70%;
   margin-left: -10px;
   margin-bottom: 10px;
 }
@@ -619,7 +649,7 @@ div.personal-project-github-link:hover span {
 div.contact-link span {
   display: none;
   position: absolute;
-  margin-top: 4.9rem;
+  margin-top: 5.5rem;
   background: rgb(0, 0, 0, 0.3);
   padding: 5px 10px;
   color: #fff;

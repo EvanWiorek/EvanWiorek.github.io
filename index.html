@@ -29,11 +29,11 @@
             </div>
             <div class="mobile-right" id="mobileLinks">
                 <a href="#about-me">About Me</a>
-                <a href="#parallax1">Projects</a>
-                <a href="#parallax2">Skills</a>
-                <a href="#parallax3">Education</a>
-                <a href="#parallax4">Experience</a>
-                <a href="#parallax5">Contact</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
                 <br />
             </div>
             <a href="javascript:void(0);" class="icon" onclick="mobileNav(mobileLinks)">
@@ -53,15 +53,15 @@
             <div class="nav-right d-flex">
                 <a class="navlink" href="#about-me" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">About
                     Me</a>
-                <a class="navlink" href="#parallax1" onmouseover="scale(this, 1.1)"
+                <a class="navlink" href="#projects" onmouseover="scale(this, 1.1)"
                     onmouseleave="scale(this, 1)">Projects</a>
-                <a class="navlink" href="#parallax2" onmouseover="scale(this, 1.1)"
+                <a class="navlink" href="#skills" onmouseover="scale(this, 1.1)"
                     onmouseleave="scale(this, 1)">Skills</a>
-                <a class="navlink" href="#parallax3" onmouseover="scale(this, 1.1)"
+                <a class="navlink" href="#education" onmouseover="scale(this, 1.1)"
                     onmouseleave="scale(this, 1)">Education</a>
-                <a class="navlink" href="#parallax4" onmouseover="scale(this, 1.1)"
+                <a class="navlink" href="#experience" onmouseover="scale(this, 1.1)"
                     onmouseleave="scale(this, 1)">Experience</a>
-                <a class="navlink" href="#parallax5" onmouseover="scale(this, 1.1)"
+                <a class="navlink" href="#contact" onmouseover="scale(this, 1.1)"
                     onmouseleave="scale(this, 1)">Contact</a>
             </div>
         </div>
@@ -137,7 +137,7 @@
         </div>
 
         <!--Projects Header-->
-        <div class="card-header parallax-container parallax-header-style-1">
+        <div class="card-header parallax-container parallax-header-style-1" id="projects">
             <div class="card-title">
                 <h1>Projects</h1>
                 <div class="parallax">
@@ -149,17 +149,16 @@
         <!--Projects section-->
         <div class="card-section projects-card card-style-1 gap-2 d-flex flex-column">
             <!--Project 1-->
-            <div class="project-1 d-flex justify-content-center flex-small flex-small-on-med align-items-center">
-                <div class="card-text-blip col-lg-4 my-col-sm-10 my-col-md-10 projects-text">
-                    <!-- <h1 class="project-title">Loose On Earth</h1> -->
+            <div class="d-flex justify-content-center flex-small flex-small-on-med align-items-center">
+                <div class="card-text-blip col-lg-5 my-col-sm-10 my-col-md-10 projects-text">
                     <img src="./assets/project-videos/loose-on-earth.png" alt="Loose On Earth Logo"
                         class="loose-on-earth-logo" />
-                    <p>An app that helps Catholics prepare for confession.</p>
+                    <p>An flask app that helps Catholics prepare for confession.</p>
                     <ul>
                         <li>
                             Users select from a list what applies to them, and can add
-                            custom list items. These two lists are stored seperately,
-                            stringified, and encrypted before entering the MySQL database.
+                            custom list items. These two lists are stringified, and encrypted before entering the MySQL
+                            database.
                         </li>
                         <li>
                             Upon loading the page, the data is decrypted and parsed through.
@@ -171,7 +170,7 @@
                             is a button to clear the list manually.
                         </li>
                         <li>
-                            I deployed this via AWS EC2 for better scalability and security,
+                            Deployed via AWS EC2 for better scalability and security,
                             added SSL using CertBot, and routed a Google Domain to the
                             elastic IP address, incase the instance server needs to be
                             moved/updated.
@@ -190,8 +189,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-video-img col-lg-5 my-col-sm-12 my-col-md-12 text-center">
-                    <!-- <img src="./assets/project-videos/calculator.gif" alt="JavaScript Calculator" width="500"> -->
+                <div class="project-video-img col-lg-4 my-col-sm-12 my-col-md-12 text-center">
                     <video src="./assets/project-videos/looseonearth.mp4" autoplay muted loop
                         class="shadow-sm rounded project-width"></video>
                 </div>
@@ -200,8 +198,50 @@
             <div class="projects-line"></div>
 
             <!--Project 2-->
-            <div class="project-1 d-flex justify-content-center flex-small flex-small-on-med align-items-center">
-                <div class="card-text-blip col-lg-4 my-col-sm-10 my-col-md-10 projects-text">
+            <div
+                class="d-flex justify-content-center col-lg-12 my-col-md-12 my-col-sm-12 flex-small flex-small-on-med align-items-center">
+                <div class="card-text-blip col-lg-5 my-col-sm-10 my-col-md-10 projects-text">
+                    <h1 class="project-title luke-api-title">Luke APi Walker</h1>
+                    <p>
+                        An app that let's your browse the Star Wars API, found <a href="https://swapi.dev/"
+                            target="_blank">here</a>.
+                        This was built using React.
+                    </p>
+                    <ul>
+                        <li>Select the category, and the id to produce a card with that information.</li>
+                        <li>
+                            Built with a dynamic background and customized bootstrap.
+                        </li>
+                        <li>
+                            This app is deployed on my GitHub, and can be visited through the website link below.
+                        </li>
+                    </ul>
+                    <div class="links-list d-flex align-items-center justify-content-around">
+                        <div class="svg-link d-flex flex-column align-items-center">
+                            <a href="https://evanwiorek.github.io/luke-api-walker/" target="_blank"><img
+                                    src="./assets/link.svg" alt="Website" /></a>
+                            <span>Website</span>
+                        </div>
+                        <div class="svg-link d-flex flex-column align-items-center">
+                            <a href="https://github.com/EvanWiorek/luke-api-walker" target="_blank"><img
+                                    src="./assets/github.svg" alt="GitHub Repo" /></a>
+                            <span>GitHub Repo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-video-img col-lg-4 my-col-sm-12 my-col-md-12 text-center">
+                    <!-- <img src="./assets/project-videos/luke-api-walker.mp4" alt="Luke-API-Walker"
+                        class="shadow-sm rounded project-width" /> -->
+                    <video src="./assets/project-videos/luke.mp4" autoplay muted loop
+                        class="shadow-sm rounded project-width"></video>
+                </div>
+            </div>
+
+            <div class="projects-line"></div>
+
+            <!--Project 3-->
+            <div class="d-flex justify-content-center flex-small flex-small-on-med align-items-center">
+                <div class="card-text-blip col-lg-5 my-col-sm-10 my-col-md-10 projects-text">
                     <h1 class="project-title">JavaScript Calculator</h1>
                     <p>
                         This is an operational 4 function calculator, made using HTML,
@@ -232,7 +272,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-video-img col-lg-5 my-col-sm-12 my-col-md-12 text-center">
+                <div class="project-video-img col-lg-4 my-col-sm-12 my-col-md-12 text-center">
                     <img src="./assets/project-videos/calculator.gif" alt="JavaScript Calculator"
                         class="shadow-sm rounded project-width" />
                 </div>
@@ -240,53 +280,9 @@
 
             <div class="projects-line"></div>
 
-            <!--Project 3-->
-            <div
-                class="project-2 d-flex justify-content-center col-lg-12 my-col-md-12 my-col-sm-12 flex-small flex-small-on-med align-items-center">
-                <div class="card-text-blip col-lg-4 my-col-sm-10 my-col-md-10 projects-text">
-                    <h1 class="project-title">Pacman From Scratch</h1>
-                    <p>
-                        This is a WIP Pacman Clone running with HTML, CSS, and Javascript.
-                    </p>
-                    <ul>
-                        <li>When the game starts, the iconic Pacman theme plays.</li>
-                        <li>
-                            When Pacman dies, there is a death animation and sound that
-                            plays.
-                        </li>
-                        <li>
-                            I've also implemented a "try again" button that resets the game
-                            board.
-                        </li>
-                        <li>
-                            The board can be remade into any design becuase it utilizes a
-                            matrix.
-                        </li>
-                    </ul>
-                    <div class="links-list d-flex align-items-center justify-content-around">
-                        <div class="svg-link d-flex flex-column align-items-center">
-                            <a href="https://evanwiorek.github.io/pacman-from-scratch/" target="_blank"><img
-                                    src="./assets/link.svg" alt="Website" /></a>
-                            <span>Website</span>
-                        </div>
-                        <div class="svg-link d-flex flex-column align-items-center">
-                            <a href="https://github.com/EvanWiorek/pacman-from-scratch" target="_blank"><img
-                                    src="./assets/github.svg" alt="GitHub Repo" /></a>
-                            <span>GitHub Repo</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-video-img col-lg-5 my-col-sm-12 my-col-md-12 text-center">
-                    <img src="./assets/project-videos/pacman.gif" alt="Pacman"
-                        class="shadow-sm rounded project-width" />
-                </div>
-            </div>
-
-            <div class="projects-line"></div>
-
             <!--Project 4-->
-            <div class="project-3 d-flex justify-content-center flex-small flex-small-on-med align-items-center">
-                <div class="card-text-blip col-lg-4 my-col-sm-10 my-col-md-10 projects-text">
+            <div class="d-flex justify-content-center flex-small flex-small-on-med align-items-center">
+                <div class="card-text-blip col-lg-5 my-col-sm-10 my-col-md-10 projects-text">
                     <h1 class="project-title">Piet Mondrian Digital Recreation</h1>
                     <p>This was made using HTML and CSS.</p>
                     <ul>
@@ -313,7 +309,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-video-img col-lg-5 my-col-sm-12 my-col-md-12 text-center">
+                <div class="project-video-img col-lg-4 my-col-sm-12 my-col-md-12 text-center">
                     <img src="./assets/project-videos/piet3.png" alt="Piet Mondrian Recreation"
                         class="shadow-sm rounded project-width" />
                 </div>
@@ -321,7 +317,7 @@
         </div>
 
         <!--Skills Header-->
-        <div class="card-header parallax-container parallax-header-style-2">
+        <div class="card-header parallax-container parallax-header-style-2" id="skills">
             <div class="card-title text-center">
                 <h1>Skills</h1>
                 <h2>Languages and Tools I'm Proficient in</h2>
@@ -333,26 +329,27 @@
 
         <!--Skills section-->
         <div
-            class="card-section skills-card card-style-1 gap-2 d-flex justify-content-center flex-small flex-small-on-med">
-            <div class="col-lg-7 my-col-sm-11 my-col-md-10 flex-small flex-small-on-med">
-                <!--Back End - Servers and Frameworks-->
-                <div class="table-line d-flex flex-small-on-med flex-small justify-content-between">
+            class="card-section skills-card card-style-1 gap-2 d-flex justify-content-center flex-small">
+            <div class="col-lg-8 my-col-sm-11 my-col-md-11 flex-small">
+
+                <!--Languages-->
+                <div class="table-line d-flex flex-small justify-content-between">
                     <div class="table-top-left d-flex">
-                        <h3>Back End</h3>
+                        <h3>Languages</h3>
                     </div>
-                    <div class="software-image-container d-flex flex-small-on-med flex-small">
+                    <div class="software-image-container d-flex flex-small">
                         <div class="svg-flex layer-margin text-center my-col-sm-11 svg-items row-of-3">
                             <div class="software d-flex flex-column align-items-center">
-                                <img src="./assets/skills/flask.png" alt="Flask" />
-                                <span>Flask</span>
+                                <img src="./assets/skills/HTML.png" alt="HTML" />
+                                <span>HTML</span>
                             </div>
                             <div class="software d-flex flex-column align-items-center">
-                                <img src="./assets/skills/gunicorn.png" alt="Gunicorn" />
-                                <span>Gunicorn</span>
+                                <img src="./assets/skills/css.png" alt="CSS" />
+                                <span>CSS</span>
                             </div>
                             <div class="software d-flex flex-column align-items-center">
-                                <img src="./assets/skills/AWS-EC2.svg" alt="AWS EC2" />
-                                <span>AWS EC2</span>
+                                <img src="./assets/skills/js.png" alt="JavaScript" />
+                                <span>JavaScript</span>
                             </div>
                         </div>
 
@@ -367,61 +364,73 @@
 
                 <div class="skills-line"></div>
 
-                <!--Front End-->
-                <div class="table-line d-flex justify-content-between flex-small-on-med flex-small">
-                    <div class="table-top-left d-flex">
-                        <h3>Front End</h3>
-                    </div>
-                    <div class="software-image-container d-flex flex-small-on-med flex-small">
-                        <div class="svg-flex layer-margin text-center my-col-sm-11 svg-items row-of-3">
-                            <div class="software d-flex flex-column align-items-center">
-                                <img src="./assets/skills/bs.png" alt="Bootstrap" />
-                                <span>Bootstrap</span>
-                            </div>
-                            <div class="software d-flex flex-column align-items-center">
-                                <img src="./assets/skills/HTML.png" alt="HTML" />
-                                <span>HTML</span>
-                            </div>
-                            <div class="software d-flex flex-column align-items-center">
-                                <img src="./assets/skills/css.png" alt="CSS" />
-                                <span>CSS</span>
-                            </div>
-                        </div>
-
-                        <div class="svg-items text-center my-col-sm-11 svg-flex row-of-1">
-                            <div class="software d-flex flex-column align-items-center">
-                                <img src="./assets/skills/js.png" alt="JavaScript" />
-                                <span>JavaScript</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skills-line"></div>
-
                 <!--Databases-->
-                <div class="table-line d-flex flex-small-on-med flex-small justify-content-between">
+                <div class="table-line d-flex flex-small justify-content-between">
                     <div class="table-top-left d-flex">
                         <h3>Databases</h3>
                     </div>
-                    <div class="software-image-container d-flex flex-small-on-med flex-small">
-                        <div class="svg-flex layer-margin text-center my-col-sm-11 svg-items row-of-1">
+                    <div class="software-image-container d-flex flex-small">
+                        <div class="svg-flex layer-margin text-center my-col-sm-11 svg-items row-of-2">
                             <div class="software d-flex flex-column align-items-center">
                                 <img src="./assets/skills/mysql.png" alt="MySQL" />
                                 <span>MySQL</span>
                             </div>
+                            <div class="software d-flex flex-column align-items-center">
+                                <img src="./assets/skills/mongodb.png" alt="MongoDB" />
+                                <span>MongoDB</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="skills-line"></div>
 
-                <!--Software-->
-                <div class="table-line d-flex flex-small-on-med flex-small justify-content-between">
+                <!--Libraries/Frameworks-->
+                <div class="table-line d-flex flex-small justify-content-between">
                     <div class="table-top-left d-flex">
-                        <h3>Software</h3>
+                        <h3>Libraries/Frameworks</h3>
                     </div>
-                    <div class="software-image-container d-flex flex-small-on-med flex-small">
+                    <div class="software-image-container d-flex flex-small">
+                        <div class="svg-flex layer-margin text-center my-col-sm-11 svg-items row-of-3">
+                            <div class="software d-flex flex-column align-items-center">
+                                <img src="./assets/skills/flask.png" alt="Flask" />
+                                <span>Flask</span>
+                            </div>
+                            <div class="software d-flex flex-column align-items-center">
+                                <img src="./assets/skills/react.png" alt="React.js" />
+                                <span>React.js</span>
+                            </div>
+                            <div class="software d-flex flex-column align-items-center">
+                                <img src="./assets/skills/express.png" alt="Express.js" />
+                                <span>Express.js</span>
+                            </div>
+                        </div>
+
+                        <div class="svg-flex layer-margin text-center my-col-sm-11 svg-items row-of-2">
+                            <div class="software d-flex flex-column align-items-center">
+                                <img src="./assets/skills/node.png" alt="Node.js" />
+                                <span>Node.js</span>
+                            </div>
+                            <div class="software d-flex flex-column align-items-center">
+                                <img src="./assets/skills/jQuery.png" alt="jQuery" />
+                                <span>jQuery</span>
+                            </div>
+                        </div>
+
+                        <div class="svg-flex text-center my-col-sm-11 svg-items row-of-1">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-line"></div>
+
+                <!--Tools-->
+                <div class="table-line d-flex flex-small justify-content-between">
+                    <div class="table-top-left d-flex">
+                        <h3>Tools</h3>
+                    </div>
+                    <div class="software-image-container d-flex flex-small">
                         <div class="svg-flex layer-margin text-center my-col-sm-11 svg-items row-of-3">
                             <div class="gimp d-flex flex-column align-items-center">
                                 <img src="./assets/skills/gimp-logo.png" alt="GIMP" />
@@ -432,22 +441,19 @@
                                 <span>Git</span>
                             </div>
                             <div class="software d-flex flex-column align-items-center">
-                                <img src="./assets/skills/Wondershare_filmora_logo.svg.png" alt="Wondershare Filmora" />
-                                <span>Wondershare Filmora</span>
-                            </div>
-                        </div>
-                        <div class="svg-flex text-center my-col-sm-11 svg-items row-of-3">
-                            <div class="software d-flex flex-column align-items-center">
-                                <img src="./assets/skills/ai.png" alt="Adobe Illustrator" />
-                                <span>Adobe Illustrator</span>
-                            </div>
-                            <div class="software d-flex flex-column align-items-center">
                                 <img src="./assets/skills/vscode.png" alt="Visual Studio Code" />
                                 <span>Visual Studio Code</span>
                             </div>
+                        </div>
+                        <div class="svg-flex text-center my-col-sm-11 svg-items row-of-2">
+
                             <div class="software d-flex flex-column align-items-center">
-                                <img src="./assets/skills/davinci.png" alt="DaVinci Resolve" />
-                                <span>DaVinci Resolve</span>
+                                <img src="./assets/skills/aws.png" alt="AWS EC2" />
+                                <span>AWS EC2</span>
+                            </div>
+                            <div class="software d-flex flex-column align-items-center">
+                                <img src="./assets/skills/bs.png" alt="Bootstrap" />
+                                <span>Bootstrap</span>
                             </div>
                         </div>
                     </div>
@@ -456,7 +462,7 @@
         </div>
 
         <!--Education Header-->
-        <div class="card-header parallax-container parallax-header-style-1">
+        <div class="card-header parallax-container parallax-header-style-1" id="education">
             <div class="card-title">
                 <h1>Education</h1>
                 <div class="parallax">
@@ -521,7 +527,7 @@
         </div>
 
         <!--Experience Header-->
-        <div class="card-header parallax-container parallax-header-style-1">
+        <div class="card-header parallax-container parallax-header-style-1" id="experience">
             <div class="card-title">
                 <h1>Experience</h1>
                 <div class="parallax">
@@ -596,7 +602,7 @@
         </div>
 
         <!--Contact Header-->
-        <div class="card-header parallax-container parallax-header-style-2">
+        <div class="card-header parallax-container parallax-header-style-2" id="contact">
             <div class="card-title text-center">
                 <h1>Contact</h1>
                 <h2>I'd love to hear from you!</h2>
