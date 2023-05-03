@@ -322,7 +322,7 @@ h3 {
 .load-animation {
   animation: fade-in;
   animation-duration: 1.5s;
-  animation-delay: 2.3s;
+  animation-delay: 2s;
   visibility: hidden;
   position: absolute;
   z-index: 100;
