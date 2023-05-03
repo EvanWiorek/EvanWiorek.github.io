@@ -11,7 +11,8 @@ function mobileNav(element) {
     element.classList.toggle("active");
     if (element.classList.contains("active")) {
         x.style.display = "block";
-        mobileNavBody.style.height = x.scrollHeight + "px";
+        // mobileNavBody.style.height = x.scrollHeight + "px";
+        mobileNavBody.style.height = "390px";
     } else {
         x.style.display = "none";
         mobileNavBody.style.height = null;
