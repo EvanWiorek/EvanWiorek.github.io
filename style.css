@@ -239,16 +239,16 @@ h3 {
 /*Header*/
 .header-1 {
   position: relative;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-shadow: 0 0 2px #000;
   background-color: #161d20;
   z-index: 0;
+  height: 100vh;
 }
 
-.welcome-container {
+.welcome-body {
   background-color: rgba(0, 0, 0, 0.2);
   padding: 30px 0px;
   backdrop-filter: blur(15px);
@@ -299,6 +299,7 @@ h3 {
   width: 300px;
   border-radius: 30px;
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.3));
+  margin: 0px 15px;
 }
 
 .header-background {
@@ -321,11 +322,12 @@ h3 {
 .load-animation {
   animation: fade-in;
   animation-duration: 1.5s;
-  display: none;
+  animation-delay: 2.3s;
+  visibility: hidden;
   position: absolute;
   z-index: 100;
   top: 88%;
-  left: 50%;
+  left: 49%;
 }
 
 @keyframes fade-in {
@@ -343,7 +345,7 @@ h3 {
   height: auto;
   animation: fade-scroll .1s linear infinite;
   animation-play-state: paused;
-  animation-delay: calc(var(--scroll) * -1s);
+  animation-delay: calc(var(--scroll) * -1.5s);
   animation-iteration-count: 1;
   animation-fill-mode: both;
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.3));

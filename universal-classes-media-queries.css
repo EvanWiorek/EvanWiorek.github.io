@@ -110,10 +110,6 @@
     width: 100%;
   }
 
-  .welcome-container {
-    margin-top: 100px;
-  }
-
   .welcome-text h1 {
     font-size: 3rem !important;
     text-align: center;
@@ -206,13 +202,59 @@
   }
 
   .header-1 {
-    height: 115vh;
-    margin-top: -100px;
+    height: 100vh;
+  }
+
+  .welcome-body {
+    margin: 0;
+    padding: 0;
+    max-height: 600px;
+    margin-top: 50px;
+  }
+
+  .welcome-container {
+    transform: scale(.9);
+    line-height: 1rem;
+  }
+
+  .welcome-text h1 {
+    font-size: 10vw !important;
+    margin: 0;
+  }
+
+  .welcome-text h2 {
+    font-size: 6vw !important;
+    margin: 0;
+  }
+
+  .welcome-text h2 {
+    font-size: 6vw !important;
+  }
+
+  .name {
+    font-size: 6vw !important;
+  }
+
+  .title {
+    font-size: 6vw !important;
+  }
+
+  .quote {
+    font-size: 4vw !important;
+  }
+
+  .quote-source {
+    font-size: 4vw !important;
   }
 
   .load-animation {
-    top: 90%;
+    top: 93%;
     left: 43%;
+  }
+
+  .svg {
+    animation-delay: calc(var(--scroll) * -2.5s);
+    width: 50px;
   }
 
   .header-background {

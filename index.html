@@ -69,28 +69,31 @@
         <!--Header-->
         <header class="header-1" id="topofpage">
             <img class="header-background" src="./assets/bg8.jpg" alt="bg" />
-            <div
-                class="welcome-container d-flex justify-content-center align-items-center flex-small flex-small-on-med">
-                <div class="portrait col-lg-3 text-center">
-                    <img src="./assets/portrait.png" alt="Portrait of Evan Wiorek" />
-                </div>
-                <div class="welcome-text col-lg-6 my-col-sm-11 my-col-md-10">
-                    <h1>Hello there,</h1>
-                    <h2>
-                        My name is <span class="name">Evan Wiorek</span>, and I'm a
-                        <span class="title">Software Developer</span>. Thank you for
-                        visiting my portfolio!
-                    </h2>
-                    <div class="bible-quote">
-                        <h5>
-                            <span class="quote">“I have the strength for everything through Him who empowers
-                                me.” </span><span class="quote-source">~ Philippians 4:13</span>
-                        </h5>
+            <div class="welcome-body">
+                <div
+                    class="welcome-container justify-content-center d-flex flex-small flex-small-on-med align-items-center">
+                    <div class="portrait col-lg-3 text-center">
+                        <img src="./assets/portrait.png" alt="Portrait of Evan Wiorek" />
+                    </div>
+                    <div class="welcome-text col-lg-6 my-col-sm-11 my-col-md-10">
+                        <h1>Hello there,</h1>
+                        <h2>
+                            My name is <span class="name">Evan Wiorek</span>, and I'm a
+                            <span class="title">Software Developer</span>. Thank you for
+                            visiting my portfolio!
+                        </h2>
+                        <div class="bible-quote">
+                            <h5>
+                                <span class="quote">“I have the strength for everything through Him who empowers
+                                    me.” </span><span class="quote-source">~ Philippians 4:13</span>
+                            </h5>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </header>
-        <div class="load-animation"><img src="./assets/down-arrow.svg" alt="down arrow" class="svg"></div>
+        <div class="load-animation"><a href="#about-me"><img src="./assets/down-arrow.svg" alt="down arrow" class="svg"></a></div>
 
         <!--About Me section-->
         <div id="about-me"
@@ -204,24 +207,29 @@
                 <div class="card-text-blip col-lg-5 my-col-sm-10 my-col-md-10 projects-text">
                     <h1 class="project-title pokemon-title">Nostalgia Red</h1>
                     <p>
-                        An app that emulates my childhood. Made using the <a href="https://pokeapi.co/" target="_blank">Pokemon API</a>, and <a href="https://react.dev/" target="_blank">React.js</a>.
+                        An app that emulates my childhood. Made using the <a href="https://pokeapi.co/"
+                            target="_blank">Pokemon API</a>, and <a href="https://react.dev/"
+                            target="_blank">React.js</a>.
                     </p>
                     <ul>
                         <li>Makes calls to the poke api using Axios.</li>
                         <li>
-                            Multi-layered CSS to imitate the screen of a DMG, where there are shadows on what appears on screen, with a slight glare in the plastic.
+                            Multi-layered CSS to imitate the screen of a DMG, where there are shadows on what appears on
+                            screen, with a slight glare in the plastic.
                         </li>
                         <li>
-                            Use of a custom button component that fetches the list of Pokemon when clicked, and serves as a "Go Back" button.
+                            Use of a custom button component that fetches the list of Pokemon when clicked, and serves
+                            as a "Go Back" button.
                         </li>
                         <li>
-                            Pausible audio plays in the background, and sound effects for clicking on links - both match what it sounds like in game on an actual DMG.
+                            Pausible audio plays in the background, and sound effects for clicking on links - both match
+                            what it sounds like in game on an actual DMG.
                         </li>
                     </ul>
                     <div class="links-list d-flex align-items-center justify-content-around">
                         <div class="svg-link d-flex flex-column align-items-center">
-                            <a href="https://evanwiorek.com/nostalgia-red/" target="_blank"><img
-                                    src="./assets/link.svg" alt="Website" /></a>
+                            <a href="https://evanwiorek.com/nostalgia-red/" target="_blank"><img src="./assets/link.svg"
+                                    alt="Website" /></a>
                             <span>Website</span>
                         </div>
                         <div class="svg-link d-flex flex-column align-items-center">
@@ -245,21 +253,24 @@
                 <div class="card-text-blip col-lg-5 my-col-sm-10 my-col-md-10 projects-text">
                     <h1 class="project-title">ProCras</h1>
                     <p>
-                        A full stack study app made using React for snappy functionality, and styled with Bootstrap and custom CSS.
+                        A full stack study app made using React for snappy functionality, and styled with Bootstrap and
+                        custom CSS.
                     </p>
                     <ul>
-                        <li>Completed in a group employing the Agile Development cycle and daily scrum meetings, which helped us visualize our goals and keep track of the projects moving parts.</li>
+                        <li>Completed in a group employing the Agile Development cycle and daily scrum meetings, which
+                            helped us visualize our goals and keep track of the projects moving parts.</li>
                         <li>
                             Includes CSS animations for loading periods.
                         </li>
                         <li>
-                            Deployed via AWS EC2 instance for better security and scalability. The demo is live and functional - try it out!
+                            Deployed via AWS EC2 instance for better security and scalability. The demo is live and
+                            functional - try it out!
                         </li>
                     </ul>
                     <div class="links-list d-flex align-items-center justify-content-around">
                         <div class="svg-link d-flex flex-column align-items-center">
-                            <a href="http://18.118.213.71/" target="_blank"><img
-                                    src="./assets/link.svg" alt="Website" /></a>
+                            <a href="http://18.118.213.71/" target="_blank"><img src="./assets/link.svg"
+                                    alt="Website" /></a>
                             <span>Website</span>
                         </div>
                         <div class="svg-link d-flex flex-column align-items-center">
@@ -409,8 +420,7 @@
         </div>
 
         <!--Skills section-->
-        <div
-            class="card-section skills-card card-style-1 gap-2 d-flex justify-content-center flex-small">
+        <div class="card-section skills-card card-style-1 gap-2 d-flex justify-content-center flex-small">
             <div class="col-lg-8 my-col-sm-11 my-col-md-11 flex-small">
 
                 <!--Languages-->
@@ -713,8 +723,8 @@
                     <div class="contact-image-container d-flex align-items-center justify-content-center flex-small">
                         <div class="contacts-row-1 d-flex">
                             <div class="contact-link d-flex flex-column align-items-center">
-                                <a href="mailto:wiorek.evan@gmail.com" target="_blank"><img src="./assets/contact/email.svg"
-                                        alt="Email" /></a>
+                                <a href="mailto:wiorek.evan@gmail.com" target="_blank"><img
+                                        src="./assets/contact/email.svg" alt="Email" /></a>
                                 <span>Email</span>
                             </div>
                             <div class="contact-link d-flex flex-column align-items-center">
@@ -742,11 +752,11 @@
                         </div>
                     </div>
                     <div class="contact-lines"></div>
-                
+
                 </div>
                 <h6 class="text-center bottom-name">Evan Wiorek 2023</h6>
             </div>
-            
+
         </div>
     </div>
 
