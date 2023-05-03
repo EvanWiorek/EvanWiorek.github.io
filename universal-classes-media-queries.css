@@ -206,7 +206,13 @@
   }
 
   .header-1 {
-    height: 100vh;
+    height: 115vh;
+    margin-top: -100px;
+  }
+
+  .load-animation {
+    top: 90%;
+    left: 43%;
   }
 
   .header-background {
@@ -452,7 +458,13 @@
   }
 
   .header-1 {
-    height: 90vh;
+    height: 110vh;
+    margin-top: -100px;
+  }
+
+  .load-animation {
+    top: 90%;
+    left: 45%;
   }
 
   .welcome-container {

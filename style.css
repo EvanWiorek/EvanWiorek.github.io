@@ -19,6 +19,7 @@
 body {
   background-color: #161d20;
   overflow: initial;
+  height: auto;
 }
 
 html {
@@ -238,7 +239,7 @@ h3 {
 /*Header*/
 .header-1 {
   position: relative;
-  height: 110vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -314,6 +315,43 @@ h3 {
 
   to {
     transform: rotate(359deg);
+  }
+}
+
+.load-animation {
+  animation: fade-in;
+  animation-duration: 1.5s;
+  display: none;
+  position: absolute;
+  z-index: 100;
+  top: 88%;
+  left: 50%;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.svg {
+  opacity: .5;
+  width: 70px;
+  height: auto;
+  animation: fade-scroll .1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.3));
+}
+
+@keyframes fade-scroll {
+  to {
+    opacity: 0;
   }
 }
 
