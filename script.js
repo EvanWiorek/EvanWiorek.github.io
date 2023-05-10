@@ -91,7 +91,7 @@ const showArrow = () => {
     document.querySelector(".load-animation").style.display = "block";
 }
 
-setTimeout(showArrow, 3000)
+setTimeout(showArrow, 2000)
 
 window.addEventListener(
     "scroll",
@@ -109,6 +109,7 @@ const animateInZooms = document.querySelectorAll(".animate-in-zoom");
 const animateOutZooms = document.querySelectorAll(".animate-out-zoom");
 const animateInDowns = document.querySelectorAll(".animate-in-down");
 const animateInSlows = document.querySelectorAll(".animate-in-slow");
+const navbarFadeIn = document.querySelector(".navbar-fade-in");
 
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -136,3 +137,20 @@ animateInDowns.forEach(animateIn => {
 animateInSlows.forEach(animateIn => {
     observer.observe(animateIn);
 });
+
+const observerDelay = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            setTimeout(function () {
+                // add the class that triggers the animation
+                entry.target.classList.add('show');
+            }, 2000);
+            observer.unobserve(entry.target);
+        }
+    })
+}, {
+    threshold: .5,
+    // 🆕 =====ANSWER=====: Set a minimum delay between notifications
+});
+
+observerDelay.observe(navbarFadeIn);

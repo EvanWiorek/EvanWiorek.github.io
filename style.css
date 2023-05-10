@@ -49,6 +49,15 @@ html {
 }
 
 /* Animations */
+.navbar-fade-in {
+  opacity: 0;
+  transition: 3s;
+}
+
+.navbar-fade-in.show {
+  opacity: 1;
+}
+
 .animate-in-zoom {
   transform: scale(.95);
   opacity: 0;
@@ -257,7 +266,7 @@ h3 {
   display: block;
   position: absolute;
   right: 0;
-  top: 15px;
+  top: 11px;
   margin-right: 10px;
   padding: 10px 10px;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0.05);
