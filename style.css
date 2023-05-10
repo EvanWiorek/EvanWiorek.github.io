@@ -48,6 +48,47 @@ html {
   z-index: 0;
 }
 
+/* Animations */
+.animate-in-zoom {
+  transform: scale(.95);
+  opacity: 0;
+  transition: .7s;
+}
+
+.animate-in-zoom.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.animate-out-zoom {
+  transform: scale(1.05);
+  opacity: 0;
+  transition: .7s;
+}
+
+.animate-out-zoom.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.animate-in-down {
+  opacity: 0;
+  transition: 2s;
+}
+
+.animate-in-down.show {
+  opacity: 1;
+}
+
+.animate-in-slow {
+  opacity: 0;
+  transition: 3s;
+}
+
+.animate-in-slow.show {
+  opacity: 1;
+}
+
 /*Universal Classes*/
 .card-style-1 {
   background-image: linear-gradient(
@@ -320,23 +361,11 @@ h3 {
 }
 
 .load-animation {
-  animation: fade-in;
-  animation-duration: 1.5s;
-  animation-delay: 2s;
-  visibility: hidden;
+  display: none;
   position: absolute;
   z-index: 100;
   top: 88%;
   left: 49%;
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 .svg {

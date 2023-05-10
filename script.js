@@ -43,7 +43,7 @@ function aboutMeSlideshow() {
     }
 
     slideshow[myIndex - 1].style.display = "block";
-    dots[myIndex-1].className += " active";
+    dots[myIndex - 1].className += " active";
     if (slideshow[myIndex - 1].getAttribute('value') == "video") {
         video.style.cssText = "font-weight: 600;";
     }
@@ -85,19 +85,54 @@ function aboutMeSlideshow() {
 
 aboutMeSlideshow();
 
+
+//scroll fade on header down arrow
 const showArrow = () => {
-    document.querySelector(".load-animation").style.visibility = "visible";
+    document.querySelector(".load-animation").style.display = "block";
 }
 
-setTimeout(showArrow, 2000)
+setTimeout(showArrow, 3000)
 
 window.addEventListener(
     "scroll",
     () => {
-      document.body.style.setProperty(
-        "--scroll",
-        window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
-      );
+        document.body.style.setProperty(
+            "--scroll",
+            window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
+        );
     },
     false
-  );
+);
+
+//IntersectionObserver
+const animateInZooms = document.querySelectorAll(".animate-in-zoom");
+const animateOutZooms = document.querySelectorAll(".animate-out-zoom");
+const animateInDowns = document.querySelectorAll(".animate-in-down");
+const animateInSlows = document.querySelectorAll(".animate-in-slow");
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        entry.target.classList.toggle("show", entry.isIntersecting)
+        if (entry.isIntersecting) {
+            observer.unobserve(entry.target);
+        }
+    })
+}, {
+    threshold: .5,
+});
+
+animateInZooms.forEach(animateIn => {
+    observer.observe(animateIn);
+});
+
+animateOutZooms.forEach(animateIn => {
+    observer.observe(animateIn);
+});
+
+animateInDowns.forEach(animateIn => {
+    observer.observe(animateIn);
+});
+
+animateInSlows.forEach(animateIn => {
+    observer.observe(animateIn);
+});

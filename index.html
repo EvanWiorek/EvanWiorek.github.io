@@ -67,9 +67,9 @@
         </div>
 
         <!--Header-->
-        <header class="header-1" id="topofpage">
+        <header class="animate-in-zoom header-1" id="topofpage">
             <img class="header-background" src="./assets/bg8.jpg" alt="bg" />
-            <div class="welcome-body">
+            <div class="welcome-body animate-in-slow">
                 <div
                     class="welcome-container justify-content-center d-flex flex-small flex-small-on-med align-items-center">
                     <div class="portrait col-lg-3 text-center">
@@ -93,12 +93,13 @@
 
             </div>
         </header>
-        <div class="load-animation"><a href="#about-me"><img src="./assets/down-arrow.svg" alt="down arrow" class="svg"></a></div>
+        <div class="load-animation animate-in-slow"><a href="#about-me"><img src="./assets/down-arrow.svg" alt="down arrow"
+                    class="svg"></a></div>
 
         <!--About Me section-->
         <div id="about-me"
             class="card-section card-style-1 about-card flex-small flex-small-on-med d-flex align-items-center">
-            <div class="card-text-blip col-lg-4 my-col-sm-11 my-col-md-11">
+            <div class="card-text-blip animate-out-zoom col-lg-4 my-col-sm-11 my-col-md-11">
                 <h1 class="text-center about-me-title">About Me</h1>
                 <p>
                     I am a teacher turned software developer based out of Wisconsin. I
@@ -115,7 +116,7 @@
                     with my family.
                 </p>
             </div>
-            <div class="col-lg-4 my-col-sm-12 my-col-md-12">
+            <div class="col-lg-4 my-col-sm-12 my-col-md-12 animate-out-zoom">
                 <div
                     class="slideshow-container d-flex flex-column gap-4 align-items-center justify-content-center text-center">
                     <div class="slideshow fade-in-slides">
@@ -153,33 +154,36 @@
         <!--Projects section-->
         <div class="card-section projects-card card-style-1 gap-2 d-flex flex-column">
             <!--Project 1-->
-            <div class="d-flex justify-content-center flex-small flex-small-on-med align-items-center">
+            <div class="animate-in-zoom d-flex justify-content-center flex-small flex-small-on-med align-items-center">
                 <div class="card-text-blip col-lg-5 my-col-sm-10 my-col-md-10 projects-text">
                     <img src="./assets/project-videos/loose-on-earth.png" alt="Loose On Earth Logo"
                         class="loose-on-earth-logo" />
-                    <p>A Flask app that helps Catholics prepare for confession.</p>
-                    <ul>
-                        <li>
-                            Users select from a list what applies to them, and can add
-                            custom list items. These two lists are stringified, and encrypted before entering the MySQL
-                            database.
-                        </li>
-                        <li>
-                            Upon loading the page, the data is decrypted and parsed through.
-                        </li>
-                        <li>
-                            Validations are done using AJAX, and users do not have to login
-                            in for the list to save to session. This allows for users to
-                            leave the page without worrying that the list will clear. There
-                            is a button to clear the list manually.
-                        </li>
-                        <li>
-                            Deployed via AWS EC2 for better scalability and security,
-                            added SSL using CertBot, and routed a Google Domain to the
-                            elastic IP address, incase the instance server needs to be
-                            moved/updated.
-                        </li>
-                    </ul>
+                    <div class="animate-in-down">
+                        <p>A Flask app that helps Catholics prepare for confession.</p>
+                        <ul>
+                            <li>
+                                Users select from a list what applies to them, and can add
+                                custom list items. These two lists are stringified, and encrypted before entering the
+                                MySQL
+                                database.
+                            </li>
+                            <li>
+                                Upon loading the page, the data is decrypted and parsed through.
+                            </li>
+                            <li>
+                                Validations are done using AJAX, and users do not have to login
+                                in for the list to save to session. This allows for users to
+                                leave the page without worrying that the list will clear. There
+                                is a button to clear the list manually.
+                            </li>
+                            <li>
+                                Deployed via AWS EC2 for better scalability and security,
+                                added SSL using CertBot, and routed a Google Domain to the
+                                elastic IP address, incase the instance server needs to be
+                                moved/updated.
+                            </li>
+                        </ul>
+                    </div>
                     <div class="links-list d-flex align-items-center justify-content-around">
                         <div class="svg-link d-flex flex-column align-items-center">
                             <a href="https://loose-on-earth.com/" target="_blank"><img src="./assets/link.svg"
@@ -193,7 +197,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-video-img col-lg-4 my-col-sm-12 my-col-md-12 text-center">
+                <div class="animate-in-zoom project-video-img col-lg-4 my-col-sm-12 my-col-md-12 text-center">
                     <video src="./assets/project-videos/looseonearth.mp4" autoplay muted loop
                         class="shadow-sm rounded project-width"></video>
                 </div>
@@ -203,29 +207,31 @@
 
             <!--Project 2-->
             <div
-                class="d-flex justify-content-center col-lg-12 my-col-md-12 my-col-sm-12 flex-small flex-small-on-med align-items-center">
-                <div class="card-text-blip col-lg-5 my-col-sm-10 my-col-md-10 projects-text">
+                class="animate-in-zoom d-flex justify-content-center col-lg-12 my-col-md-12 my-col-sm-12 flex-small flex-small-on-med align-items-center">
+                <div class="animate-in-down card-text-blip col-lg-5 my-col-sm-10 my-col-md-10 projects-text">
                     <h1 class="project-title pokemon-title">Nostalgia Red</h1>
-                    <p>
-                        An app that emulates my childhood. Made using the <a href="https://pokeapi.co/"
-                            target="_blank">Pokemon API</a>, and <a href="https://react.dev/"
-                            target="_blank">React.js</a>.
-                    </p>
-                    <ul>
-                        <li>Makes calls to the poke api using Axios.</li>
-                        <li>
-                            Multi-layered CSS to imitate the screen of a DMG, where there are shadows on what appears on
-                            screen, with a slight glare in the plastic.
-                        </li>
-                        <li>
-                            Use of a custom button component that fetches the list of Pokemon when clicked, and serves
-                            as a "Go Back" button.
-                        </li>
-                        <li>
-                            Pausible audio plays in the background, and sound effects for clicking on links - both match
-                            what it sounds like in game on an actual DMG.
-                        </li>
-                    </ul>
+                    <div class="animate-in-down">
+                        <p>
+                            An app that emulates my childhood. Made using the <a href="https://pokeapi.co/"
+                                target="_blank">Pokemon API</a>, and <a href="https://react.dev/"
+                                target="_blank">React.js</a>.
+                        </p>
+                        <ul>
+                            <li>Makes calls to the poke api using Axios.</li>
+                            <li>
+                                Multi-layered CSS to imitate the screen of a DMG, where there are shadows on what appears on
+                                screen, with a slight glare in the plastic.
+                            </li>
+                            <li>
+                                Use of a custom button component that fetches the list of Pokemon when clicked, and serves
+                                as a "Go Back" button.
+                            </li>
+                            <li>
+                                Pausible audio plays in the background, and sound effects for clicking on links - both match
+                                what it sounds like in game on an actual DMG.
+                            </li>
+                        </ul>
+                    </div>
                     <div class="links-list d-flex align-items-center justify-content-around">
                         <div class="svg-link d-flex flex-column align-items-center">
                             <a href="https://evanwiorek.com/nostalgia-red/" target="_blank"><img src="./assets/link.svg"
@@ -239,7 +245,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-video-img col-lg-4 my-col-sm-12 my-col-md-12 text-center">
+                <div class="animate-in-zoom project-video-img col-lg-4 my-col-sm-12 my-col-md-12 text-center">
                     <video src="./assets/project-videos/nostalgia-red.mp4" autoplay muted loop
                         class="shadow-sm rounded project-width"></video>
                 </div>
@@ -249,24 +255,26 @@
 
             <!--Project 2-->
             <div
-                class="d-flex justify-content-center col-lg-12 my-col-md-12 my-col-sm-12 flex-small flex-small-on-med align-items-center">
+                class="animate-in-zoom d-flex justify-content-center col-lg-12 my-col-md-12 my-col-sm-12 flex-small flex-small-on-med align-items-center">
                 <div class="card-text-blip col-lg-5 my-col-sm-10 my-col-md-10 projects-text">
                     <h1 class="project-title">ProCras</h1>
-                    <p>
-                        A full stack study app made using React for snappy functionality, and styled with Bootstrap and
-                        custom CSS.
-                    </p>
-                    <ul>
-                        <li>Completed in a group employing the Agile Development cycle and daily scrum meetings, which
-                            helped us visualize our goals and keep track of the projects moving parts.</li>
-                        <li>
-                            Includes CSS animations for loading periods.
-                        </li>
-                        <li>
-                            Deployed via AWS EC2 instance for better security and scalability. The demo is live and
-                            functional - try it out!
-                        </li>
-                    </ul>
+                    <div class="animate-in-down">
+                        <p>
+                            A full stack study app made using React for snappy functionality, and styled with Bootstrap and
+                            custom CSS.
+                        </p>
+                        <ul>
+                            <li>Completed in a group employing the Agile Development cycle and daily scrum meetings, which
+                                helped us visualize our goals and keep track of the projects moving parts.</li>
+                            <li>
+                                Includes CSS animations for loading periods.
+                            </li>
+                            <li>
+                                Deployed via AWS EC2 instance for better security and scalability. The demo is live and
+                                functional - try it out!
+                            </li>
+                        </ul>
+                    </div>
                     <div class="links-list d-flex align-items-center justify-content-around">
                         <div class="svg-link d-flex flex-column align-items-center">
                             <a href="http://18.118.213.71/" target="_blank"><img src="./assets/link.svg"
@@ -290,26 +298,28 @@
 
             <!--Project 2-->
             <div
-                class="d-flex justify-content-center col-lg-12 my-col-md-12 my-col-sm-12 flex-small flex-small-on-med align-items-center">
+                class="animate-in-zoom d-flex justify-content-center col-lg-12 my-col-md-12 my-col-sm-12 flex-small flex-small-on-med align-items-center">
                 <div class="card-text-blip col-lg-5 my-col-sm-10 my-col-md-10 projects-text">
                     <h1 class="project-title luke-api-title">Luke APi Walker</h1>
-                    <p>
-                        An app that let's your browse the Star Wars API, found <a href="https://swapi.dev/"
-                            target="_blank">here</a>.
-                        This was built using React.
-                    </p>
-                    <ul>
-                        <li>Select the category, and the id to produce a card with that information.</li>
-                        <li>
-                            Built with a dynamic background and customized bootstrap.
-                        </li>
-                        <li>
-                            API calls are made using Axios, which allows for easier readability and use.
-                        </li>
-                        <li>
-                            This app is deployed on my GitHub, and can be visited through the website link below.
-                        </li>
-                    </ul>
+                    <div class="animate-in-down">
+                        <p>
+                            An app that let's your browse the Star Wars API, found <a href="https://swapi.dev/"
+                                target="_blank">here</a>.
+                            This was built using React.
+                        </p>
+                        <ul>
+                            <li>Select the category, and the id to produce a card with that information.</li>
+                            <li>
+                                Built with a dynamic background and customized bootstrap.
+                            </li>
+                            <li>
+                                API calls are made using Axios, which allows for easier readability and use.
+                            </li>
+                            <li>
+                                This app is deployed on my GitHub, and can be visited through the website link below.
+                            </li>
+                        </ul>
+                    </div>
                     <div class="links-list d-flex align-items-center justify-content-around">
                         <div class="svg-link d-flex flex-column align-items-center">
                             <a href="https://evanwiorek.github.io/luke-api-walker/" target="_blank"><img
@@ -332,25 +342,27 @@
             <div class="projects-line"></div>
 
             <!--Project 3-->
-            <div class="d-flex justify-content-center flex-small flex-small-on-med align-items-center">
+            <div class="animate-in-zoom d-flex justify-content-center flex-small flex-small-on-med align-items-center">
                 <div class="card-text-blip col-lg-5 my-col-sm-10 my-col-md-10 projects-text">
                     <h1 class="project-title">JavaScript Calculator</h1>
-                    <p>
-                        This is an operational 4 function calculator, made using HTML,
-                        CSS, and JavaScript. It is styled after an old Casio MS80-B.
-                    </p>
-                    <ul>
-                        <li>
-                            When the equation produces too high a number for the display to
-                            contain, "too long!" is shown.
-                        </li>
-                        <li>
-                            If an equation has a large string of decimals, the amount
-                            displayed on the right is determined by the space to the left of
-                            the decimal.
-                        </li>
-                        <li>The calculator can also be moved around the screen.</li>
-                    </ul>
+                    <div class="animate-in-down">
+                        <p>
+                            This is an operational 4 function calculator, made using HTML,
+                            CSS, and JavaScript. It is styled after an old Casio MS80-B.
+                        </p>
+                        <ul>
+                            <li>
+                                When the equation produces too high a number for the display to
+                                contain, "too long!" is shown.
+                            </li>
+                            <li>
+                                If an equation has a large string of decimals, the amount
+                                displayed on the right is determined by the space to the left of
+                                the decimal.
+                            </li>
+                            <li>The calculator can also be moved around the screen.</li>
+                        </ul>
+                    </div>
                     <div class="links-list d-flex align-items-center justify-content-around">
                         <div class="svg-link d-flex flex-column align-items-center">
                             <a href="https://evanwiorek.github.io/JavaScript-Calculator/" target="_blank"><img
@@ -425,27 +437,27 @@
 
                 <!--Languages-->
                 <div class="table-line d-flex flex-small justify-content-between">
-                    <div class="table-top-left d-flex align-items-center">
+                    <div class="table-top-left d-flex align-items-center animate-out-zoom">
                         <h3>Languages</h3>
                     </div>
                     <div class="software-image-container d-flex flex-small">
                         <div class="svg-flex layer-margin text-center my-col-sm-11 svg-items row-of-3">
-                            <div class="software d-flex flex-column align-items-center">
+                            <div class="software d-flex flex-column align-items-center animate-in-zoom">
                                 <img src="./assets/skills/HTML.png" alt="HTML" />
                                 <span>HTML</span>
                             </div>
-                            <div class="software d-flex flex-column align-items-center">
+                            <div class="software d-flex flex-column align-items-center animate-in-zoom">
                                 <img src="./assets/skills/css.png" alt="CSS" />
                                 <span>CSS</span>
                             </div>
-                            <div class="software d-flex flex-column align-items-center">
+                            <div class="software d-flex flex-column align-items-center animate-in-zoom">
                                 <img src="./assets/skills/js.png" alt="JavaScript" />
                                 <span>JavaScript</span>
                             </div>
                         </div>
 
                         <div class="svg-flex text-center my-col-sm-11 svg-items row-of-1">
-                            <div class="software d-flex flex-column align-items-center">
+                            <div class="software d-flex flex-column align-items-center animate-in-zoom">
                                 <img src="./assets/skills/python.png" alt="Python" />
                                 <span>Python</span>
                             </div>
@@ -457,16 +469,16 @@
 
                 <!--Databases-->
                 <div class="table-line d-flex flex-small justify-content-between">
-                    <div class="table-top-left d-flex align-items-center">
+                    <div class="table-top-left d-flex align-items-center animate-out-zoom">
                         <h3>Databases</h3>
                     </div>
                     <div class="software-image-container d-flex flex-small">
                         <div class="svg-flex layer-margin text-center my-col-sm-11 svg-items row-of-2">
-                            <div class="software d-flex flex-column align-items-center">
+                            <div class="software d-flex flex-column align-items-center animate-in-zoom">
                                 <img src="./assets/skills/mysql.png" alt="MySQL" />
                                 <span>MySQL</span>
                             </div>
-                            <div class="software d-flex flex-column align-items-center">
+                            <div class="software d-flex flex-column align-items-center animate-in-zoom">
                                 <img src="./assets/skills/mongodb.png" alt="MongoDB" />
                                 <span>MongoDB</span>
                             </div>
@@ -478,31 +490,31 @@
 
                 <!--Libraries/Frameworks-->
                 <div class="table-line d-flex flex-small justify-content-between">
-                    <div class="table-top-left d-flex align-items-center">
+                    <div class="table-top-left d-flex align-items-center animate-out-zoom">
                         <h3>Libraries/Frameworks</h3>
                     </div>
                     <div class="software-image-container d-flex flex-small">
                         <div class="svg-flex layer-margin text-center my-col-sm-11 svg-items row-of-3">
-                            <div class="software d-flex flex-column align-items-center">
+                            <div class="software d-flex flex-column align-items-center animate-in-zoom">
                                 <img src="./assets/skills/flask.png" alt="Flask" />
                                 <span>Flask</span>
                             </div>
-                            <div class="software d-flex flex-column align-items-center">
+                            <div class="software d-flex flex-column align-items-center animate-in-zoom">
                                 <img src="./assets/skills/react.png" alt="React.js" />
                                 <span>React.js</span>
                             </div>
-                            <div class="software d-flex flex-column align-items-center">
+                            <div class="software d-flex flex-column align-items-center animate-in-zoom">
                                 <img src="./assets/skills/express.png" alt="Express.js" />
                                 <span>Express.js</span>
                             </div>
                         </div>
 
                         <div class="svg-flex layer-margin text-center my-col-sm-11 svg-items row-of-2">
-                            <div class="software d-flex flex-column align-items-center">
+                            <div class="software d-flex flex-column align-items-center animate-in-zoom">
                                 <img src="./assets/skills/node.png" alt="Node.js" />
                                 <span>Node.js</span>
                             </div>
-                            <div class="software d-flex flex-column align-items-center">
+                            <div class="software d-flex flex-column align-items-center animate-in-zoom">
                                 <img src="./assets/skills/jquery.png" alt="jQuery" />
                                 <span>jQuery</span>
                             </div>
@@ -518,42 +530,42 @@
 
                 <!--Tools-->
                 <div class="table-line d-flex flex-small justify-content-between align-items-center">
-                    <div class="table-top-left d-flex">
+                    <div class="table-top-left d-flex animate-out-zoom">
                         <h3>Tools</h3>
                     </div>
                     <div class="software-image-container d-flex flex-small">
                         <div class="svg-flex layer-margin text-center my-col-sm-11 svg-items row-of-3">
-                            <div class="gimp d-flex flex-column align-items-center">
+                            <div class="gimp d-flex flex-column align-items-center animate-in-zoom">
                                 <img src="./assets/skills/gimp-logo.png" alt="GIMP" />
                                 <span>GIMP</span>
                             </div>
-                            <div class="software d-flex flex-column align-items-center">
+                            <div class="software d-flex flex-column align-items-center animate-in-zoom">
                                 <img src="./assets/skills/git.png" alt="Git" />
                                 <span>Git</span>
                             </div>
-                            <div class="software d-flex flex-column align-items-center">
+                            <div class="software d-flex flex-column align-items-center animate-in-zoom">
                                 <img src="./assets/skills/vscode.png" alt="Visual Studio Code" />
                                 <span>Visual Studio Code</span>
                             </div>
                         </div>
                         <div class="svg-flex text-center my-col-sm-11 svg-items row-of-3">
 
-                            <div class="software d-flex flex-column align-items-center">
+                            <div class="software d-flex flex-column align-items-center animate-in-zoom">
                                 <img src="./assets/skills/aws.png" alt="AWS EC2" />
                                 <span>AWS EC2</span>
                             </div>
-                            <div class="software d-flex flex-column align-items-center">
+                            <div class="software d-flex flex-column align-items-center animate-in-zoom">
                                 <img src="./assets/skills/bs.png" alt="Bootstrap" />
                                 <span>Bootstrap</span>
                             </div>
-                            <div class="software d-flex flex-column align-items-center">
+                            <div class="software d-flex flex-column align-items-center animate-in-zoom">
                                 <img src="./assets/skills/materializecss.png" alt="Materialize.css" />
                                 <span>Materialize.css</span>
                             </div>
                         </div>
                         <div class="svg-flex text-center my-col-sm-11 svg-items row-of-1">
 
-                            <div class="software d-flex flex-column align-items-center">
+                            <div class="software d-flex flex-column align-items-center animate-in-zoom">
                                 <img src="./assets/skills/vite.png" alt="Vite.js" />
                                 <span>Vite.js</span>
                             </div>
@@ -579,10 +591,10 @@
             <div class="col-lg-7 col-md-11 my-col-sm-10 flex-small">
                 <!--Coding Dojo-->
                 <div class="table-line d-flex justify-content-center flex-small">
-                    <div class="education-img col-lg-2 col-md-2 d-flex">
+                    <div class="education-img col-lg-2 col-md-2 d-flex animate-in-zoom">
                         <img src="./assets/education/cd.png" />
                     </div>
-                    <div class="education-text col-lg-8 col-md-8">
+                    <div class="education-text col-lg-8 col-md-8 animate-in-slow">
                         <h4>Coding Dojo Bootcamp</h4>
                         <h5>Software Development - Black Belt in Python</h5>
                         <h5>Online/Remote | 2023</h5>
@@ -607,10 +619,10 @@
 
                 <!--UWSP-->
                 <div class="table-line d-flex justify-content-center flex-small">
-                    <div class="education-img col-lg-2 col-md-2 d-flex">
+                    <div class="education-img col-lg-2 col-md-2 d-flex animate-in-zoom">
                         <img src="./assets/education/uwsp.jpg" />
                     </div>
-                    <div class="education-text col-lg-8 col-md-8">
+                    <div class="education-text col-lg-8 col-md-8 animate-in-slow">
                         <h4>University of Wisconsin - Stevens Point</h4>
                         <h5>Stevens Point, WI | December, 2019</h5>
                         <ul class="browser-default">
@@ -642,7 +654,7 @@
         <!--Experience section-->
         <div class="card-section experience-card card-style-1 gap-2 flex-small">
             <div class="col-lg-8 my-col-sm-10 my-col-md-10">
-                <div class="experience-top text-left">
+                <div class="experience-top text-left animate-in-slow">
                     <h6>
                         I started coding when MySpace was big, which for me was in late
                         elementary school. I would spend hours editing my profile over and
@@ -667,7 +679,7 @@
                 </div>
                 <div
                     class="personal-projects d-flex align-items-center justify-content-around flex-small my-col-sm-11 my-col-md-12 flex-med">
-                    <div class="personal-project text-center">
+                    <div class="personal-project text-center animate-out-zoom">
                         <div class="project-title-link">
                             <h4>FunKey S Themes</h4>
                             <div class="personal-project-github-link d-flex flex-column align-items-center">
@@ -678,7 +690,7 @@
                         </div>
                         <img src="./assets/experience/FunKeyS.gif" alt="FunKey S Themes" class="funkey-gif rounded" />
                     </div>
-                    <div class="personal-project text-center">
+                    <div class="personal-project text-center animate-out-zoom">
                         <div class="project-title-link">
                             <h4>Dig Themes</h4>
                             <div class="personal-project-github-link d-flex flex-column align-items-center">
@@ -689,7 +701,7 @@
                         </div>
                         <img src="./assets/experience/dig.gif" alt="Dig Themes" class="dig-gif rounded" />
                     </div>
-                    <div class="personal-project text-center">
+                    <div class="personal-project text-center animate-out-zoom">
                         <div class="project-title-link">
                             <h4>Watch Widgets</h4>
                             <div class="personal-project-github-link d-flex flex-column align-items-center">
@@ -722,29 +734,29 @@
                     <div class="contact-lines"></div>
                     <div class="contact-image-container d-flex align-items-center justify-content-center flex-small">
                         <div class="contacts-row-1 d-flex">
-                            <div class="contact-link d-flex flex-column align-items-center">
+                            <div class="contact-link d-flex flex-column align-items-center animate-in-slow">
                                 <a href="mailto:wiorek.evan@gmail.com" target="_blank"><img
                                         src="./assets/contact/email.svg" alt="Email" /></a>
                                 <span>Email</span>
                             </div>
-                            <div class="contact-link d-flex flex-column align-items-center">
+                            <div class="contact-link d-flex flex-column align-items-center animate-in-slow">
                                 <a href="https://www.linkedin.com/in/evan-wiorek-082900104/" target="_blank"><img
                                         src="./assets/contact/linkedin.svg" alt="Linkedin" /></a>
                                 <span>Linkedin</span>
                             </div>
                         </div>
                         <div class="contacts-row-1 d-flex">
-                            <div class="contact-link d-flex flex-column align-items-center">
+                            <div class="contact-link d-flex flex-column align-items-center animate-in-slow">
                                 <a href="https://github.com/EvanWiorek/" target="_blank"><img src="./assets/github.svg"
                                         alt="GitHub" /></a>
                                 <span>GitHub</span>
                             </div>
-                            <div class="contact-link d-flex flex-column align-items-center">
+                            <div class="contact-link d-flex flex-column align-items-center animate-in-slow">
                                 <a href="https://www.youtube.com/channel/UCNUWx9gwErzmWxj81x7OL6w" target="_blank"><img
                                         src="./assets/contact/youtube.svg" alt="YouTube" /></a>
                                 <span>YouTube</span>
                             </div>
-                            <div class="contact-link d-flex flex-column align-items-center">
+                            <div class="contact-link d-flex flex-column align-items-center animate-in-slow">
                                 <a href="https://docs.google.com/document/d/1tZlbV8r2pbCLak3IxiGfJN4ycTAuYcPlBnHfAlfiX-s/edit?usp=sharing"
                                     target="_blank"><img src="./assets/contact/resume.svg" alt="Resume" /></a>
                                 <span>Resume</span>
@@ -754,7 +766,7 @@
                     <div class="contact-lines"></div>
 
                 </div>
-                <h6 class="text-center bottom-name">Evan Wiorek 2023</h6>
+                <h6 class="text-center bottom-name animate-in-slow">Evan Wiorek 2023</h6>
             </div>
 
         </div>
