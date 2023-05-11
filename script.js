@@ -1,4 +1,4 @@
-import 'intersection-observer';
+
 
 //Scaling transition for navbar link elements
 function scale(element, value) {
