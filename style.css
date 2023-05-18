@@ -594,25 +594,10 @@ div.svg-link:hover span {
   margin: 0px 10px;
   image-rendering: crisp-edges;
   filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.3));
-  z-index: 1;
-}
-
-div.gimp span {
-  display: none;
-  position: absolute;
-  background: rgb(0, 0, 0, 0.3);
-  padding: 5px 10px;
-  color: #fff;
-  text-align: center;
-  font-size: 1.3rem;
-  border: 0px;
-  border-radius: 5px;
-  margin-top: 4.5rem;
-  z-index: 2;
 }
 
 div.software span {
-  display: none;
+  opacity: 0;
   position: absolute;
   background: rgb(0, 0, 0, 0.4);
   padding: 5px 10px;
@@ -621,16 +606,14 @@ div.software span {
   font-size: 1.3rem;
   border: 0px;
   border-radius: 5px;
-  margin-top: 5.8rem;
-  z-index: 2;
-}
-
-div.gimp:hover span {
-  display: block;
+  margin-top: 1.5rem;
+  transition: .1s;
+  backdrop-filter: blur(3px);
+  pointer-events: none;
 }
 
 div.software:hover span {
-  display: block;
+  opacity: 1;
 }
 
 /*Education*/

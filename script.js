@@ -1,5 +1,3 @@
-
-
 //Scaling transition for navbar link elements
 function scale(element, value) {
     element.style.transform = "scale(" + value + ")";
