@@ -100,11 +100,9 @@ html {
 
 /*Universal Classes*/
 .card-style-1 {
-  background-image: linear-gradient(
-    180deg,
-    rgba(30, 43, 46, 1) 0%,
-    rgba(17, 22, 25, 1) 150%
-  );
+  background-image: linear-gradient(180deg,
+      rgba(30, 43, 46, 1) 0%,
+      rgba(17, 22, 25, 1) 150%);
   color: #a2bcc3;
   padding: 20px;
   font-size: 2rem;
@@ -127,11 +125,11 @@ html {
 }
 
 .parallax-header-style-1 {
-    max-height: 26vh;
+  max-height: 26vh;
 }
 
 .parallax-header-style-2 {
-    max-height: 31vh;
+  max-height: 31vh;
 }
 
 .card-section {
@@ -174,7 +172,11 @@ html {
   text-decoration: underline;
 }
 
-#projects, #skills, #education, #experience, #contact {
+#projects,
+#skills,
+#education,
+#experience,
+#contact {
   scroll-padding-top: 150rem;
 }
 
@@ -187,11 +189,9 @@ h3 {
 /*Navbar*/
 .my-navbar {
   padding: 20px;
-  background: linear-gradient(
-    180deg,
-    rgb(0, 0, 0) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(180deg,
+      rgb(0, 0, 0) 0%,
+      rgba(255, 255, 255, 0) 100%);
   width: 100%;
   font-size: 1.3rem;
   box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 0.5);
@@ -219,11 +219,9 @@ h3 {
 /*Mobile Navbar*/
 #mobile-nav {
   padding: 20px 10px 20px 10px;
-  background: linear-gradient(
-    180deg,
-    rgb(0, 0, 0) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(180deg,
+      rgb(0, 0, 0) 0%,
+      rgba(255, 255, 255, 0) 100%);
   width: 100%;
   color: #dadcdd;
   box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 0.5);
@@ -500,8 +498,7 @@ h3 {
 }
 
 .svg-link img {
-  filter: invert(83%) sepia(9%) saturate(557%) hue-rotate(146deg)
-    brightness(90%) contrast(83%) drop-shadow(0px 0px 3px rgba(0, 0, 0, 1));
+  filter: invert(83%) sepia(9%) saturate(557%) hue-rotate(146deg) brightness(90%) contrast(83%) drop-shadow(0px 0px 3px rgba(0, 0, 0, 1));
 }
 
 .svg-link img:hover {
@@ -541,10 +538,12 @@ div.svg-link:hover span {
 
 .projects-text p {
   font-weight: 400;
+  font-size: 1rem;
 }
 
 .projects-text li {
   font-weight: 400;
+  font-size: 1rem;
 }
 
 .project-width {
@@ -565,6 +564,12 @@ div.svg-link:hover span {
 .loose-on-earth-logo {
   width: 70%;
   margin-left: -10px;
+  margin-bottom: 10px;
+}
+
+.art-by-abby-logo {
+  width: 50%;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, .5));
   margin-bottom: 10px;
 }
 
@@ -654,8 +659,7 @@ div.software:hover span {
 .personal-project-github-link img {
   width: 25px;
   margin: -15px 0px 0px 10px;
-  filter: invert(83%) sepia(9%) saturate(557%) hue-rotate(146deg)
-    brightness(90%) contrast(83%) drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.8));
+  filter: invert(83%) sepia(9%) saturate(557%) hue-rotate(146deg) brightness(90%) contrast(83%) drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.8));
   transition: 0.4s;
   transform: translateY(10px);
 }
@@ -747,8 +751,7 @@ div.contact-link:hover span {
   height: 60px;
   margin: 0px 50px;
   transition: 0.4s;
-  filter: invert(83%) sepia(9%) saturate(557%) hue-rotate(146deg)
-    brightness(90%) contrast(83%) drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.9));
+  filter: invert(83%) sepia(9%) saturate(557%) hue-rotate(146deg) brightness(90%) contrast(83%) drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.9));
 }
 
 .contact-link img:hover {

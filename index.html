@@ -93,8 +93,8 @@
 
             </div>
         </header>
-        <div class="load-animation animate-in-slow"><a href="#about-me"><img src="./assets/down-arrow.svg" alt="down arrow"
-                    class="svg"></a></div>
+        <div class="load-animation animate-in-slow"><a href="#about-me"><img src="./assets/down-arrow.svg"
+                    alt="down arrow" class="svg"></a></div>
 
         <!--About Me section-->
         <div id="about-me"
@@ -153,6 +153,60 @@
 
         <!--Projects section-->
         <div class="card-section projects-card card-style-1 gap-2 d-flex flex-column">
+
+            <!--Project 1-->
+            <div class="animate-in-zoom d-flex justify-content-center flex-small flex-small-on-med align-items-center">
+                <div class="card-text-blip col-lg-5 my-col-sm-10 my-col-md-10 projects-text">
+                    <div class="art-by-abby-container"><img src="./assets/project-videos/artbyabby.svg" alt="Art By Abby Logo" class="art-by-abby-logo" /></div>
+                    <div class="animate-in-down">
+                        <p>A work in progress e-commerce site, running on Next.js</p>
+                        <ul>
+                            <li>
+                                Allows the client to CRUD (Create, Read or get, Update, and Delete) blog posts in the
+                                form of virtual art lessons, or sales/store updates. The post content can be written and
+                                displayed styled thanks to React-Quill. These posts, as well as the products and orders,
+                                are stored in MongoDB.
+                            </li>
+                            <li>
+                                Client can also CRUD products, with each product having a complex data structure. Upon
+                                creating a product, the client can give it multiple prices and/or additional options,
+                                all which allow for adding images that associate with each option. When viewing the page
+                                and adding to cart, the chosen options appear in the image viewer.
+                            </li>
+                            <li>
+                                This site utilizes the SEO features of Next.js, with each page having custom "head"
+                                properties. It also implements server side rendering with getServerSideProps(), allowing
+                                for static page generation.
+                            </li>
+                            <li>
+                                I've developed this with mobile-first pattern, which means that it is mostly responsive.
+                                Being a WIP, I am not finished with the app yet. This is currently deployed for free to
+                                Vercel, is mostly functional and can be
+                                viewed/tested by clicking the website icon.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="links-list d-flex align-items-center justify-content-around">
+                        <div class="svg-link d-flex flex-column align-items-center">
+                            <a href="https://artbyabbynext-git-master-evanwiorek.vercel.app/" target="_blank"><img
+                                    src="./assets/link.svg" alt="Website" /></a>
+                            <span>Website</span>
+                        </div>
+                        <div class="svg-link d-flex flex-column align-items-center">
+                            <a href="https://github.com/EvanWiorek/artbyabbynext" target="_blank"><img
+                                    src="./assets/github.svg" alt="GitHub Repo" /></a>
+                            <span>GitHub Repo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="animate-in-zoom project-video-img col-lg-4 my-col-sm-12 my-col-md-12 text-center">
+                    <video src="./assets/project-videos/ArtByAbby.mp4" autoplay muted loop
+                        class="shadow-sm rounded project-width"></video>
+                </div>
+            </div>
+
+            <div class="projects-line"></div>
+
             <!--Project 1-->
             <div class="animate-in-zoom d-flex justify-content-center flex-small flex-small-on-med align-items-center">
                 <div class="card-text-blip col-lg-5 my-col-sm-10 my-col-md-10 projects-text">
@@ -219,15 +273,18 @@
                         <ul>
                             <li>Makes calls to the poke api using Axios.</li>
                             <li>
-                                Multi-layered CSS to imitate the screen of a DMG, where there are shadows on what appears on
+                                Multi-layered CSS to imitate the screen of a DMG, where there are shadows on what
+                                appears on
                                 screen, with a slight glare in the plastic.
                             </li>
                             <li>
-                                Use of a custom button component that fetches the list of Pokemon when clicked, and serves
+                                Use of a custom button component that fetches the list of Pokemon when clicked, and
+                                serves
                                 as a "Go Back" button.
                             </li>
                             <li>
-                                Pausible audio plays in the background, and sound effects for clicking on links - both match
+                                Pausible audio plays in the background, and sound effects for clicking on links - both
+                                match
                                 what it sounds like in game on an actual DMG.
                             </li>
                         </ul>
@@ -260,11 +317,13 @@
                     <h1 class="project-title">ProCras</h1>
                     <div class="animate-in-down">
                         <p>
-                            A full stack study app made using React for snappy functionality, and styled with Bootstrap and
+                            A full stack study app made using React for snappy functionality, and styled with Bootstrap
+                            and
                             custom CSS.
                         </p>
                         <ul>
-                            <li>Completed in a group employing the Agile Development cycle and daily scrum meetings, which
+                            <li>Completed in a group employing the Agile Development cycle and daily scrum meetings,
+                                which
                                 helped us visualize our goals and keep track of the projects moving parts.</li>
                             <li>
                                 Includes CSS animations for loading periods.

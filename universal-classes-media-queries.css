@@ -416,6 +416,15 @@
   .contact-lines {
     display: none;
   }
+
+  .art-by-abby-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .art-by-abby-logo {
+    width: 90%;
+  }
 }
 
 /*tablet*/
