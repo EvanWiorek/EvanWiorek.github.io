@@ -119,7 +119,7 @@ const observer = new IntersectionObserver(entries => {
         }
     })
 }, {
-    threshold: .5,
+    threshold: 1,
 });
 
 animateInZooms.forEach(animateIn => {

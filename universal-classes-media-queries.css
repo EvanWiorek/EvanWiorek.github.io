@@ -35,6 +35,10 @@
     visibility: visible;
   }
 
+  .hide-for-mobile {
+    display: none !important;
+  }
+
   .flex-small {
     display: flex;
     flex-direction: column;
@@ -110,19 +114,7 @@
     width: 100%;
   }
 
-  .welcome-text h1 {
-    font-size: 3rem !important;
-    text-align: center;
-    margin-top: 0px;
-  }
-
-  .welcome-text h2 {
-    font-size: 2rem !important;
-    text-align: center;
-  }
-
-  .welcome-text .name,
-  .title {
+  .welcome-text {
     font-size: 1.7rem;
   }
 
@@ -164,12 +156,6 @@
 
   h5 {
     font-size: 1.3rem !important;
-  }
-
-  .card-title h2 {
-    font-size: 1.3rem !important;
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
   }
 
   .card-section {
@@ -217,34 +203,23 @@
     line-height: 1rem;
   }
 
-  .welcome-text h1 {
-    font-size: 10vw !important;
-    margin: 0;
+  .welcome-name {
+    font-size: 10vw;
+    margin-bottom: 50px;
   }
-
-  .welcome-text h2 {
-    font-size: 6vw !important;
-    margin: 0;
-  }
-
-  .welcome-text h2 {
-    font-size: 6vw !important;
-  }
-
-  .name {
-    font-size: 6vw !important;
-  }
-
-  .title {
-    font-size: 6vw !important;
+  
+  .welcome-title {
+    font-size: 4vw;
+    margin-bottom: 20px;
+    line-height: 2rem;
   }
 
   .quote {
-    font-size: 4vw !important;
+    font-size: 3vw !important;
   }
 
   .quote-source {
-    font-size: 4vw !important;
+    font-size: 3vw !important;
   }
 
   .load-animation {
@@ -333,7 +308,6 @@
   .education-img img {
     border: 0px;
     border-radius: 50%;
-    width: 100px;
     margin-bottom: 10px;
   }
 
@@ -522,21 +496,6 @@
     margin-top: 90px;
   }
 
-  .welcome-text h1 {
-    font-size: 4rem !important;
-    text-align: center;
-  }
-
-  .welcome-text h2 {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .welcome-text .name,
-  .title {
-    font-size: 2.1rem;
-  }
-
   .bible-quote {
     text-align: center;
   }
@@ -582,19 +541,6 @@
 
   h5 {
     font-size: 1.3rem !important;
-  }
-
-  .welcome-text .name,
-  .title {
-    font-size: 3rem;
-    font-weight: 500;
-    color: rgb(205, 205, 205);
-  }
-
-  .card-title h2 {
-    font-size: 2rem !important;
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
   }
 
   .card-section {
@@ -755,5 +701,9 @@
 
   .mobile-nav {
     visibility: hidden;
+  }
+
+  .hide-for-desktop {
+    display: none !important;
   }
 }

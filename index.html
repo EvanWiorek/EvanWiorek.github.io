@@ -25,15 +25,15 @@
         <!-- Mobile Navigation Menu -->
         <div id="mobile-nav">
             <div class="mobile-left">
-                <a href="#topofpage">Evan Wiorek</a>
+                <a href="#topofpage">EVAN WIOREK</a>
             </div>
             <div class="mobile-right" id="mobileLinks">
-                <a href="#about-me">About Me</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#education">Education</a>
-                <a href="#experience">Experience</a>
-                <a href="#contact">Contact</a>
+                <a href="#about-me">ABOUT ME</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#skills">SKILLD</a>
+                <a href="#education">EDUCATION</a>
+                <a href="#experience">EXPERIENCE</a>
+                <a href="#contact">CONTACT</a>
                 <br />
             </div>
             <a href="javascript:void(0);" class="icon" onclick="mobileNav(mobileLinks)">
@@ -48,21 +48,22 @@
         <!--Desktop Navbar-->
         <div class="my-navbar d-flex justify-content-between align-items-center fixed-top navbar-fade-in">
             <div class="nav-left d-flex">
-                <a href="#topofpage">Evan Wiorek</a>
+                <a href="#topofpage" onmouseover="scale(this, 1.05)" onmouseleave="scale(this, 1)"
+                    style="transition: .2s;"><span style="font-weight:700;">EVAN WIOREK</span></a>
             </div>
             <div class="nav-right d-flex">
-                <a class="navlink" href="#about-me" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">About
-                    Me</a>
-                <a class="navlink" href="#projects" onmouseover="scale(this, 1.1)"
-                    onmouseleave="scale(this, 1)">Projects</a>
-                <a class="navlink" href="#skills" onmouseover="scale(this, 1.1)"
-                    onmouseleave="scale(this, 1)">Skills</a>
-                <a class="navlink" href="#education" onmouseover="scale(this, 1.1)"
-                    onmouseleave="scale(this, 1)">Education</a>
-                <a class="navlink" href="#experience" onmouseover="scale(this, 1.1)"
-                    onmouseleave="scale(this, 1)">Experience</a>
-                <a class="navlink" href="#contact" onmouseover="scale(this, 1.1)"
-                    onmouseleave="scale(this, 1)">Contact</a>
+                <a class="navlink" href="#about-me" onmouseover="scale(this, 1.05)" onmouseleave="scale(this, 1)">ABOUT
+                    ME</a>
+                <a class="navlink" href="#projects" onmouseover="scale(this, 1.05)"
+                    onmouseleave="scale(this, 1)">PROJECTS</a>
+                <a class="navlink" href="#skills" onmouseover="scale(this, 1.05)"
+                    onmouseleave="scale(this, 1)">SKILLS</a>
+                <a class="navlink" href="#education" onmouseover="scale(this, 1.05)"
+                    onmouseleave="scale(this, 1)">EDUCATION</a>
+                <a class="navlink" href="#experience" onmouseover="scale(this, 1.05)"
+                    onmouseleave="scale(this, 1)">EXPERIENCE</a>
+                <a class="navlink" href="#contact" onmouseover="scale(this, 1.05)"
+                    onmouseleave="scale(this, 1)">CONTACT</a>
             </div>
         </div>
 
@@ -72,16 +73,9 @@
             <div class="welcome-body animate-in-slow">
                 <div
                     class="welcome-container justify-content-center d-flex flex-small flex-small-on-med align-items-center">
-                    <div class="portrait col-lg-3 text-center">
-                        <img src="./assets/portrait.png" alt="Portrait of Evan Wiorek" />
-                    </div>
-                    <div class="welcome-text col-lg-6 my-col-sm-11 my-col-md-10">
-                        <h1>Hello there,</h1>
-                        <h2>
-                            My name is <span class="name">Evan Wiorek</span>, and I'm a
-                            <span class="title">Software Developer</span>. Thank you for
-                            visiting my portfolio!
-                        </h2>
+                    <div class="my-col-sm-11 my-col-md-10">
+                        <p class="welcome-name">EVAN WIOREK</p>
+                        <p class="welcome-title">Software engineer, Problem solver, Leader, Teacher, and Jesus lover</p>
                         <div class="bible-quote">
                             <h5>
                                 <span class="quote">“I have the strength for everything through Him who empowers
@@ -97,45 +91,89 @@
                     alt="down arrow" class="svg"></a></div>
 
         <!--About Me section-->
-        <div id="about-me"
-            class="card-section card-style-1 about-card flex-small flex-small-on-med d-flex align-items-center">
-            <div class="card-text-blip animate-out-zoom col-lg-4 my-col-sm-11 my-col-md-11">
-                <h1 class="text-center about-me-title">About Me</h1>
-                <p>
-                    I am a teacher turned software developer based out of Wisconsin. I
-                    like to do a lot of stuff! I dabble in
-                    <span id="drawing">drawing</span>,
-                    <span id="video">video production</span>,
-                    <span id="printing">3D printing and painting</span>,
-                    <span id="photography">photography</span>,
-                    <span id="leather">sewing and leathercraft</span>, and
-                    <span id="design">graphic design</span>.
-                </p>
-                <p>
-                    When I am not coding or working on my hobbies, I am spending time
-                    with my family.
-                </p>
-            </div>
-            <div class="col-lg-4 my-col-sm-12 my-col-md-12 animate-out-zoom">
-                <div
-                    class="slideshow-container d-flex flex-column gap-4 align-items-center justify-content-center text-center">
-                    <div class="slideshow fade-in-slides">
-                        <img class="mySlides" src="./assets/hobbies/drawing.png" alt="Drawing" />
-                        <video class="mySlides video-production" type="video/mp4" value="video" autoplay muted loop>
-                            <source src="./assets/hobbies/video-prod.mp4" type="video/mp4" />
-                        </video>
-                        <img class="mySlides" src="./assets/hobbies/3dprint.png" alt="3D Printing & Painting" />
-                        <img class="mySlides" src="./assets/hobbies/photography3.png" alt="Photography" />
-                        <img class="mySlides" src="./assets/hobbies/leather.png" alt="Sewwing & Leathercraft" />
-                        <img class="mySlides" src="./assets/hobbies/gaad.jpg" alt="Graphic Design" />
+        <div class="card-background" style="position: relative; z-index: 2;">
+            <div id="about-me" class="card-style">
+                <div>
+                    <h1 class="card-title text-center mb-5">ABOUT ME</h1>
+                    <div class="card-text-blip about-me-blip col-lg-8 m-auto">
+                        <h6>Hi! I'm Evan, a software engineer with several years of experience in education, and over a
+                            decade
+                            of experience with personal programming projects, based out of a little town in Wisconsin.
+                        </h6>
+                        <h6>I am a quick learner, and that has helped me in many facets of my life. Two years ago, I was
+                            a
+                            high
+                            school teacher; I then left that profession and took up some factory work to provide for my
+                            family
+                            while I discerned my next path. Come January of 2023, I was advancing to leading others in
+                            my
+                            role
+                            at the factory, until layoffs hit. This provided the perfect opportunity to pursue something
+                            I'd
+                            considered throughout my life: software development.</h6>
+                        <h6>
+                            On top of my personal experiences, I now come equipped with over 1000 hours of programming
+                            and
+                            collaborating experience via the Coding Dojo Software Development course. I came out of the
+                            bootcamp
+                            with a multitude of projects and hands-on experience, and I encourage you to check out some
+                            of
+                            my
+                            work below!
+                        </h6>
+                        <h6>In short, I:</h6>
+                        <ul class="browser-default">
+                            <h6>
+                                <li>Have an aptitude for learning new languages</li>
+                                <li>Am great with pattern recognition and can adapt quickly</li>
+                                <li>Enjoy helping others and boosting their confidence in what they do</li>
+                                <li>Value contributing to what’s good in the world</li>
+                                <li>And finally producing high-quality work in everything I do</li>
+                            </h6>
+                        </ul>
                     </div>
-                    <div class="dot-container">
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
+                </div>
+                <div class="about-card flex-small flex-small-on-med d-flex align-items-center">
+                    <div class="card-text-blip animate-out-zoom col-lg-4 my-col-sm-11 my-col-md-11"
+                        style="text-align: justify;">
+                        <h6>
+                            When I am not coding, or spending time with the kiddos, I am:
+                        </h6>
+                        <ul class="browser-default">
+                            <h6>
+                                <li><span id="drawing">Drawing</span></li>
+                                <li><span id="video">Producing videos</span></li>
+                                <li><span id="printing">3D printing and painting</span></li>
+                                <li><span id="photography">Taking pictures</span></li>
+                                <li><span id="leather">Sewing and leathercrafting</span></li>
+                                <li><span id="design">And graphic designing</span></li>
+                            </h6>
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-3 my-col-sm-12 my-col-md-12 animate-out-zoom">
+                        <div
+                            class="slideshow-container d-flex flex-column gap-4 align-items-center justify-content-center text-center">
+                            <div class="slideshow fade-in-slides">
+                                <img class="mySlides" src="./assets/hobbies/drawing.png" alt="Drawing" />
+                                <video class="mySlides video-production" type="video/mp4" value="video" autoplay muted
+                                    loop>
+                                    <source src="./assets/hobbies/video-prod.mp4" type="video/mp4" />
+                                </video>
+                                <img class="mySlides" src="./assets/hobbies/3dprint.png" alt="3D Printing & Painting" />
+                                <img class="mySlides" src="./assets/hobbies/photography3.png" alt="Photography" />
+                                <img class="mySlides" src="./assets/hobbies/leather.png" alt="Sewwing & Leathercraft" />
+                                <img class="mySlides" src="./assets/hobbies/gaad.jpg" alt="Graphic Design" />
+                            </div>
+                            <div class="dot-container">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -144,7 +182,7 @@
         <!--Projects Header-->
         <div class="card-header parallax-container parallax-header-style-1" id="projects">
             <div class="card-title">
-                <h1>Projects</h1>
+                <h1>PROJECTS</h1>
                 <div class="parallax">
                     <img src="./assets/bg4.jpg" style="height: auto" />
                 </div>
@@ -152,338 +190,311 @@
         </div>
 
         <!--Projects section-->
-        <div class="card-section projects-card card-style-1 gap-2 d-flex flex-column">
-
-            <!--Project 1-->
-            <div class="animate-in-zoom d-flex justify-content-center flex-small flex-small-on-med align-items-center">
-                <div class="card-text-blip col-lg-5 my-col-sm-10 my-col-md-10 projects-text">
-                    <div class="art-by-abby-container"><img src="./assets/project-videos/artbyabby.svg" alt="Art By Abby Logo" class="art-by-abby-logo" /></div>
-                    <div class="animate-in-down">
-                        <p>A work in progress e-commerce site, running on Next.js</p>
-                        <ul>
-                            <li>
-                                Allows the client to CRUD (Create, Read or get, Update, and Delete) blog posts in the
-                                form of virtual art lessons, or sales/store updates. The post content can be written and
-                                displayed styled thanks to React-Quill. These posts, as well as the products and orders,
-                                are stored in MongoDB.
-                            </li>
-                            <li>
-                                Client can also CRUD products, with each product having a complex data structure. Upon
-                                creating a product, the client can give it multiple prices and/or additional options,
-                                all which allow for adding images that associate with each option. When viewing the page
-                                and adding to cart, the chosen options appear in the image viewer.
-                            </li>
-                            <li>
-                                This site utilizes the SEO features of Next.js, with each page having custom "head"
-                                properties. It also implements server side rendering with getServerSideProps(), allowing
-                                for static page generation.
-                            </li>
-                            <li>
-                                I've developed this with mobile-first pattern, which means that it is mostly responsive.
-                                Being a WIP, I am not finished with the app yet. This is currently deployed for free to
-                                Vercel, is mostly functional and can be
-                                viewed/tested by clicking the website icon.
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="links-list d-flex align-items-center justify-content-around">
-                        <div class="svg-link d-flex flex-column align-items-center">
-                            <a href="https://artbyabbynext-git-master-evanwiorek.vercel.app/" target="_blank"><img
-                                    src="./assets/link.svg" alt="Website" /></a>
-                            <span>Website</span>
+        <div class="card-background">
+            <div class="card-section projects-card card-style gap-2 d-flex flex-column">
+                <!--Project 1-->
+                <div
+                    class="animate-in-zoom d-flex justify-content-center flex-small flex-small-on-med align-items-center">
+                    <div class="card-text-blip col-lg-5 my-col-sm-10 my-col-md-10 projects-text">
+                        <div class="art-by-abby-container"><img src="./assets/project-videos/artbyabby.svg"
+                                alt="Art By Abby Logo" class="art-by-abby-logo" /></div>
+                        <div class="animate-in-down">
+                            <p>A work in progress e-commerce site, running on Next.js</p>
+                            <ul>
+                                <li>
+                                    Allows the client to CRUD (Create, Read or get, Update, and Delete) blog posts in
+                                    the
+                                    form of virtual art lessons, or sales/store updates. The post content can be written
+                                    and
+                                    displayed styled thanks to React-Quill. These posts, as well as the products and
+                                    orders,
+                                    are stored in MongoDB.
+                                </li>
+                                <li>
+                                    Client can also CRUD products, with each product having a complex data structure.
+                                    Upon
+                                    creating a product, the client can give it multiple prices and/or additional
+                                    options,
+                                    all which allow for adding images that associate with each option. When viewing the
+                                    page
+                                    and adding to cart, the chosen options appear in the image viewer.
+                                </li>
+                                <li>
+                                    This site utilizes the SEO features of Next.js, with each page having custom "head"
+                                    properties. It also implements server side rendering with getServerSideProps(),
+                                    allowing
+                                    for static page generation.
+                                </li>
+                                <li>
+                                    I've developed this with mobile-first pattern, which means that it is mostly
+                                    responsive.
+                                    Being a WIP, I am not finished with the app yet. This is currently deployed for free
+                                    to
+                                    Vercel, is mostly functional and can be
+                                    viewed/tested by clicking the website icon.
+                                </li>
+                            </ul>
                         </div>
-                        <div class="svg-link d-flex flex-column align-items-center">
-                            <a href="https://github.com/EvanWiorek/artbyabbynext" target="_blank"><img
-                                    src="./assets/github.svg" alt="GitHub Repo" /></a>
-                            <span>GitHub Repo</span>
+
+                    </div>
+                    <div class="animate-in-zoom project-video-img col-lg-4 my-col-sm-12 my-col-md-12 text-center">
+                        <video src="./assets/project-videos/ArtByAbby.mp4" autoplay muted loop
+                            class="shadow-sm rounded project-width"></video>
+                        <div class="links-list d-flex align-items-center justify-content-evenly gap-5">
+                            <div class="svg-link d-flex flex-column align-items-center">
+                                <a href="https://artbyabbynext-git-master-evanwiorek.vercel.app/" target="_blank"><img
+                                        src="./assets/link.svg" alt="Website" /></a>
+                                <span>Website</span>
+                            </div>
+                            <div class="svg-link d-flex flex-column align-items-center">
+                                <a href="https://github.com/EvanWiorek/artbyabbynext" target="_blank"><img
+                                        src="./assets/github.svg" alt="GitHub Repo" /></a>
+                                <span>GitHub Repo</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="animate-in-zoom project-video-img col-lg-4 my-col-sm-12 my-col-md-12 text-center">
-                    <video src="./assets/project-videos/ArtByAbby.mp4" autoplay muted loop
-                        class="shadow-sm rounded project-width"></video>
+                <div class="projects-line"></div>
+                <!--Project 1-->
+                <div
+                    class="animate-in-zoom d-flex justify-content-center flex-small flex-small-on-med align-items-center">
+                    <div class="card-text-blip col-lg-5 my-col-sm-10 my-col-md-10 projects-text">
+                        <img src="./assets/project-videos/loose-on-earth.png" alt="Loose On Earth Logo"
+                            class="loose-on-earth-logo" />
+                        <div class="animate-in-down">
+                            <p>A Flask app that helps Catholics prepare for confession.</p>
+                            <ul>
+                                <li>
+                                    Users select from a list what applies to them, and can add
+                                    custom list items. These two lists are stringified, and encrypted before entering
+                                    the
+                                    MySQL
+                                    database.
+                                </li>
+                                <li>
+                                    Upon loading the page, the data is decrypted and parsed through.
+                                </li>
+                                <li>
+                                    Validations are done using AJAX, and users do not have to login
+                                    in for the list to save to session. This allows for users to
+                                    leave the page without worrying that the list will clear. There
+                                    is a button to clear the list manually.
+                                </li>
+                                <li>
+                                    Deployed via AWS EC2 for better scalability and security,
+                                    added SSL using CertBot, and routed a Google Domain to the
+                                    elastic IP address, incase the instance server needs to be
+                                    moved/updated.
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="animate-in-zoom project-video-img col-lg-4 my-col-sm-12 my-col-md-12 text-center">
+                        <video src="./assets/project-videos/looseonearth.mp4" autoplay muted loop
+                            class="shadow-sm rounded project-width"></video>
+                        <div class="links-list d-flex align-items-center justify-content-evenly gap-5">
+                            <div class="svg-link d-flex flex-column align-items-center">
+                                <a href="https://evanwiorek.com/confession-helper-static/" target="_blank"><img
+                                        src="./assets/link.svg" alt="Website" /></a>
+                                <span>Website</span>
+                            </div>
+                            <div class="svg-link d-flex flex-column align-items-center">
+                                <a href="https://github.com/EvanWiorek/loose-on-earth" target="_blank"><img
+                                        src="./assets/github.svg" alt="GitHub Repo" /></a>
+                                <span>GitHub Repo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-line"></div>
+                <!--Project 2-->
+                <div
+                    class="animate-in-zoom d-flex justify-content-center col-lg-12 my-col-md-12 my-col-sm-12 flex-small flex-small-on-med align-items-center">
+                    <div class="animate-in-down card-text-blip col-lg-5 my-col-sm-10 my-col-md-10 projects-text">
+                        <h1 class="project-title pokemon-title">Nostalgia Red</h1>
+                        <div class="animate-in-down">
+                            <p>
+                                An app that emulates my childhood. Made using the <a href="https://pokeapi.co/"
+                                    target="_blank">Pokemon API</a>, and <a href="https://react.dev/"
+                                    target="_blank">React.js</a>.
+                            </p>
+                            <ul>
+                                <li>Makes calls to the poke api using Axios.</li>
+                                <li>
+                                    Multi-layered CSS to imitate the screen of a DMG, where there are shadows on what
+                                    appears on
+                                    screen, with a slight glare in the plastic.
+                                </li>
+                                <li>
+                                    Use of a custom button component that fetches the list of Pokemon when clicked, and
+                                    serves
+                                    as a "Go Back" button.
+                                </li>
+                                <li>
+                                    Pausible audio plays in the background, and sound effects for clicking on links -
+                                    both
+                                    match
+                                    what it sounds like in game on an actual DMG.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="animate-in-zoom project-video-img col-lg-4 my-col-sm-12 my-col-md-12 text-center">
+                        <video src="./assets/project-videos/nostalgia-red.mp4" autoplay muted loop
+                            class="shadow-sm rounded project-width"></video>
+                        <div class="links-list d-flex align-items-center justify-content-evenly gap-5">
+                            <div class="svg-link d-flex flex-column align-items-center">
+                                <a href="https://evanwiorek.com/nostalgia-red/" target="_blank"><img
+                                        src="./assets/link.svg" alt="Website" /></a>
+                                <span>Website</span>
+                            </div>
+                            <div class="svg-link d-flex flex-column align-items-center">
+                                <a href="https://github.com/EvanWiorek/nostalgia-red" target="_blank"><img
+                                        src="./assets/github.svg" alt="GitHub Repo" /></a>
+                                <span>GitHub Repo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-line"></div>
+                <!--Project 2-->
+                <div
+                    class="animate-in-zoom d-flex justify-content-center col-lg-12 my-col-md-12 my-col-sm-12 flex-small flex-small-on-med align-items-center">
+                    <div class="card-text-blip col-lg-5 my-col-sm-10 my-col-md-10 projects-text">
+                        <h1 class="project-title">ProCras</h1>
+                        <div class="animate-in-down">
+                            <p>
+                                A full stack study app made using React for snappy functionality, and styled with
+                                Bootstrap
+                                and
+                                custom CSS.
+                            </p>
+                            <ul>
+                                <li>Completed in a group employing the Agile Development cycle and daily scrum meetings,
+                                    which
+                                    helped us visualize our goals and keep track of the projects moving parts.</li>
+                                <li>
+                                    Includes CSS animations for loading periods.
+                                </li>
+                                <li>
+                                    Deployed via AWS EC2 instance for better security and scalability. The demo is live
+                                    and
+                                    functional - try it out!
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-video-img col-lg-4 my-col-sm-12 my-col-md-12 text-center">
+                        <video src="./assets/project-videos/procrase-demo.mp4" autoplay muted loop
+                            class="shadow-sm rounded project-width"></video>
+                        <div class="links-list d-flex align-items-center justify-content-evenly gap-5">
+                            <div class="svg-link d-flex flex-column align-items-center">
+                                <a href="https://youtu.be/wc9quFRi50E" target="_blank"><img
+                                        src="./assets/video-link.svg" alt="Website" /></a>
+                                <span>Video Demo</span>
+                            </div>
+                            <div class="svg-link d-flex flex-column align-items-center">
+                                <a href="https://github.com/SpencerJCode/ProCras" target="_blank"><img
+                                        src="./assets/github.svg" alt="GitHub Repo" /></a>
+                                <span>GitHub Repo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-line"></div>
+                <!--Project 2-->
+                <div
+                    class="animate-in-zoom d-flex justify-content-center col-lg-12 my-col-md-12 my-col-sm-12 flex-small flex-small-on-med align-items-center">
+                    <div class="card-text-blip col-lg-5 my-col-sm-10 my-col-md-10 projects-text">
+                        <h1 class="project-title luke-api-title">Luke APi Walker</h1>
+                        <div class="animate-in-down">
+                            <p>
+                                An app that let's your browse the Star Wars API, found <a href="https://swapi.dev/"
+                                    target="_blank">here</a>.
+                                This was built using React.
+                            </p>
+                            <ul>
+                                <li>Select the category, and the id to produce a card with that information.</li>
+                                <li>
+                                    Built with a dynamic background and customized bootstrap.
+                                </li>
+                                <li>
+                                    API calls are made using Axios, which allows for easier readability and use.
+                                </li>
+                                <li>
+                                    This app is deployed on my GitHub, and can be visited through the website link
+                                    below.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-video-img col-lg-4 my-col-sm-12 my-col-md-12 text-center">
+                        <video src="./assets/project-videos/luke.mp4" autoplay muted loop
+                            class="shadow-sm rounded project-width"></video>
+                        <div class="links-list d-flex align-items-center justify-content-evenly gap-5">
+                            <div class="svg-link d-flex flex-column align-items-center">
+                                <a href="https://evanwiorek.github.io/luke-api-walker/" target="_blank"><img
+                                        src="./assets/link.svg" alt="Website" /></a>
+                                <span>Website</span>
+                            </div>
+                            <div class="svg-link d-flex flex-column align-items-center">
+                                <a href="https://github.com/EvanWiorek/luke-api-walker" target="_blank"><img
+                                        src="./assets/github.svg" alt="GitHub Repo" /></a>
+                                <span>GitHub Repo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-line"></div>
+                <!--Project 3-->
+                <div
+                    class="animate-in-zoom d-flex justify-content-center flex-small flex-small-on-med align-items-center">
+                    <div class="card-text-blip col-lg-5 my-col-sm-10 my-col-md-10 projects-text">
+                        <h1 class="project-title">JavaScript Calculator</h1>
+                        <div class="animate-in-down">
+                            <p>
+                                This is an operational 4 function calculator, made using HTML,
+                                CSS, and JavaScript. It is styled after an old Casio MS80-B.
+                            </p>
+                            <ul>
+                                <li>
+                                    When the equation produces too high a number for the display to
+                                    contain, "too long!" is shown.
+                                </li>
+                                <li>
+                                    If an equation has a large string of decimals, the amount
+                                    displayed on the right is determined by the space to the left of
+                                    the decimal.
+                                </li>
+                                <li>The calculator can also be moved around the screen.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-video-img col-lg-4 my-col-sm-12 my-col-md-12 text-center">
+                        <img src="./assets/project-videos/calculator.gif" alt="JavaScript Calculator"
+                            class="shadow-sm rounded project-width" />
+                        <div class="links-list d-flex align-items-center justify-content-evenly gap-5">
+                            <div class="svg-link d-flex flex-column align-items-center">
+                                <a href="https://evanwiorek.github.io/JavaScript-Calculator/" target="_blank"><img
+                                        src="./assets/link.svg" alt="Website" /></a>
+                                <span>Website</span>
+                            </div>
+                            <div class="svg-link d-flex flex-column align-items-center">
+                                <a href="https://github.com/EvanWiorek/JavaScript-Calculator" target="_blank"><img
+                                        src="./assets/github.svg" alt="GitHub Repo" /></a>
+                                <span>GitHub Repo</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="projects-line"></div>
-
-            <!--Project 1-->
-            <div class="animate-in-zoom d-flex justify-content-center flex-small flex-small-on-med align-items-center">
-                <div class="card-text-blip col-lg-5 my-col-sm-10 my-col-md-10 projects-text">
-                    <img src="./assets/project-videos/loose-on-earth.png" alt="Loose On Earth Logo"
-                        class="loose-on-earth-logo" />
-                    <div class="animate-in-down">
-                        <p>A Flask app that helps Catholics prepare for confession.</p>
-                        <ul>
-                            <li>
-                                Users select from a list what applies to them, and can add
-                                custom list items. These two lists are stringified, and encrypted before entering the
-                                MySQL
-                                database.
-                            </li>
-                            <li>
-                                Upon loading the page, the data is decrypted and parsed through.
-                            </li>
-                            <li>
-                                Validations are done using AJAX, and users do not have to login
-                                in for the list to save to session. This allows for users to
-                                leave the page without worrying that the list will clear. There
-                                is a button to clear the list manually.
-                            </li>
-                            <li>
-                                Deployed via AWS EC2 for better scalability and security,
-                                added SSL using CertBot, and routed a Google Domain to the
-                                elastic IP address, incase the instance server needs to be
-                                moved/updated.
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="links-list d-flex align-items-center justify-content-around">
-                        <div class="svg-link d-flex flex-column align-items-center">
-                            <a href="https://loose-on-earth.com/" target="_blank"><img src="./assets/link.svg"
-                                    alt="Website" /></a>
-                            <span>Website</span>
-                        </div>
-                        <div class="svg-link d-flex flex-column align-items-center">
-                            <a href="https://github.com/EvanWiorek/loose-on-earth" target="_blank"><img
-                                    src="./assets/github.svg" alt="GitHub Repo" /></a>
-                            <span>GitHub Repo</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="animate-in-zoom project-video-img col-lg-4 my-col-sm-12 my-col-md-12 text-center">
-                    <video src="./assets/project-videos/looseonearth.mp4" autoplay muted loop
-                        class="shadow-sm rounded project-width"></video>
-                </div>
-            </div>
-
-            <div class="projects-line"></div>
-
-            <!--Project 2-->
-            <div
-                class="animate-in-zoom d-flex justify-content-center col-lg-12 my-col-md-12 my-col-sm-12 flex-small flex-small-on-med align-items-center">
-                <div class="animate-in-down card-text-blip col-lg-5 my-col-sm-10 my-col-md-10 projects-text">
-                    <h1 class="project-title pokemon-title">Nostalgia Red</h1>
-                    <div class="animate-in-down">
-                        <p>
-                            An app that emulates my childhood. Made using the <a href="https://pokeapi.co/"
-                                target="_blank">Pokemon API</a>, and <a href="https://react.dev/"
-                                target="_blank">React.js</a>.
-                        </p>
-                        <ul>
-                            <li>Makes calls to the poke api using Axios.</li>
-                            <li>
-                                Multi-layered CSS to imitate the screen of a DMG, where there are shadows on what
-                                appears on
-                                screen, with a slight glare in the plastic.
-                            </li>
-                            <li>
-                                Use of a custom button component that fetches the list of Pokemon when clicked, and
-                                serves
-                                as a "Go Back" button.
-                            </li>
-                            <li>
-                                Pausible audio plays in the background, and sound effects for clicking on links - both
-                                match
-                                what it sounds like in game on an actual DMG.
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="links-list d-flex align-items-center justify-content-around">
-                        <div class="svg-link d-flex flex-column align-items-center">
-                            <a href="https://evanwiorek.com/nostalgia-red/" target="_blank"><img src="./assets/link.svg"
-                                    alt="Website" /></a>
-                            <span>Website</span>
-                        </div>
-                        <div class="svg-link d-flex flex-column align-items-center">
-                            <a href="https://github.com/EvanWiorek/nostalgia-red" target="_blank"><img
-                                    src="./assets/github.svg" alt="GitHub Repo" /></a>
-                            <span>GitHub Repo</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="animate-in-zoom project-video-img col-lg-4 my-col-sm-12 my-col-md-12 text-center">
-                    <video src="./assets/project-videos/nostalgia-red.mp4" autoplay muted loop
-                        class="shadow-sm rounded project-width"></video>
-                </div>
-            </div>
-
-            <div class="projects-line"></div>
-
-            <!--Project 2-->
-            <div
-                class="animate-in-zoom d-flex justify-content-center col-lg-12 my-col-md-12 my-col-sm-12 flex-small flex-small-on-med align-items-center">
-                <div class="card-text-blip col-lg-5 my-col-sm-10 my-col-md-10 projects-text">
-                    <h1 class="project-title">ProCras</h1>
-                    <div class="animate-in-down">
-                        <p>
-                            A full stack study app made using React for snappy functionality, and styled with Bootstrap
-                            and
-                            custom CSS.
-                        </p>
-                        <ul>
-                            <li>Completed in a group employing the Agile Development cycle and daily scrum meetings,
-                                which
-                                helped us visualize our goals and keep track of the projects moving parts.</li>
-                            <li>
-                                Includes CSS animations for loading periods.
-                            </li>
-                            <li>
-                                Deployed via AWS EC2 instance for better security and scalability. The demo is live and
-                                functional - try it out!
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="links-list d-flex align-items-center justify-content-around">
-                        <div class="svg-link d-flex flex-column align-items-center">
-                            <a href="http://18.118.213.71/" target="_blank"><img src="./assets/link.svg"
-                                    alt="Website" /></a>
-                            <span>Website</span>
-                        </div>
-                        <div class="svg-link d-flex flex-column align-items-center">
-                            <a href="https://github.com/SpencerJCode/ProCras" target="_blank"><img
-                                    src="./assets/github.svg" alt="GitHub Repo" /></a>
-                            <span>GitHub Repo</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-video-img col-lg-4 my-col-sm-12 my-col-md-12 text-center">
-                    <video src="./assets/project-videos/procrase-demo.mp4" autoplay muted loop
-                        class="shadow-sm rounded project-width"></video>
-                </div>
-            </div>
-
-            <div class="projects-line"></div>
-
-            <!--Project 2-->
-            <div
-                class="animate-in-zoom d-flex justify-content-center col-lg-12 my-col-md-12 my-col-sm-12 flex-small flex-small-on-med align-items-center">
-                <div class="card-text-blip col-lg-5 my-col-sm-10 my-col-md-10 projects-text">
-                    <h1 class="project-title luke-api-title">Luke APi Walker</h1>
-                    <div class="animate-in-down">
-                        <p>
-                            An app that let's your browse the Star Wars API, found <a href="https://swapi.dev/"
-                                target="_blank">here</a>.
-                            This was built using React.
-                        </p>
-                        <ul>
-                            <li>Select the category, and the id to produce a card with that information.</li>
-                            <li>
-                                Built with a dynamic background and customized bootstrap.
-                            </li>
-                            <li>
-                                API calls are made using Axios, which allows for easier readability and use.
-                            </li>
-                            <li>
-                                This app is deployed on my GitHub, and can be visited through the website link below.
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="links-list d-flex align-items-center justify-content-around">
-                        <div class="svg-link d-flex flex-column align-items-center">
-                            <a href="https://evanwiorek.github.io/luke-api-walker/" target="_blank"><img
-                                    src="./assets/link.svg" alt="Website" /></a>
-                            <span>Website</span>
-                        </div>
-                        <div class="svg-link d-flex flex-column align-items-center">
-                            <a href="https://github.com/EvanWiorek/luke-api-walker" target="_blank"><img
-                                    src="./assets/github.svg" alt="GitHub Repo" /></a>
-                            <span>GitHub Repo</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-video-img col-lg-4 my-col-sm-12 my-col-md-12 text-center">
-                    <video src="./assets/project-videos/luke.mp4" autoplay muted loop
-                        class="shadow-sm rounded project-width"></video>
-                </div>
-            </div>
-
-            <div class="projects-line"></div>
-
-            <!--Project 3-->
-            <div class="animate-in-zoom d-flex justify-content-center flex-small flex-small-on-med align-items-center">
-                <div class="card-text-blip col-lg-5 my-col-sm-10 my-col-md-10 projects-text">
-                    <h1 class="project-title">JavaScript Calculator</h1>
-                    <div class="animate-in-down">
-                        <p>
-                            This is an operational 4 function calculator, made using HTML,
-                            CSS, and JavaScript. It is styled after an old Casio MS80-B.
-                        </p>
-                        <ul>
-                            <li>
-                                When the equation produces too high a number for the display to
-                                contain, "too long!" is shown.
-                            </li>
-                            <li>
-                                If an equation has a large string of decimals, the amount
-                                displayed on the right is determined by the space to the left of
-                                the decimal.
-                            </li>
-                            <li>The calculator can also be moved around the screen.</li>
-                        </ul>
-                    </div>
-                    <div class="links-list d-flex align-items-center justify-content-around">
-                        <div class="svg-link d-flex flex-column align-items-center">
-                            <a href="https://evanwiorek.github.io/JavaScript-Calculator/" target="_blank"><img
-                                    src="./assets/link.svg" alt="Website" /></a>
-                            <span>Website</span>
-                        </div>
-                        <div class="svg-link d-flex flex-column align-items-center">
-                            <a href="https://github.com/EvanWiorek/JavaScript-Calculator" target="_blank"><img
-                                    src="./assets/github.svg" alt="GitHub Repo" /></a>
-                            <span>GitHub Repo</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-video-img col-lg-4 my-col-sm-12 my-col-md-12 text-center">
-                    <img src="./assets/project-videos/calculator.gif" alt="JavaScript Calculator"
-                        class="shadow-sm rounded project-width" />
-                </div>
-            </div>
-
-            <!-- <div class="projects-line"></div> -->
-
-            <!--Project 5-->
-            <!-- <div class="d-flex justify-content-center flex-small flex-small-on-med align-items-center">
-                <div class="card-text-blip col-lg-5 my-col-sm-10 my-col-md-10 projects-text">
-                    <h1 class="project-title">Piet Mondrian Digital Recreation</h1>
-                    <p>This was made using HTML and CSS.</p>
-                    <ul>
-                        <li>
-                            The lines are made by adding color to specific borders around
-                            each block.
-                        </li>
-                        <li>
-                            If you notice, each block is colored with a gradient, and at the
-                            bottom a gradient has been added to the line.
-                        </li>
-                        <li>I was able to create this in less than an hour.</li>
-                    </ul>
-                    <div class="links-list d-flex align-items-center justify-content-around">
-                        <div class="svg-link d-flex flex-column align-items-center">
-                            <a href="https://evanwiorek.github.io/piet-mondrian/" target="_blank"><img
-                                    src="./assets/link.svg" alt="Website" /></a>
-                            <span>Website</span>
-                        </div>
-                        <div class="svg-link d-flex flex-column align-items-center">
-                            <a href="https://github.com/EvanWiorek/piet-mondrian" target="_blank"><img
-                                    src="./assets/github.svg" alt="GitHub Repo" /></a>
-                            <span>GitHub Repo</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-video-img col-lg-4 my-col-sm-12 my-col-md-12 text-center">
-                    <img src="./assets/project-videos/piet3.png" alt="Piet Mondrian Recreation"
-                        class="shadow-sm rounded project-width" />
-                </div>
-            </div> -->
         </div>
 
         <!--Skills Header-->
         <div class="card-header parallax-container parallax-header-style-2" id="skills">
             <div class="card-title text-center">
-                <h1>Skills</h1>
-                <h2>Languages and Tools I'm Proficient in</h2>
+                <h1>SKILLS</h1>
                 <div class="parallax">
                     <img src="./assets/bg6.jpg" style="height: auto" />
                 </div>
@@ -491,149 +502,198 @@
         </div>
 
         <!--Skills section-->
-        <div class="card-section skills-card card-style-1 gap-2 d-flex justify-content-center flex-small">
-            <div class="col-lg-8 my-col-sm-11 my-col-md-11 flex-small">
-
-                <!--Languages-->
-                <div class="table-line d-flex flex-small justify-content-between">
-                    <div class="table-top-left d-flex align-items-center animate-out-zoom">
-                        <h3>Languages</h3>
-                    </div>
-                    <div class="software-image-container d-flex flex-small">
-                        <div class="svg-flex layer-margin text-center my-col-sm-11 svg-items row-of-3">
-                            <div class="software d-flex flex-column align-items-center animate-in-zoom">
-                                <img src="./assets/skills/HTML.png" alt="HTML" />
-                                <span>HTML</span>
-                            </div>
-                            <div class="software d-flex flex-column align-items-center animate-in-zoom">
-                                <img src="./assets/skills/css.png" alt="CSS" />
-                                <span>CSS</span>
-                            </div>
-                            <div class="software d-flex flex-column align-items-center animate-in-zoom">
-                                <img src="./assets/skills/js.png" alt="JavaScript" />
-                                <span>JavaScript</span>
-                            </div>
+        <div class="card-background">
+            <div class="card-section skills-card card-style gap-2 d-flex justify-content-center flex-small">
+                <div class="col-lg-8 my-col-sm-11 my-col-md-11 flex-small">
+                    <!--Languages-->
+                    <div class="table-line d-flex flex-small justify-content-between">
+                        <div class="table-top-left d-flex align-items-center animate-out-zoom">
+                            <h3>LANGUAGES</h3>
                         </div>
-
-                        <div class="svg-flex text-center my-col-sm-11 svg-items row-of-2">
-                            <div class="software d-flex flex-column align-items-center animate-in-zoom">
-                                <img src="./assets/skills/python.png" alt="Python" />
-                                <span>Python</span>
+                        <div class="software-image-container d-flex flex-small">
+                            <div class="svg-flex layer-margin text-center my-col-sm-11 svg-items row-of-3">
+                                <div class="software d-flex flex-column align-items-center animate-in-zoom">
+                                    <img src="./assets/skills/HTML.png" alt="HTML" />
+                                    <span>HTML</span>
+                                </div>
+                                <div class="software d-flex flex-column align-items-center animate-in-zoom">
+                                    <img src="./assets/skills/css.png" alt="CSS" />
+                                    <span>CSS</span>
+                                </div>
+                                <div class="software d-flex flex-column align-items-center animate-in-zoom">
+                                    <img src="./assets/skills/js.png" alt="JavaScript" />
+                                    <span>JavaScript</span>
+                                </div>
                             </div>
-                            <div class="software d-flex flex-column align-items-center animate-in-zoom">
-                                <img src="./assets/skills/csharp.png" alt="C Sharp" />
-                                <span>C#</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skills-line"></div>
-
-                <!--Databases-->
-                <div class="table-line d-flex flex-small justify-content-between">
-                    <div class="table-top-left d-flex align-items-center animate-out-zoom">
-                        <h3>Databases</h3>
-                    </div>
-                    <div class="software-image-container d-flex flex-small">
-                        <div class="svg-flex layer-margin text-center my-col-sm-11 svg-items row-of-2">
-                            <div class="software d-flex flex-column align-items-center animate-in-zoom">
-                                <img src="./assets/skills/mysql.png" alt="MySQL" />
-                                <span>MySQL</span>
-                            </div>
-                            <div class="software d-flex flex-column align-items-center animate-in-zoom">
-                                <img src="./assets/skills/mongodb.png" alt="MongoDB" />
-                                <span>MongoDB</span>
+                            <div class="svg-flex text-center my-col-sm-11 svg-items row-of-3">
+                                <div class="software d-flex flex-column align-items-center animate-in-zoom">
+                                    <img src="./assets/skills/python.png" alt="Python" />
+                                    <span>Python</span>
+                                </div>
+                                <div class="software d-flex flex-column align-items-center animate-in-zoom">
+                                    <img src="./assets/skills/csharp.png" alt="C Sharp" />
+                                    <span>C#</span>
+                                </div>
+                                <div class="software d-flex flex-column align-items-center animate-in-zoom">
+                                    <img src="./assets/skills/java.png" alt="Java" />
+                                    <span>Java</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="skills-line"></div>
-
-                <!--Libraries/Frameworks-->
-                <div class="table-line d-flex flex-small justify-content-between">
-                    <div class="table-top-left d-flex align-items-center animate-out-zoom">
-                        <h3>Libraries/Frameworks</h3>
+                    <div class="software-image-container d-flex flex-small justify-content-end mt-2">
+                        <div class="svg-flex layer-margin text-center my-col-sm-11 svg-items row-of-1">
+                            <div class="software d-flex flex-column align-items-center animate-in-zoom">
+                                <img src="./assets/skills/typescript.png" alt="TypeScript" />
+                                <span>TypeScript</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="software-image-container d-flex flex-small">
-                        <div class="svg-flex layer-margin text-center my-col-sm-11 svg-items row-of-3">
-                            <div class="software d-flex flex-column align-items-center animate-in-zoom">
-                                <img src="./assets/skills/flask.png" alt="Flask" />
-                                <span>Flask</span>
+                    <div class="skills-line"></div>
+                    <!--Databases-->
+                    <div class="table-line d-flex flex-small justify-content-between">
+                        <div class="table-top-left d-flex align-items-center animate-out-zoom">
+                            <h3>DATABASES</h3>
+                        </div>
+                        <div class="software-image-container d-flex flex-small">
+                            <div class="svg-flex layer-margin text-center my-col-sm-11 svg-items row-of-2">
+                                <div class="software d-flex flex-column align-items-center animate-in-zoom">
+                                    <img src="./assets/skills/mysql.png" alt="MySQL" />
+                                    <span>MySQL</span>
+                                </div>
+                                <div class="software d-flex flex-column align-items-center animate-in-zoom">
+                                    <img src="./assets/skills/mongodb.png" alt="MongoDB" />
+                                    <span>MongoDB</span>
+                                </div>
                             </div>
-                            <div class="software d-flex flex-column align-items-center animate-in-zoom">
-                                <img src="./assets/skills/react.png" alt="React.js" />
-                                <span>React.js</span>
+                        </div>
+                    </div>
+                    <div class="skills-line"></div>
+                    <!--Libraries/Frameworks-->
+                    <div class="table-line d-flex flex-small justify-content-between">
+                        <div class="table-top-left d-flex align-items-center animate-out-zoom">
+                            <h3>LIBRARIES/FRAMEWORKS</h3>
+                        </div>
+                        <div class="software-image-container d-flex flex-small">
+                            <div class="svg-flex layer-margin text-center my-col-sm-11 svg-items row-of-3">
+                                <div class="software d-flex flex-column align-items-center animate-in-zoom">
+                                    <img src="./assets/skills/flask.png" alt="Flask" />
+                                    <span>Flask</span>
+                                </div>
+                                <div class="software d-flex flex-column align-items-center animate-in-zoom">
+                                    <img src="./assets/skills/react.png" alt="React.js" />
+                                    <span>React.js</span>
+                                </div>
+                                <div class="software d-flex flex-column align-items-center animate-in-zoom">
+                                    <img src="./assets/skills/express.png" alt="Express.js" />
+                                    <span>Express.js</span>
+                                </div>
                             </div>
-                            <div class="software d-flex flex-column align-items-center animate-in-zoom">
-                                <img src="./assets/skills/express.png" alt="Express.js" />
-                                <span>Express.js</span>
+                            <div class="svg-flex layer-margin text-center my-col-sm-11 svg-items row-of-3">
+                                <div class="software d-flex flex-column align-items-center animate-in-zoom">
+                                    <img src="./assets/skills/node.png" alt="Node.js" />
+                                    <span>Node.js</span>
+                                </div>
+                                <div class="software d-flex flex-column align-items-center animate-in-zoom">
+                                    <img src="./assets/skills/jquery.png" alt="jQuery" />
+                                    <span>jQuery</span>
+                                </div>
+                                <div class="software d-flex flex-column align-items-center animate-in-zoom">
+                                    <img src="./assets/skills/blazor.png" alt="Blazor" />
+                                    <span>Blazor</span>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="svg-flex layer-margin text-center my-col-sm-11 svg-items row-of-2">
+                    </div>
+                    <div class="software-image-container d-flex flex-small justify-content-end">
+                        <div class="svg-flex layer-margin text-center my-col-sm-11 svg-items row-of-1">
                             <div class="software d-flex flex-column align-items-center animate-in-zoom">
-                                <img src="./assets/skills/node.png" alt="Node.js" />
-                                <span>Node.js</span>
-                            </div>
-                            <div class="software d-flex flex-column align-items-center animate-in-zoom">
-                                <img src="./assets/skills/jquery.png" alt="jQuery" />
-                                <span>jQuery</span>
+                                <img src="./assets/skills/aspnet.png" alt="ASP.NET" />
+                                <span>ASP.NET</span>
                             </div>
                         </div>
-
                         <div class="svg-flex text-center my-col-sm-11 svg-items row-of-1">
-
                         </div>
                     </div>
-                </div>
-
-                <div class="skills-line"></div>
-
-                <!--Tools-->
-                <div class="table-line d-flex flex-small justify-content-between align-items-center">
-                    <div class="table-top-left d-flex animate-out-zoom">
-                        <h3>Tools</h3>
+                    <div class="skills-line"></div>
+                    <!--Tools-->
+                    <div class="table-line d-flex flex-small justify-content-between align-items-center">
+                        <div class="table-top-left d-flex animate-out-zoom">
+                            <h3>TOOLS</h3>
+                        </div>
+                        <div class="software-image-container d-flex flex-small">
+                            <div class="svg-flex layer-margin text-center my-col-sm-11 svg-items row-of-3">
+                                <div class="software d-flex flex-column align-items-center animate-in-zoom">
+                                    <img src="./assets/skills/gimp-logo.png" alt="GIMP" />
+                                    <span>GIMP</span>
+                                </div>
+                                <div class="software d-flex flex-column align-items-center animate-in-zoom">
+                                    <img src="./assets/skills/git.png" alt="Git" />
+                                    <span>Git</span>
+                                </div>
+                                <div class="software d-flex flex-column align-items-center animate-in-zoom">
+                                    <img src="./assets/skills/vscode.png" alt="Visual Studio Code" />
+                                    <span>VS Code</span>
+                                </div>
+                            </div>
+                            <div class="svg-flex text-center my-col-sm-11 svg-items row-of-3">
+                                <div class="software d-flex flex-column align-items-center animate-in-zoom">
+                                    <img src="./assets/skills/aws.png" alt="AWS EC2" />
+                                    <span>AWS EC2</span>
+                                </div>
+                                <div class="software d-flex flex-column align-items-center animate-in-zoom">
+                                    <img src="./assets/skills/bs.png" alt="Bootstrap" />
+                                    <span>Bootstrap</span>
+                                </div>
+                                <div class="software d-flex flex-column align-items-center animate-in-zoom">
+                                    <img src="./assets/skills/materializecss.png" alt="Materialize.css" />
+                                    <span>Materialize.css</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="software-image-container d-flex flex-small">
-                        <div class="svg-flex layer-margin text-center my-col-sm-11 svg-items row-of-3">
+                    <div class="software-image-container d-flex flex-small justify-content-end mt-2">
+                        <div class="svg-flex text-center my-col-sm-11 svg-items row-of-3">
                             <div class="software d-flex flex-column align-items-center animate-in-zoom">
-                                <img src="./assets/skills/gimp-logo.png" alt="GIMP" />
-                                <span>GIMP</span>
+                                <img src="./assets/skills/dbeaver.png" alt="DBeaver" />
+                                <span>DBeaver</span>
                             </div>
                             <div class="software d-flex flex-column align-items-center animate-in-zoom">
-                                <img src="./assets/skills/git.png" alt="Git" />
-                                <span>Git</span>
+                                <img src="./assets/skills/gitkraken.png" alt="GitKraken" />
+                                <span>GitKraken</span>
                             </div>
                             <div class="software d-flex flex-column align-items-center animate-in-zoom">
-                                <img src="./assets/skills/vscode.png" alt="Visual Studio Code" />
-                                <span>VS Code</span>
+                                <img src="./assets/skills/intellij.png" alt="IntelliJ" />
+                                <span>IntelliJ</span>
                             </div>
                         </div>
                         <div class="svg-flex text-center my-col-sm-11 svg-items row-of-3">
-
                             <div class="software d-flex flex-column align-items-center animate-in-zoom">
-                                <img src="./assets/skills/aws.png" alt="AWS EC2" />
-                                <span>AWS EC2</span>
+                                <img src="./assets/skills/gitlab.png" alt="GitLab" />
+                                <span>GitLab</span>
                             </div>
                             <div class="software d-flex flex-column align-items-center animate-in-zoom">
-                                <img src="./assets/skills/bs.png" alt="Bootstrap" />
-                                <span>Bootstrap</span>
+                                <img src="./assets/skills/jira.png" alt="Jira" />
+                                <span>Jira</span>
                             </div>
                             <div class="software d-flex flex-column align-items-center animate-in-zoom">
-                                <img src="./assets/skills/materializecss.png" alt="Materialize.css" />
-                                <span>Materialize.css</span>
-                            </div>
-                        </div>
-                        <div class="svg-flex text-center my-col-sm-11 svg-items row-of-1">
-
-                            <div class="software d-flex flex-column align-items-center animate-in-zoom">
-                                <img src="./assets/skills/vite.png" alt="Vite.js" />
-                                <span>Vite.js</span>
+                                <img src="./assets/skills/docker.png" alt="Docker" />
+                                <span>Docker</span>
                             </div>
                         </div>
-
+                    </div>
+                    <div class="software-image-container d-flex flex-small justify-content-end mt-1">
+                        <div class="svg-flex text-center my-col-sm-11 svg-items row-of-2" style="margin-top: 10px;">
+                            <div class="software d-flex flex-column align-items-center animate-in-zoom">
+                                <img src="./assets/skills/azure.png" alt="Azure" />
+                                <span>Azure</span>
+                            </div>
+                            <div class="software d-flex flex-column align-items-center animate-in-zoom">
+                                <img src="./assets/skills/mysqlworkbench.png" alt="MySQL Workbench" />
+                                <span>MySQL Workbench</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -642,7 +702,7 @@
         <!--Education Header-->
         <div class="card-header parallax-container parallax-header-style-1" id="education">
             <div class="card-title">
-                <h1>Education</h1>
+                <h1>EDUCATION</h1>
                 <div class="parallax">
                     <img src="./assets/bg13.jpg" style="height: auto" />
                 </div>
@@ -650,55 +710,68 @@
         </div>
 
         <!--Education section-->
-        <div class="card-section education-card card-style-1 flex-small">
-            <div class="col-lg-7 col-md-11 my-col-sm-10 flex-small">
-                <!--Coding Dojo-->
-                <div class="table-line d-flex justify-content-center flex-small">
-                    <div class="education-img col-lg-2 col-md-2 d-flex animate-in-zoom">
-                        <img src="./assets/education/cd.png" />
-                    </div>
-                    <div class="education-text col-lg-8 col-md-8 animate-in-slow">
-                        <h4>Coding Dojo Bootcamp</h4>
-                        <h5>Software Development - Black Belt in Python</h5>
-                        <h5>Online/Remote | 2023</h5>
-                        <ul class="browser-default">
-                            <h5>
-                                <li>
-                                    Achieved Black Belt status, the highest level of knowledge
-                                    achievement, in Web Fundamentals, Python, MERN, and C#.
-                                </li>
-                            </h5>
-                            <h5>
-                                <li>
-                                    16 weeks intensive coding bootcamp: 1000+ hours of full
-                                    stack web development
-                                </li>
-                            </h5>
-                        </ul>
-                    </div>
-                </div>
+        <div class="card-background">
+            <div class="card-section education-card card-style flex-small">
+                <div class="col-lg-7 col-md-11 my-col-sm-10 flex-small">
+                    <!--Coding Dojo-->
+                    <div class="table-line d-flex justify-content-center flex-small">
+                        <div class="education-img col-lg-2 col-md-2 d-flex animate-in-zoom">
+                            <img src="./assets/education/cd.png" />
+                        </div>
+                        <div class="education-text col-lg-8 col-md-8 animate-in-slow">
+                            <div class="hide-for-mobile">
+                                <h4 style="margin-bottom: 0;">Coding Dojo Bootcamp</h4>
+                                <div class="d-flex justify-content-between">
+                                    <h5>Online/Remote</h5>
+                                    <h5 style="font-style: italic;">February, 2023 - May, 2023</h5>
+                                </div>
+                            </div>
 
-                <div class="education-line"></div>
-
-                <!--UWSP-->
-                <div class="table-line d-flex justify-content-center flex-small">
-                    <div class="education-img col-lg-2 col-md-2 d-flex animate-in-zoom">
-                        <img src="./assets/education/uwsp.jpg" />
+                            <div class="hide-for-desktop">
+                                <h5>Coding Dojo Bootcamp</h5>
+                                <h6>Software Development - Black Belt in Python</h6>
+                                <h6>Online/Remote | 2023</h6>
+                            </div>
+                            <ul class="browser-default">
+                                <h6>
+                                    <li>
+                                        Achieved Black Belt status, the highest level of knowledge
+                                        achievement, in Web Fundamentals, Python, MERN, and C#.
+                                    </li>
+                                    <li>
+                                        16 weeks intensive, project based coding boot camp: 1000+ hours of full stack
+                                        web development, and many projects to show for it.
+                                    </li>
+                                </h6>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="education-text col-lg-8 col-md-8 animate-in-slow">
-                        <h4>University of Wisconsin - Stevens Point</h4>
-                        <h5>Stevens Point, WI | December, 2019</h5>
-                        <ul class="browser-default">
-                            <h5>
-                                <li>Bachelors of Science Degree in Education</li>
-                            </h5>
-                            <h5>
-                                <li>Major in Family and Consumer Sciences Ed.</li>
-                            </h5>
-                            <h5>
-                                <li>Minor in Health Ed.</li>
-                            </h5>
-                        </ul>
+                    <div class="horizontal-line"></div>
+                    <!--UWSP-->
+                    <div class="table-line d-flex justify-content-center flex-small">
+                        <div class="education-img col-lg-2 col-md-2 d-flex animate-in-zoom">
+                            <img src="./assets/education/uwsp.jpg" />
+                        </div>
+                        <div class="education-text col-lg-8 col-md-8 animate-in-slow">
+                            <div class="hide-for-mobile">
+                                <h4 style="margin-bottom: 0;">University of Wisconsin - Stevens Point</h4>
+                                <div class="d-flex justify-content-between">
+                                    <h5>Stevens Point, WI</h5>
+                                    <h5 style="font-style: italic;">September, 2015 - December, 2019</h5>
+                                </div>
+                            </div>
+                            <div class="hide-for-desktop">
+                                <h5>University of Wisconsin - Stevens Point</h5>
+                                <h6>Stevens Point, WI | December, 2019</h6>
+                            </div>
+                            <ul class="browser-default">
+                                <h6>
+                                    <li>Bachelors of Science Degree in Education</li>
+                                    <li>Major in Family and Consumer Sciences Ed.</li>
+                                    <li>Minor in Health Ed.</li>
+                                </h6>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -707,7 +780,7 @@
         <!--Experience Header-->
         <div class="card-header parallax-container parallax-header-style-1" id="experience">
             <div class="card-title">
-                <h1>Experience</h1>
+                <h1>EXPEREINCE</h1>
                 <div class="parallax">
                     <img src="./assets/bg9.jpg" />
                 </div>
@@ -715,65 +788,115 @@
         </div>
 
         <!--Experience section-->
-        <div class="card-section experience-card card-style-1 gap-2 flex-small">
-            <div class="col-lg-8 my-col-sm-10 my-col-md-10">
-                <div class="experience-top text-left animate-in-slow">
-                    <h6>
-                        I started coding when MySpace was big, which for me was in late
-                        elementary school. I would spend hours editing my profile over and
-                        over until it was perfect. Then along came YouTube in my middle
-                        school days, editing that profile, and creating custom XML files
-                        to create effects in Windows Movie Maker.
-                    </h6>
-                    <h6>
-                        Since then, I've had many projects that involved a little bit of
-                        coding. I would take what was made, try to understand how it did
-                        what it did, then import my own code or change it to fit my
-                        liking.
-                    </h6>
-                    <h6>
-                        Fast forward to now: I am currently enrolled full-time in Coding
-                        Dojo, and finally acting on a passion of mine I've had since I was
-                        a child. I am excited for what new projects await me - but for
-                        now, I have listed some in which I didn't fully know what I was
-                        doing. Most graphics were made by me, and coding manipulated by
-                        me.
-                    </h6>
-                </div>
-                <div
-                    class="personal-projects d-flex align-items-center justify-content-around flex-small my-col-sm-11 my-col-md-12 flex-med">
-                    <div class="personal-project text-center animate-out-zoom">
-                        <div class="project-title-link">
-                            <h4>FunKey S Themes</h4>
-                            <div class="personal-project-github-link d-flex flex-column align-items-center">
-                                <a href="https://github.com/EvanWiorek/personal-projects/tree/master/FunKeySThemes"
-                                    target="_blank"><img src="./assets/github.svg" alt="GitHub Repo" /></a>
-                                <span>GitHub Repo</span>
-                            </div>
+        <div class="card-background">
+            <div class="card-section experience-card card-style gap-2 flex-small">
+                <div class="col-lg-8 my-col-sm-10 my-col-md-10">
+                    <div class="horizontal-line"></div>
+                    <h3 style="text-align: center;">PROFESSIONAL</h3>
+                    <div class="horizontal-line"></div>
+                    <!--The Wellness Way-->
+                    <div class="table-line d-flex justify-content-center flex-small">
+                        <div class="experience-img col-lg-2 col-md-2 d-flex animate-in-zoom">
+                            <img src="./assets/experience/TWW.png" />
                         </div>
-                        <img src="./assets/experience/FunKeyS.gif" alt="FunKey S Themes" class="funkey-gif rounded" />
+                        <div class="education-text col-lg-8 col-md-8 animate-in-slow">
+                            <div class="hide-for-mobile">
+                                <h4 style="margin-bottom: 0;">Frontend/Fullstack Developer</h4>
+                                <div class="d-flex justify-content-between">
+                                    <h5>The Wellness Way | Green Bay, WI</h5>
+                                    <h5 style="font-style: italic;">July, 2023 - Present</h5>
+                                </div>
+                            </div>
+                            <div class="hide-for-desktop">
+                                <h5 style="margin-bottom: 0; margin-top: 30px;">Frontend/Fullstack Developer</h5>
+                                <h6>The Wellness Way | Green Bay, WI</h6>
+                                <h6 style="font-style: italic;">July, 2023 - Present</h6>
+                            </div>
+                            <ul class="browser-default">
+                                <h6>
+                                    <li>
+                                        Tasked with lead frontend developer duties within six months of hiring,
+                                        demonstrating quick adaptability and several years of educational experience.
+                                    </li>
+                                    <li>
+                                        Guide architectural decisions, implement best practices following React
+                                        standards, and conduct code reviews to maintain high-quality codebase.
+                                    </li>
+                                    <li>
+                                        Creation and delegation of tasks via Jira, in collaboration with business
+                                        analysts to ensure standard buisness operating procedures.
+                                    </li>
+                                    <li>
+                                        Mentoring team members to enhance skills, build confidence, and foster positive
+                                        workplace morale.
+                                    </li>
+                                </h6>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="personal-project text-center animate-out-zoom">
-                        <div class="project-title-link">
-                            <h4>Dig Themes</h4>
-                            <div class="personal-project-github-link d-flex flex-column align-items-center">
-                                <a href="https://github.com/EvanWiorek/personal-projects/tree/master/DIG-Themes/Retroid%20Pocket%202"
-                                    target="_blank"><img src="./assets/github.svg" alt="GitHub Repo" /></a>
-                                <span>GitHub Repo</span>
-                            </div>
-                        </div>
-                        <img src="./assets/experience/dig.gif" alt="Dig Themes" class="dig-gif rounded" />
+                    <br>
+                    <div class="horizontal-line"></div>
+                    <h3 style="text-align: center;">PERSONAL</h3>
+                    <div class="horizontal-line"></div>
+                    <div class="experience-top text-left animate-in-slow">
+                        <h6>
+                            I started coding when MySpace was big, which for me was in late
+                            elementary school. I would spend hours editing my profile over and
+                            over until it was perfect. Then along came YouTube in my middle
+                            school days, editing that profile, and creating custom XML files
+                            to create effects in Windows Movie Maker.
+                        </h6>
+                        <h6>
+                            Since then, I've had many projects that involved a little bit of
+                            coding. I would take what was made, try to understand how it did
+                            what it did, then import my own code or change it to fit my
+                            liking.
+                        </h6>
+                        <h6>
+                            Fast forward to now: I am currently enrolled full-time in Coding
+                            Dojo, and finally acting on a passion of mine I've had since I was
+                            a child. I am excited for what new projects await me - but for
+                            now, I have listed some in which I didn't fully know what I was
+                            doing. Most graphics were made by me, and coding manipulated by
+                            me.
+                        </h6>
                     </div>
-                    <div class="personal-project text-center animate-out-zoom">
-                        <div class="project-title-link">
-                            <h4>Watch Widgets</h4>
-                            <div class="personal-project-github-link d-flex flex-column align-items-center">
-                                <a href="https://github.com/EvanWiorek/personal-projects/tree/master/Watch-Widgets"
-                                    target="_blank"><img src="./assets/github.svg" alt="GitHub Repo" /></a>
-                                <span>GitHub Repo</span>
+                    <div
+                        class="personal-projects d-flex align-items-center justify-content-around flex-small my-col-sm-11 my-col-md-12 flex-med">
+                        <div class="personal-project text-center animate-out-zoom">
+                            <div class="project-title-link">
+                                <h4>FunKey S Themes</h4>
+                                <div class="personal-project-github-link d-flex flex-column align-items-center">
+                                    <a href="https://github.com/EvanWiorek/personal-projects/tree/master/FunKeySThemes"
+                                        target="_blank"><img src="./assets/github.svg" alt="GitHub Repo" /></a>
+                                    <span>GitHub Repo</span>
+                                </div>
                             </div>
+                            <img src="./assets/experience/FunKeyS.gif" alt="FunKey S Themes"
+                                class="funkey-gif rounded" />
                         </div>
-                        <img src="./assets/experience/Watch2.gif" alt="Watch Widgets" class="watch-gif rounded" />
+                        <div class="personal-project text-center animate-out-zoom">
+                            <div class="project-title-link">
+                                <h4>Dig Themes</h4>
+                                <div class="personal-project-github-link d-flex flex-column align-items-center">
+                                    <a href="https://github.com/EvanWiorek/personal-projects/tree/master/DIG-Themes/Retroid%20Pocket%202"
+                                        target="_blank"><img src="./assets/github.svg" alt="GitHub Repo" /></a>
+                                    <span>GitHub Repo</span>
+                                </div>
+                            </div>
+                            <img src="./assets/experience/dig.gif" alt="Dig Themes" class="dig-gif rounded" />
+                        </div>
+                        <div class="personal-project text-center animate-out-zoom">
+                            <div class="project-title-link">
+                                <h4>Watch Widgets</h4>
+                                <div class="personal-project-github-link d-flex flex-column align-items-center">
+                                    <a href="https://github.com/EvanWiorek/personal-projects/tree/master/Watch-Widgets"
+                                        target="_blank"><img src="./assets/github.svg" alt="GitHub Repo" /></a>
+                                    <span>GitHub Repo</span>
+                                </div>
+                            </div>
+                            <img src="./assets/experience/Watch2.gif" alt="Watch Widgets" class="watch-gif rounded" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -782,8 +905,7 @@
         <!--Contact Header-->
         <div class="card-header parallax-container parallax-header-style-2" id="contact">
             <div class="card-title text-center">
-                <h1>Contact</h1>
-                <h2>I'd love to hear from you!</h2>
+                <h1>CONTACT</h1>
                 <div class="parallax">
                     <img src="./assets/bg11.jpg" style="height: auto" />
                 </div>
@@ -791,47 +913,48 @@
         </div>
 
         <!--Contact section-->
-        <div class="contact-body card-style-1">
-            <div class="footer-content">
-                <div class="card-section d-flex align-items-center">
-                    <div class="contact-lines"></div>
-                    <div class="contact-image-container d-flex align-items-center justify-content-center flex-small">
-                        <div class="contacts-row-1 d-flex">
-                            <div class="contact-link d-flex flex-column align-items-center animate-in-slow">
-                                <a href="mailto:wiorek.evan@gmail.com" target="_blank"><img
-                                        src="./assets/contact/email.svg" alt="Email" /></a>
-                                <span>Email</span>
+        <div class="card-background">
+            <div class="contact-body card-style">
+                <div class="footer-content">
+                    <div class="card-section d-flex align-items-center">
+                        <div class="contact-lines"></div>
+                        <div
+                            class="contact-image-container d-flex align-items-center justify-content-center flex-small">
+                            <div class="contacts-row-1 d-flex">
+                                <div class="contact-link d-flex flex-column align-items-center animate-in-slow">
+                                    <a href="mailto:wiorek.evan@gmail.com" target="_blank"><img
+                                            src="./assets/contact/email.svg" alt="Email" /></a>
+                                    <span>Email</span>
+                                </div>
+                                <div class="contact-link d-flex flex-column align-items-center animate-in-slow">
+                                    <a href="https://www.linkedin.com/in/evan-wiorek-082900104/" target="_blank"><img
+                                            src="./assets/contact/linkedin.svg" alt="Linkedin" /></a>
+                                    <span>Linkedin</span>
+                                </div>
                             </div>
-                            <div class="contact-link d-flex flex-column align-items-center animate-in-slow">
-                                <a href="https://www.linkedin.com/in/evan-wiorek-082900104/" target="_blank"><img
-                                        src="./assets/contact/linkedin.svg" alt="Linkedin" /></a>
-                                <span>Linkedin</span>
+                            <div class="contacts-row-1 d-flex">
+                                <div class="contact-link d-flex flex-column align-items-center animate-in-slow">
+                                    <a href="https://github.com/EvanWiorek/" target="_blank"><img
+                                            src="./assets/github.svg" alt="GitHub" /></a>
+                                    <span>GitHub</span>
+                                </div>
+                                <div class="contact-link d-flex flex-column align-items-center animate-in-slow">
+                                    <a href="https://www.youtube.com/channel/UCNUWx9gwErzmWxj81x7OL6w"
+                                        target="_blank"><img src="./assets/contact/youtube.svg" alt="YouTube" /></a>
+                                    <span>YouTube</span>
+                                </div>
+                                <div class="contact-link d-flex flex-column align-items-center animate-in-slow">
+                                    <a href="https://docs.google.com/document/d/1dAQ3vWeoHkEIPAl6T-SRK1Q-0X21gYIzBm4s_9iF56I/edit?usp=sharing"
+                                        target="_blank"><img src="./assets/contact/resume.svg" alt="Resume" /></a>
+                                    <span>Resume</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="contacts-row-1 d-flex">
-                            <div class="contact-link d-flex flex-column align-items-center animate-in-slow">
-                                <a href="https://github.com/EvanWiorek/" target="_blank"><img src="./assets/github.svg"
-                                        alt="GitHub" /></a>
-                                <span>GitHub</span>
-                            </div>
-                            <div class="contact-link d-flex flex-column align-items-center animate-in-slow">
-                                <a href="https://www.youtube.com/channel/UCNUWx9gwErzmWxj81x7OL6w" target="_blank"><img
-                                        src="./assets/contact/youtube.svg" alt="YouTube" /></a>
-                                <span>YouTube</span>
-                            </div>
-                            <div class="contact-link d-flex flex-column align-items-center animate-in-slow">
-                                <a href="https://docs.google.com/document/d/1tZlbV8r2pbCLak3IxiGfJN4ycTAuYcPlBnHfAlfiX-s/edit?usp=sharing"
-                                    target="_blank"><img src="./assets/contact/resume.svg" alt="Resume" /></a>
-                                <span>Resume</span>
-                            </div>
-                        </div>
+                        <div class="contact-lines"></div>
                     </div>
-                    <div class="contact-lines"></div>
-
+                    <h6 class="text-center bottom-name animate-in-slow">Evan Wiorek 2024</h6>
                 </div>
-                <h6 class="text-center bottom-name animate-in-slow">Evan Wiorek 2023</h6>
             </div>
-
         </div>
     </div>
 
