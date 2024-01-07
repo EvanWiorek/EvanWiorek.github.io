@@ -312,19 +312,19 @@
   }
 
   .dig-gif {
-    height: 190px;
+    height: 160px;
     margin-bottom: 30px;
     width: revert;
   }
 
   .funkey-gif {
-    width: 200px;
+    width: 160px;
     margin-bottom: 30px;
   }
 
   .watch-gif {
-    width: 200px;
-    height: 243px;
+    width: 160px;
+    height: 200px;
   }
 
   div.personal-project-github-link:hover span {
@@ -332,17 +332,27 @@
   }
 
   .contact-link img {
-    height: 70px;
+    height: 50px;
     width: revert;
     margin: 10px 20px 60px 20px;
   }
 
   div.contact-link span {
     display: block;
-    margin-top: 6rem;
+    margin-top: 4.5rem;
     background-color: transparent;
     color: #778b91;
+    font-size: 1rem;
     font-weight: 500 !important;
+  }
+  
+  .contact-body {
+    height: 310px;
+    padding: 10px;
+  }
+
+  .bottom-name {
+    font-size: .7rem;
   }
 
   .card-text-blip {
@@ -375,11 +385,6 @@
 
   .project-video-img video {
     width: 90%;
-  }
-
-  .contact-body {
-    height: 360px;
-    padding: 10px;
   }
 
   .contact-image-container {
