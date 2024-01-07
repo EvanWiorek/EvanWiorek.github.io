@@ -317,7 +317,7 @@ h3 {
 .welcome-name {
   font-weight: 700;
   color: rgb(205, 205, 205);
-  margin-bottom: -10px;
+  margin-bottom: -20px;
   text-align: center;
 }
 
@@ -326,11 +326,23 @@ h3 {
 }
 
 .welcome-title {
-  font-size: 1.69vw;
+  font-size: 1.79vw;
   font-weight: 400;
   color: rgb(205, 205, 205);
   margin-bottom: 0px;
   text-align: center;
+}
+
+.welcome-title-top {
+  font-weight: 400;
+  color: rgb(205, 205, 205);
+  margin-bottom: 0px;
+}
+
+.welcome-title-bottom {
+  font-weight: 400;
+  color: rgb(205, 205, 205);
+  margin-bottom: 0px;
 }
 
 .bible-quote {

@@ -191,6 +191,13 @@
     height: 100vh;
   }
 
+  .header-background {
+    animation: rotation 400s infinite linear;
+    z-index: 0;
+    position: absolute;
+    width: 115%;
+  }
+
   .welcome-body {
     margin: 0;
     padding: 0;
@@ -216,8 +223,17 @@
     font-size: 18vw;
   }
 
-  .welcome-title {
-    font-size: 4.19vw;
+  .welcome-title-top {
+    font-size: 4.64vw;
+    margin-bottom: 20px;
+    line-height: 2rem;
+    text-align: justify;
+    width: 80vw;
+    margin: auto;
+  }
+
+  .welcome-title-bottom {
+    font-size: 3.91vw;
     margin-bottom: 20px;
     line-height: 2rem;
     text-align: justify;
@@ -424,6 +440,10 @@
 @media only screen and (min-width: 767px) and (max-width: 912px) {
   .my-navbar {
     visibility: hidden;
+  }
+
+  .hide-for-desktop {
+    display: none !important;
   }
 
   #mobile-nav {
