@@ -98,6 +98,12 @@ html {
   opacity: 1;
 }
 
+.pipe-style {
+  opacity: .5;
+  position: relative;
+  top: -2px;
+}
+
 /*Universal Classes*/
 .card-background {
   background-image: linear-gradient(0deg,
@@ -309,15 +315,18 @@ h3 {
 }
 
 .welcome-name {
-  font-size: 7.5vw;
   font-weight: 700;
   color: rgb(205, 205, 205);
   margin-bottom: -10px;
   text-align: center;
 }
 
+.welcome-name-full {
+  font-size: 9vw;
+}
+
 .welcome-title {
-  font-size: 1.7vw;
+  font-size: 1.69vw;
   font-weight: 400;
   color: rgb(205, 205, 205);
   margin-bottom: 0px;
@@ -326,23 +335,14 @@ h3 {
 
 .bible-quote {
   text-align: center;
+  margin-top: 40px;
 }
 
-.bible-quote span {
-  margin-bottom: 10px;
-}
-
-.quote {
+.bible-quote h5 {
   font-style: italic;
   color: #899ea4;
   font-weight: 400;
-  font-size: .9rem;
-}
-
-.quote-source {
-  font-weight: 400;
-  font-size: 0.9rem;
-  color: #899ea4;
+  font-size: 1vw;
 }
 
 .portrait img {

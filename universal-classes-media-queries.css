@@ -204,22 +204,36 @@
   }
 
   .welcome-name {
-    font-size: 10vw;
-    margin-bottom: 50px;
+    line-height: 4rem;
+    margin-bottom: 30px;
   }
-  
+
+  .welcome-name-first {
+    font-size: 28vw;
+  }
+
+  .welcome-name-last {
+    font-size: 18vw;
+  }
+
   .welcome-title {
-    font-size: 4vw;
+    font-size: 4.19vw;
     margin-bottom: 20px;
     line-height: 2rem;
+    text-align: justify;
+    width: 80vw;
+    margin: auto;
   }
 
-  .quote {
-    font-size: 3vw !important;
+  .bible-quote {
+    text-align: justify;
+    width: 80vw;
+    margin: auto;
   }
 
-  .quote-source {
-    font-size: 3vw !important;
+  .bible-quote h5 {
+    font-size: 3.74vw !important;
+    line-height: 1.5rem;
   }
 
   .load-animation {
@@ -256,7 +270,7 @@
     display: block;
     margin-top: 4.5rem;
     background-color: transparent;
-    color: #778b91;
+    color: #bdcace;
     font-weight: 500 !important;
   }
 
@@ -341,11 +355,11 @@
     display: block;
     margin-top: 4.5rem;
     background-color: transparent;
-    color: #778b91;
+    color: #bdcace;
     font-size: 1rem;
     font-weight: 500 !important;
   }
-  
+
   .contact-body {
     height: 310px;
     padding: 10px;
@@ -568,7 +582,7 @@
     display: block;
     margin-top: 4.5rem;
     background-color: transparent;
-    color: #778b91;
+    color: #bdcace;
     font-weight: 500 !important;
   }
 
@@ -690,7 +704,7 @@
     display: block;
     margin-top: 7rem;
     background-color: transparent;
-    color: #778b91;
+    color: #bdcace;
     font-weight: 500 !important;
   }
 
